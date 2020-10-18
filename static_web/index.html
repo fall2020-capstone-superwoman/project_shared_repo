@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Agendo Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script >
+			jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<!--start-banner-->
+	<div class="banner" id="home">
+		<div class="container">
+			<div class="banner-text">
+				<h1>WE CARE ABOUT WEMEN HEALTH</h1>
+			</div>
+		</div>
+	</div>
+	<!--end-banner-->
+	<!--start-header-->
+	 <div class="header-bottom">
+	 <div class="fixed-header">
+		<div class="container">
+			<div class="logo wow fadeInLeft" data-wow-delay="0.5s">
+				<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>
+			</div>
+			<span class="menu"> </span>
+			<div class="top-menu">
+			<nav class="cl-effect-21">
+				<ul>
+					<li><a class="scroll" href="index.html">Home</a></li>
+					<li><a class="scroll" href="#about">About</a></li>
+					<li><a class="scroll" href="#team">Team</a></li>
+					<li><a class="scroll" href="#portfolio">Portfolio</a></li>
+				</ul>
+			</nav>		
+			</div>
+		<!-- script for menu -->
+				<script>
+				$( "span.menu" ).click(function() {
+				  $( ".top-menu" ).slideToggle( "slow", function() {
+				    // Animation complete.
+				  });
+				});
+			</script>
+			<!-- script for menu -->
+			<script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header-bottom").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".header-bottom").addClass("fixed");
+				}else{
+					$(".header-bottom").removeClass("fixed");
+				}
+			 });
+			 
+		});
+		</script>
+			<div class="clearfix"></div>
+		</div>
+	 </div>
+	 </div>
+	<!--end-header-->
+	<!--start-about-->
+	<div class="about" id="about">
+		<div class="container">
+			<div class="about-top">
+				<h3>HELLO AND WELCOME, <span>WCAWH</span> IS A TEAM CARE ABOUT NUTRITION</h3>
+			</div>
+			<div class="about-bottom">
+				<div class="col-md-4 about-left">
+					<span class="bttl"> </span>
+					<h4>our target</h4>
+					<p>write something about why we do this app</p>
+				</div>
+				<div class="col-md-4 about-left">
+					<span class="tv"> </span>
+					<h4>our value</h4>
+					<p>lalalala.... </p>
+				</div>
+				<div class="col-md-4 about-left">
+					<span class="cup"> </span>
+					<h4>someting else</h4>
+					<p>add yourself </p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--end-about-->
+	<!--start-work-->
+	<div class="work">
+		<div class="container">
+			<div class="work-top">
+				<h3>SHOWCASE YOUR WORK</h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/3IuYWg4THUo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<!--end-work-->
+	<!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+		 <!--Slider-Starts-Here-->
+				<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: false,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!--End-slider-script-->	
+	<!--start-team-->
+	<div class="team" id="team">
+		<div class="container">
+			<div class="team-top">
+				<h3>MEET OUR TEAM</h3>
+				<p>Check our awesome team memebers who always work hard to provide quality products.</p>
+			</div>
+			<div class="team-bottom">
+				<div class="col-md-3 team-left">
+					<img src="images/team-1.png" alt="" />
+					<h4>JOHN SMITH</h4>
+					<p>Founder</p>
+					<div class="team-one">
+						<ul>
+							<li><a href="#"><img src="images/fb-1.png" alt="" /></a></li>
+							<li><a href="#"><img src="images/twit-2.png" alt="" /></a></li>
+							<li><a href="#"><img src="images/drbl-1.png" alt="" /></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 team-left">
+					<img src="images/team-2.png" alt="" />
+					<h4>PATRICIA MEDINA</h4>
+					<p>Senior Desigener</p>
+					<div class="team-one">
+						<ul>
+							<li><a href="#"><img src="images/fb-1.png" alt="" /></a></li>
+							<li><a href="#"><img src="images/twit-2.png" alt="" /></a></li>
+							<li><a href="#"><img src="images/drbl-1.png" alt="" /></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 team-left">
+					<img src="images/team-3.png" alt="" />
+					<h4>THOMAS HANS</h4>
+					<p>Lead Developer</p>
+					<div class="team-one">
+						<ul>
+							<li><a href="#"><img src="images/fb-1.png" alt="" /></a></li>
+							<li><a href="#"><img src="images/twit-2.png" alt="" /></a></li>
+							<li><a href="#"><img src="images/drbl-1.png" alt="" /></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 team-left">
+					<img src="images/team-4.png" alt="" />
+					<h4>PATRICIA MEDINA</h4>
+					<p>Art Director</p>
+					<div class="team-one">
+						<ul>
+							<li><a href="#"><img src="images/fb-1.png" alt="" /></a></li>
+							<li><a href="#"><img src="images/twit-2.png" alt="" /></a></li>
+							<li><a href="#"><img src="images/drbl-1.png" alt="" /></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--end-team-->
+	<!--start-portfolio-->
+	<div class="port" id="portfolio">
+		<div class="container">
+			<div class="port-top">
+				<h3>OUR PORTFOLIO</h3>
+			</div>
+			<div class="portfolio-bottom">
+				<div class="portfolios entertain_box  wow fadeInUp" data-wow-delay="0.4s" id="portfolio">
+					<div class="portfolio-top">
+						<ul id="filters" class="clearfix">
+							<li><span class="filter active" data-filter="app card icon logo web photo">ALL</span></li>
+							<li><span class="filter" data-filter="app">Web Design</span></li>
+							<li><span class="filter" data-filter="photo">Photography</span></li>
+							<li><span class="filter" data-filter="card photo">Digital</span></li>
+						</ul>
+					<div id="portfoliolist">
+						<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="images/port-1.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+							     <img src="images/port-1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Project One</h2>
+							  	 </div></a>
+			                </div>
+						</div>				
+						<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="images/port-2.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+							     <img src="images/port-2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Project two</h2>
+							  	 </div></a>
+			               	</div>
+						</div>		
+						<div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="images/port-3.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+							     <img src="images/port-3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Project Three</h2>
+							  	 </div></a>
+			                </div>
+						</div>				
+						<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="images/port-4.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+							     <img src="images/port-4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Project Four</h2>
+							  	 </div></a>
+			                </div>
+						</div>	
+						<div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="images/port-5.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
+							     <img src="images/port-5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Project Five</h2>
+							  	 </div></a>
+			                </div> 
+						</div>			
+						<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="images/port-6.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
+							     <img src="images/port-6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Project Six</h2>
+							  	 </div></a>
+			                </div>
+			            </div>
+			            <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="images/port-7.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
+							     <img src="images/port-7.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Project Seven</h2>
+							  	 </div></a>
+			                </div>
+			            </div>
+			            <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="images/port-8.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
+							     <img src="images/port-8.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Project Eight</h2>
+							  	 </div></a>
+			                </div>
+			            </div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!--end-portfolio-->
+	<link href="css/swipebox.css">
+	<script type="text/javascript" src="js/jquery.swipebox.min.js"></script> 
+	    <script >
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+		</script>
+	<!-- Portfolio Ends Here -->
+	<script  type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script >
+$(function () {
+	
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+		// http://mixitup.io
+		$('#portfoliolist').mixitup({
+			targetSelector: '.portfolio',
+			filterSelector: '.filter',
+			effects: ['fade'],
+			easing: 'snap',
+			// call the hover effect
+			onMixEnd: filterList.hoverEffect()
+		});				
+	
+	},
+	
+	hoverEffect: function () {
+	
+		// Simple parallax effect
+		$('#portfoliolist .portfolio').hover(
+			function () {
+				$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+				$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+			},
+			function () {
+				$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+				$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+			}		
+		);				
+	
+	}
+
+};
+
+// Run the show!
+	filterList.init();
+	
+});	
+</script>
+	<!--start-footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-text">
+				<ul>
+					<li><a href="#"><span class="fb"> </span></a></li>
+					<li><a href="#"><span class="twt"> </span></a></li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!--end-footer-->
+</body>
+</html>
