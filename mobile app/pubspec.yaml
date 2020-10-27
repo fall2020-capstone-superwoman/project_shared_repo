@@ -24,10 +24,12 @@ dependencies:
   direct_select: "^1.0.0"
   charts_flutter: ^0.8.1
   syncfusion_flutter_charts: ^18.3.40
-  cupertino_radio_choice: ^1.0.0+2
+  flutter_form_builder: ^3.4.1
   intl: ">=0.14.0"
+  cupertino_radio_choice: ^1.0.0+2
   flutter:
     sdk: flutter
+
 
 
   # The following adds the Cupertino Icons font to your application.

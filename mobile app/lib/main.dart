@@ -2,27 +2,28 @@ import 'package:flutter/material.dart';
 import './recipeinputpage.dart';
 import './listviewpage_backup1.dart';
 import './chartviewpage.dart';
-import './biopage.dart';
+import './biopage2.dart';
 
 
 void main() {
   runApp(MyApp());
-      // new MaterialApp(
-      // theme: ThemeData(
-      //   primarySwatch: Colors.indigo,
-      //   accentColor: Colors.indigoAccent,
-      //   appBarTheme: AppBarTheme(
-      //     color: Color.fromRGBO(90, 50, 142, 1),
-      //   ),
-      // ),
-      // home: new MyTabs()
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark(),
+      theme: ThemeData(
+       brightness: Brightness.light,
+        primaryColor: Color(0xFFF37280),
+        accentColor: Colors.deepOrange[600],
+        appBarTheme: AppBarTheme(
+          color: Color(0xFFF37280)
+        ),
+
+        // fontFamily: 'Georgia',
+
+      ),
       home: new MyTabs()
     );
   }
@@ -53,7 +54,7 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context){
     return new Scaffold(
         bottomNavigationBar: new Material(
-            // color: Colors.indigoAccent,
+            color: Color(0xFFF37280),
             child: new TabBar(
                 controller: controller,
                 tabs: <Tab>[

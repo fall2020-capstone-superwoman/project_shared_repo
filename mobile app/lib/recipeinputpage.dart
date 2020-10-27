@@ -1,232 +1,330 @@
 import 'package:flutter/material.dart';
-import 'package:direct_select/direct_select.dart';
+import 'package:flutter_form_builder/flutter_form_builder.dart';
+import 'package:intl/intl.dart';
 
-class RecipeInputPage extends StatelessWidget {
-  // This widget is the root of your application.
+class RecipeInputPage extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-  return Scaffold(
-    appBar: AppBar(
-      title: Text("Add Recipe Details"),
-    ),
-      body: MyRecipeInputPage(),
+  State<StatefulWidget> createState() {
+    return RecipeInputPageState();
+  }
+}
+
+class RecipeInputPageState extends State<RecipeInputPage> {
+  String _recipe_title;
+  String _protein;
+  int _proteinquantity;
+  String _proteinunit;
+  String _vegetables;
+  int _vegetablesquantity;
+  String _vegetablesunit;
+  String _grains;
+  int _grainsquantity;
+  String _grainsunit;
+  String _fruit;
+  int _fruitquantity;
+  String _fruitunit;
+
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+
+  Widget _buildTitle() {
+    return TextFormField(
+      decoration: InputDecoration(labelText: 'Recipe Title'),
+      maxLength: 40,
+      validator: (String value) {
+        if (value.isEmpty) {
+          return 'Title is Required';
+        }
+
+        return null;
+      },
+      onSaved: (String value) {
+        _recipe_title = value;
+      },
     );
   }
-}
-
-class MyRecipeInputPage extends StatefulWidget {
-  MyRecipeInputPage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyRecipeInputPageState createState() => _MyRecipeInputPageState();
-}
 
 
-class _MyRecipeInputPageState extends State<MyRecipeInputPage> {
-  final elements1 = [
-    "Chicken",
-    "Beef",
-    "Pork",
-    "Lamb",
-    "Tofu",
-  ];
-  final elements2 = [
-    "Broccoli",
-    "Lettuce",
-    "Cabbage",
-  ];
-
-  final elements3 = [
-    "Brown Rice",
-    "White Rice",
-    "White Bread",
-    "Rye Bread",
-    "Corn",
-  ];
-
-  final elements4 = [
-    "Apple",
-    "Banana",
-    "Blueberry",
-  ];
-
-  int selectedIndex1 = 0,
-      selectedIndex2 = 0,
-      selectedIndex3 = 0,
-      selectedIndex4 = 0;
-
-  List<Widget> _buildItems1() {
-    return elements1
-        .map((val) => MySelectionItem(
-      title: val,
-    ))
-        .toList();
+  Widget _buildProtein() {
+    return Row(
+      mainAxisSize: MainAxisSize.min,  // see 3
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Flexible(
+          flex:5,
+          child: FormBuilderDropdown(
+            attribute: "protein",
+            decoration: InputDecoration(labelText: "Protein", contentPadding: EdgeInsets.all(0.0)),
+            // initialValue: 'Male',
+            hint: Text('Select Protein'),
+            // validators: [FormBuilderValidators.required()],
+            items: ['Chicken', 'Beef', 'Pork']
+                .map((protein) => DropdownMenuItem(
+                value: protein, child: Text("$protein")))
+                .toList(),
+            onSaved: (String value) {
+              _protein = value;
+            },
+          ),
+        ),
+        SizedBox(width:10),
+        Flexible(
+          flex: 3,
+          child: TextFormField(
+            decoration: InputDecoration(labelText: "Quantity", hintText: "Quantity", contentPadding: EdgeInsets.all(0.0)),
+            keyboardType: TextInputType.number,
+            validator: FormBuilderValidators.numeric(),
+            onSaved: (String value) {
+              _proteinquantity = int.parse(value);
+            },
+            ),
+        ),
+        SizedBox(width:10),
+        Flexible(
+          flex: 2,
+          child:  FormBuilderDropdown(
+            attribute: "unit",
+            decoration: InputDecoration(labelText: "Unit",contentPadding: EdgeInsets.all(0.0)),
+            // initialValue: 'Male',
+            hint: Text('Unit'),
+            // validators: [FormBuilderValidators.required()],
+            items: ['g', 'kg', 'lb']
+                .map((unit) => DropdownMenuItem(
+                value: unit, child: Text("$unit")))
+                .toList(),
+            onSaved: (String value) {
+              _proteinunit = value;
+            },
+          ),
+        ),
+      ],
+    );
   }
 
-  List<Widget> _buildItems2() {
-    return elements2
-        .map((val) => MySelectionItem(
-      title: val,
-    ))
-        .toList();
+  Widget _buildVegetables() {
+    return Row(
+      mainAxisSize: MainAxisSize.min,  // see 3
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Flexible(
+          flex:5,
+          child: FormBuilderDropdown(
+            attribute: "vegetables",
+            decoration: InputDecoration(labelText: "Vegetables", contentPadding: EdgeInsets.all(0.0)),
+            // initialValue: 'Male',
+            hint: Text('Select Vegetables'),
+            // validators: [FormBuilderValidators.required()],
+            items: ['Broccoli', 'Cabbage', 'Leek']
+                .map((vegetables) => DropdownMenuItem(
+                value: vegetables, child: Text("$vegetables")))
+                .toList(),
+            onSaved: (String value) {
+              _vegetables = value;
+            },
+          ),
+        ),
+        SizedBox(width:10),
+        Flexible(
+          flex: 3,
+          child: TextFormField(
+            decoration: InputDecoration(labelText: "Quantity", hintText: "Quantity", contentPadding: EdgeInsets.all(0.0)),
+            keyboardType: TextInputType.number,
+            validator: FormBuilderValidators.numeric(),
+            onSaved: (String value) {
+              _vegetablesquantity = int.parse(value);
+            },
+          ),
+        ),
+        SizedBox(width:10),
+        Flexible(
+          flex: 2,
+          child:  FormBuilderDropdown(
+            attribute: "unit",
+            decoration: InputDecoration(labelText: "Unit",contentPadding: EdgeInsets.all(0.0)),
+            // initialValue: 'Male',
+            hint: Text('Unit'),
+            // validators: [FormBuilderValidators.required()],
+            items: ['g', 'kg', 'lb']
+                .map((unit) => DropdownMenuItem(
+                value: unit, child: Text("$unit")))
+                .toList(),
+            onSaved: (String value) {
+              _vegetablesunit = value;
+            },
+          ),
+        ),
+      ],
+    );
   }
 
-  List<Widget> _buildItems3() {
-    return elements3
-        .map((val) => MySelectionItem(
-      title: val,
-    ))
-        .toList();
+  Widget _buildGrains() {
+    return Row(
+      mainAxisSize: MainAxisSize.min,  // see 3
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Flexible(
+          flex:5,
+          child: FormBuilderDropdown(
+            attribute: "grains",
+            decoration: InputDecoration(labelText: "Grains", contentPadding: EdgeInsets.all(0.0)),
+            // initialValue: 'Male',
+            hint: Text('Select Grains'),
+            // validators: [FormBuilderValidators.required()],
+            items: ['White Rice', 'Brown Rice', 'Rye Pasta']
+                .map((grains) => DropdownMenuItem(
+                value: grains, child: Text("$grains")))
+                .toList(),
+            onSaved: (String value) {
+              _grains = value;
+            },
+          ),
+        ),
+        SizedBox(width:10),
+        Flexible(
+          flex: 3,
+          child: TextFormField(
+            decoration: InputDecoration(labelText: "Quantity", hintText: "Quantity", contentPadding: EdgeInsets.all(0.0)),
+            keyboardType: TextInputType.number,
+            validator: FormBuilderValidators.numeric(),
+            onSaved: (String value) {
+              _grainsquantity = int.parse(value);
+            },
+          ),
+        ),
+        SizedBox(width:10),
+        Flexible(
+          flex: 2,
+          child:  FormBuilderDropdown(
+            attribute: "unit",
+            decoration: InputDecoration(labelText: "Unit",contentPadding: EdgeInsets.all(0.0)),
+            // initialValue: 'Male',
+            hint: Text('Unit'),
+            // validators: [FormBuilderValidators.required()],
+            items: ['g', 'kg', 'lb']
+                .map((unit) => DropdownMenuItem(
+                value: unit, child: Text("$unit")))
+                .toList(),
+            onSaved: (String value) {
+              _grainsunit = value;
+            },
+          ),
+        ),
+      ],
+    );
   }
 
-  List<Widget> _buildItems4() {
-    return elements4
-        .map((val) => MySelectionItem(
-      title: val,
-    ))
-        .toList();
+  Widget _buildFruit() {
+    return Row(
+      mainAxisSize: MainAxisSize.min,  // see 3
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Flexible(
+          flex:5,
+          child: FormBuilderDropdown(
+            attribute: "fruit",
+            decoration: InputDecoration(labelText: "Fruit", contentPadding: EdgeInsets.all(0.0)),
+            // initialValue: 'Male',
+            hint: Text('Select Fruits'),
+            // validators: [FormBuilderValidators.required()],
+            items: ['Strawberries', 'Banana', 'Apple']
+                .map((fruit) => DropdownMenuItem(
+                value: fruit, child: Text("$fruit")))
+                .toList(),
+            onSaved: (String value) {
+              _fruit = value;
+            },
+          ),
+        ),
+        SizedBox(width:10),
+        Flexible(
+          flex: 3,
+          child: TextFormField(
+            decoration: InputDecoration(labelText: "Quantity", hintText: "Quantity", contentPadding: EdgeInsets.all(0.0)),
+            keyboardType: TextInputType.number,
+            validator: FormBuilderValidators.numeric(),
+            onSaved: (String value) {
+              _fruitquantity = int.parse(value);
+            },
+          ),
+        ),
+        SizedBox(width:10),
+        Flexible(
+          flex: 2,
+          child:  FormBuilderDropdown(
+            attribute: "unit",
+            decoration: InputDecoration(labelText: "Unit",contentPadding: EdgeInsets.all(0.0)),
+            // initialValue: 'Male',
+            hint: Text('Unit'),
+            // validators: [FormBuilderValidators.required()],
+            items: ['g', 'kg', 'lb']
+                .map((unit) => DropdownMenuItem(
+                value: unit, child: Text("$unit")))
+                .toList(),
+            onSaved: (String value) {
+              _fruitunit = value;
+            },
+          ),
+        ),
+      ],
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(15.0),
-        child: Center(
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.only(left: 10.0),
-                  child: Text(
-                    "Select your protein",
-                    style: TextStyle(
-                        color: Colors.grey, fontWeight: FontWeight.w500),
-                  ),
+      resizeToAvoidBottomPadding:false,
+      appBar: AppBar(title: Text("Recipe Input")),
+      body: Container(
+        margin: EdgeInsets.all(24),
+        child: Form(
+          key: _formKey,
+          child: ListView(
+            // mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              _buildTitle(),
+              SizedBox(height: 20),
+              _buildProtein(),
+              SizedBox(height: 20),
+              _buildVegetables(),
+              SizedBox(height: 20),
+              _buildGrains(),
+              SizedBox(height: 20),
+              _buildFruit(),
+              SizedBox(height: 50),
+              Row(
+                children: <Widget>[
+              RaisedButton(
+                child: Text(
+                  'Submit',
+                  style: TextStyle(color: Colors.blue, fontSize: 16),
                 ),
-                DirectSelect(
-                    itemExtent: 45.0,
-                    selectedIndex: selectedIndex1,
-                    child: MySelectionItem(
-                      isForList: false,
-                      title: elements1[selectedIndex1],
-                    ),
-                    onSelectedItemChanged: (index) {
-                      setState(() {
-                        selectedIndex1 = index;
-                      });
-                    },
-                    items: _buildItems1()),
-                Padding(
-                  padding: const EdgeInsets.only(left: 10.0, top: 20.0),
-                  child: Text(
-                    "Select your vegetables",
-                    style: TextStyle(
-                        color: Colors.grey, fontWeight: FontWeight.w500),
-                  ),
-                ),
-                DirectSelect(
-                    itemExtent: 45.0,
-                    selectedIndex: selectedIndex2,
-                    child: MySelectionItem(
-                      isForList: false,
-                      title: elements2[selectedIndex2],
-                    ),
-                    onSelectedItemChanged: (index) {
-                      setState(() {
-                        selectedIndex2 = index;
-                      });
-                    },
-                    items: _buildItems2()),
-                Padding(
-                  padding: const EdgeInsets.only(left: 10.0, top: 20.0),
-                  child: Text(
-                    "Select your grains",
-                    style: TextStyle(
-                        color: Colors.grey, fontWeight: FontWeight.w500),
-                  ),
-                ),
-                DirectSelect(
-                    itemExtent: 45.0,
-                    selectedIndex: selectedIndex3,
-                    child: MySelectionItem(
-                      isForList: false,
-                      title: elements3[selectedIndex3],
-                    ),
-                    onSelectedItemChanged: (index) {
-                      setState(() {
-                        selectedIndex3 = index;
-                      });
-                    },
-                    items: _buildItems3()),
-                Padding(
-                  padding: const EdgeInsets.only(left: 10.0, top: 20.0),
-                  child: Text(
-                    "Select your fruits",
-                    style: TextStyle(
-                        color: Colors.grey, fontWeight: FontWeight.w500),
-                  ),
-                ),
-                DirectSelect(
-                    itemExtent: 45.0,
-                    selectedIndex: selectedIndex4,
-                    child: MySelectionItem(
-                      isForList: false,
-                      title: elements4[selectedIndex4],
-                    ),
-                    onSelectedItemChanged: (index) {
-                      setState(() {
-                        selectedIndex4 = index;
-                      });
-                    },
-                    items: _buildItems4()),
-              ]),
+                onPressed: () {
+                  if (!_formKey.currentState.validate()) {
+                    print("Error");
+                  }
+
+                  _formKey.currentState.save();
+
+                  print(_recipe_title);
+                  print(_protein+" "+_proteinquantity.toString()+_proteinunit);
+                  print(_vegetables+" "+_vegetablesquantity.toString()+_vegetablesunit);
+                  print(_grains+" "+_grainsquantity.toString()+_grainsunit);
+                  print(_fruit+" "+_fruitquantity.toString()+_fruitunit);
+
+                  //Send to API
+                },
+              ),
+              RaisedButton(
+                child: Text("Reset"),
+                onPressed: () {
+                  _formKey.currentState.reset();
+                },
+              ),
+                  ],
+              ),
+            ],
+          ),
         ),
       ),
-    );
-  }
-}
-
-//You can use any Widget
-class MySelectionItem extends StatelessWidget {
-  final String title;
-  final bool isForList;
-
-  const MySelectionItem({Key key, this.title, this.isForList = true})
-      : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 60.0,
-      child: isForList
-          ? Padding(
-        child: _buildItem(context),
-        padding: EdgeInsets.all(10.0),
-      )
-          : Card(
-        margin: EdgeInsets.symmetric(horizontal: 10.0),
-        child: Stack(
-          children: <Widget>[
-            _buildItem(context),
-            Align(
-              alignment: Alignment.centerRight,
-              child: Icon(Icons.arrow_drop_down),
-            )
-          ],
-        ),
-      ),
-    );
-  }
-
-  _buildItem(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      alignment: Alignment.center,
-      child: Text(title, style: TextStyle(fontSize: 20.0)),
     );
   }
 }

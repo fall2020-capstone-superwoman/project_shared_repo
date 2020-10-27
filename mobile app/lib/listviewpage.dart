@@ -1,96 +1,124 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 import 'dart:convert';
-import 'package:flutter/services.dart';
+import 'package:flutter/material.dart';
+import './chart_input.dart';
+import 'dart:async';
+import 'dart:core';
+import 'package:intl/intl.dart';
+import 'package:flutter/services.dart' show rootBundle;
 
-class ListViewPage extends StatefulWidget {
-  @override
-  MyAppState createState() => MyAppState();
-}
-
-class MyAppState extends State<ListViewPage> {
+class ListViewPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Compare Recipes"),
-      ),
-      body: Container(
-        child: Center(
-          // Use future builder and DefaultAssetBundle to load the local JSON file
-          child: FutureBuilder(
-            future: DefaultAssetBundle
-                .of(context)
-                .loadString('assets/recipes.json'),
-            builder: (context, snapshot) {
-              // Decode the JSON
-              var new_data = jsonDecode(snapshot.data.toString());
-
-              return ListView.builder(
-                // Build the ListView
-                itemBuilder: (BuildContext context, int index) {
-                  return Card(
-                    elevation: 5,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: <Widget>[
-                        // Text("user_ID: " + new_data[index]['User_ID'].toString()),
-                        // Text("request_ID: " + new_data[index]['Request_ID'].toString()),
-                        // Text("request_time: " + new_data[index]['Request_time'].toString()),
-                        Padding(
-                          padding: const EdgeInsets.all(10.0),
-                          child: Text(
-                              "Recipe " + (index + 1).toString() + ": " + new_data[index]['Recipe_title'], style: TextStyle(fontSize: 20.0)),
-                        ),
-                        Text(
-                            "nutrient: " + new_data[index]['Nutrition_Info'][0]['Nutrient'].toString()),
-                        // Text(
-                        //     "Amount: " + new_data[index]['Amount'].toString()),
-                        // Text(
-                        //     "Unit: " + new_data[index]['Unit']),
-                        // Text("Pct_Daily: " + new_data[index]['Pct_Daily'].toString()),
-                      ],
-                    ),
-                  );
-                },
-                itemCount: new_data == null ? 0 : new_data.length,
-              );
-            },
-            // future: DefaultAssetBundle.of(context).loadString('assets/recipes.json'),),
-          ),
-        ),
-      ),
+      body: HomePage(),
     );
   }
 }
+class HomePage extends StatefulWidget {
+
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  final List<Recipe> chartData = [];
+  final _savedRecipes = Set<Recipe>();
+   // list for storing the last parsed Json data
 
 
+  Future<String> _loadRecipeAsset() async {
+    return await rootBundle.loadString('assets/recipes.json');
+  }
+
+  Future loadRecipes() async {
+    String jsonString = await _loadRecipeAsset();
+    final jsonResponse = json.decode(jsonString);
+    setState(() {
+      for(Map i in jsonResponse) {
+        chartData.add(Recipe.fromJson(i)); // Deserialization step
+      }
+    });
+  }
+
+  var f = NumberFormat("#%");
 
 
-
-
-class Recipe {
-  final String user_ID;
-  final String request_ID;
-  final String request_time;
-  final String recipe_title;
-  final String nutrient;
-  final String amount;
-  final String unit;
-  final String pct_daily;
-
-  Recipe._({this.user_ID, this.request_ID, this.request_time, this.recipe_title, this.nutrient, this.amount, this.unit, this.pct_daily});
-
-  factory Recipe.fromJson(Map<String, dynamic> json) {
-    return new Recipe._(
-      user_ID: json['user_ID'],
-      request_ID: json['request_ID'],
-      request_time: json['request_time'],
-      recipe_title: json['recipe_title'],
-      nutrient: json['nutrient'],
-      amount: json['amount'],
-      unit: json['unit'],
-      pct_daily: json['pct_daily'],
+  Widget _buildList() {
+    return ListView.builder(
+      itemBuilder: (context, index) {
+        // return new Card(
+        //     child: Padding(
+        //         padding: const EdgeInsets.only(
+        //             top: 15.0, bottom: 15.0, left: 16.0, right: 16.0),
+        //         child: Column(
+        //             crossAxisAlignment: CrossAxisAlignment.start,
+        //             children: <Widget>[
+                      _buildRow(chartData[index]);
+                    // ]
+        //         ),
+        //   ),
+        // );
+      },
+      itemCount: chartData.length,
     );
+  }
+
+  Widget _buildRow(Recipe recipe) {
+    final alreadySaved = _savedRecipes.contains(recipe.recipe_title);
+
+    return ListTile(
+      title: Text(recipe.recipe_title, style: TextStyle(fontSize: 16.0)),
+      trailing: Icon(alreadySaved ? Icons.check_box: Icons.check_box_outline_blank),
+      onTap: () {
+        setState(() {
+          if(alreadySaved) {
+            _savedRecipes.remove(recipe);
+          } else {
+            _savedRecipes.add(recipe);
+          }
+        }
+        );
+      },
+    );
+  }
+
+  void _pushSaved() {
+    Navigator.of(context).push(
+        MaterialPageRoute(
+            builder: (BuildContext context) {
+              final Iterable<ListTile> tiles = _savedRecipes.map((Recipe recipe) {
+                return ListTile(
+                  title: Text(recipe.recipe_title, style: TextStyle(fontSize: 16.0)),
+                  // subtitle: Text("two cups of flour"),
+                );
+              });
+              final List<Widget> divided = ListTile.divideTiles(
+                  context: context,
+                  tiles: tiles
+              ).toList();
+
+              return Scaffold(
+                  appBar: AppBar(
+                      title: Text("Saved Recipes"),
+                  ),
+                  body: ListView(children: divided)
+              );
+            }
+        )
+    );
+  }
+
+  Widget build(BuildContext context) {
+    return Scaffold (
+        appBar: AppBar(
+          title: Text("Compare Recipes"),
+          actions: <Widget>[
+            IconButton(
+                icon: Icon(Icons.compare_arrows), onPressed:
+            _pushSaved)
+          ],
+        ),
+        body: _buildList());
+
   }
 }

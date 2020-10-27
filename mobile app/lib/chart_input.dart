@@ -48,3 +48,9 @@ class Nutrition_info{
     );
   }
 }
+
+class NutrientData{
+  NutrientData(this.nutrient, this.pct_daily);
+  final String nutrient;
+  final double pct_daily;
+}

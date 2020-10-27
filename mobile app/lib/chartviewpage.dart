@@ -1,27 +1,29 @@
 import './chart_input.dart';
 import 'package:flutter/material.dart';
-import 'dart:convert';
-import 'dart:async';
 import 'package:intl/intl.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:syncfusion_flutter_charts/charts.dart';
+import './json_read.dart';
+import 'dart:core';
+import './listviewpage_backup1.dart';
 
 class ChartViewPage extends StatelessWidget {
+
+
   @override
   Widget build(BuildContext context) {
-  return Scaffold(
-    appBar: AppBar(
-      title: Text("Charts"),
-    ),
-    body: MyHomePage(),
-  );
+  // return Scaffold(
+  //   appBar: AppBar(
+  //     title: Text("Charts"),
+  //   ),
+  //   body:
+    return MyHomePage();
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  Set<int> data = Set<int>();
+  MyHomePage({Key key, Set<int> data}) : super(key: key);
 
-  final String title;
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -30,36 +32,6 @@ class MyHomePage extends StatefulWidget {
 var f = NumberFormat("#%");
 
 class _MyHomePageState extends State<MyHomePage> {
-
-  List<Recipe> chartData = []; // list for storing the last parsed Json data
-  List<List<NutrientData>> nutritionData = [];
-  List<NutrientData> nutritionPerRecipe = [];
-
-  Future<String> _loadRecipeAsset() async {
-    return await rootBundle.loadString('assets/recipes.json');
-  }
-
-  Future loadRecipes() async {
-    String jsonString = await _loadRecipeAsset();
-    final jsonResponse = json.decode(jsonString);
-    setState(() {
-      for(Map i in jsonResponse) {
-        chartData.add(Recipe.fromJson(i)); // Deserialization step 3
-      }
-    });
-      for (int i = 0; i < chartData.length; i++) {
-        nutritionPerRecipe = [];
-        for (int j = chartData[i].nutrition_info.length-1; j >= 0; j--) {
-          nutritionPerRecipe.add(NutrientData(chartData[i].nutrition_info[j].nutrient, chartData[i].nutrition_info[j].pct_daily));
-        }
-          nutritionData.add(nutritionPerRecipe);
-        }
-        return nutritionData;
-      }
-
-
-
-
   @override
   void initState() {
     super.initState();
@@ -69,13 +41,17 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+      title: Text("Charts"),
+      ),
       body: Center(
         child: Container(
-          child: SfCartesianChart(
+          child:
+          SfCartesianChart(
               primaryXAxis: CategoryAxis(
               ),
               primaryYAxis: NumericAxis(numberFormat: NumberFormat.percentPattern()),
-              title: ChartTitle(text: chartData[0].recipe_title),
+              title: ChartTitle(text: chartData[0].recipe_title + " vs. " + chartData[1].recipe_title),
               tooltipBehavior: TooltipBehavior(enable: true),
               zoomPanBehavior: ZoomPanBehavior(
                   enablePanning: true
@@ -83,11 +59,22 @@ class _MyHomePageState extends State<MyHomePage> {
               series: <CartesianSeries>[
                 BarSeries<NutrientData, String>(
                     dataSource: nutritionData[0],
+                    //widget.data.first
                     xValueMapper: (NutrientData row, _) => row.nutrient,
                     yValueMapper: (NutrientData row, _) => row.pct_daily,
                     dataLabelSettings: DataLabelSettings(
                     // Renders the data label
                     isVisible: true,
+                      labelAlignment: ChartDataLabelAlignment.top,
+                    )
+                ),
+                BarSeries<NutrientData, String>(
+                    dataSource: nutritionData[1],
+                    xValueMapper: (NutrientData row, _) => row.nutrient,
+                    yValueMapper: (NutrientData row, _) => row.pct_daily,
+                    dataLabelSettings: DataLabelSettings(
+                      // Renders the data label
+                      isVisible: true,
                       labelAlignment: ChartDataLabelAlignment.top,
                     )
                 )
@@ -99,8 +86,9 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class NutrientData{
-  NutrientData(this.nutrient, this.pct_daily);
-  final String nutrient;
-  final double pct_daily;
-}
+// class NutrientData{
+//   NutrientData(this.nutrient, this.pct_daily);
+//   final String nutrient;
+//   final double pct_daily;
+// }
+
