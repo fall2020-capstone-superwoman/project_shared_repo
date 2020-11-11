@@ -1,0 +1,220 @@
+[
+    {
+        "uuid": 1234,
+        "user_id": 1234,
+        "request_id": 1,
+        "request_time": "9/28/2020",
+        "user_selection": "recipe_1",
+        "recipe_rank": 1,
+        "recipe_name": "Scrumptious Baked Chicken and Potatoes",
+        "recipe_directions": "Prep\n15 m\nCook\n1 h\nReady In\n1 h 15 m\nPreheat oven to 400 degrees F (200 degrees C).\nBrush crust with melted butter. Sprinkle bacon inside crust. Place zucchini, eggs and cream in a blender; puree until smooth. Pour zucchini mixture into a bowl and stir in marjoram, onion salt, pepper, and cayenne. Fold in cheese and pour mixture into pie crust.\nBake in preheated oven for 15 minutes. Reduce heat to 300 degrees F (150 degrees C) and bake for an additional 45 minutes, or until set.",
+        "recipe_ingredients": ["chicken parts", "water", "potatoes", "olive oil", "crushed dried rosemary", "crushed dried thyme", "salt and ground black pepper to taste"],
+        "recipe_nutrition_result": [
+            {
+                "name": "Vitamin B6",
+                "amount": 1.066978,
+                "percentDailyValue": "67",
+                "displayValue": "1",
+                "unit": "mg",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.60,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef1","spanich1","egg1"],
+                "raw_nutrition_top_list": ["milk1","kale1","tofu1"]
+            },
+            {
+                "name": "Folate",
+                "amount": 40.67905,
+                "percentDailyValue": "23",
+                "displayValue": "41",
+                "unit": "mcg",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.70,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef2","spanich2","egg2"],
+                "raw_nutrition_top_list": ["milk2","kale2","tofu2"]
+            },
+            {
+                "name": "Calcium",
+                "amount": 53.15401,
+                "percentDailyValue": "7",
+                "displayValue": "53",
+                "unit": "mg",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.60,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef3","spanich3","egg3"],
+                "raw_nutrition_top_list": ["milk3","kale3","tofu3"]
+            },
+            {
+                "name": "Iron",
+                "amount": 4.333617,
+                "percentDailyValue": "43",
+                "displayValue": "4",
+                "unit": "mg",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.60,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef4","spanich4","egg4"],
+                "raw_nutrition_top_list": ["milk4","kale4","tofu4"]
+            },
+            {
+                "name": "Cholesterol",
+                "amount": 176.7,
+                "percentDailyValue": "59",
+                "displayValue": "177",
+                "unit": "mg",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.60,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef5","spanich5","egg5"],
+                "raw_nutrition_top_list": ["milk5","kale5","tofu5"]
+            },
+            {
+                "name": "Protein",
+                "amount": 50.8869,
+                "percentDailyValue": "102",
+                "displayValue": "50.9",
+                "unit": "g",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.60,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef6","spanich6","egg6"],
+                "raw_nutrition_top_list": ["milk6","kale6","tofu6"]
+            },
+            {
+                "name": "Vitamin A - IU",
+                "amount": 338.842,
+                "percentDailyValue": "7",
+                "displayValue": "339",
+                "unit": "IU",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.60,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef7","spanich7","egg7"],
+                "raw_nutrition_top_list": ["milk7","kale7","tofu7"]
+            },
+            {
+                "name": "Vitamin C",
+                "amount": 31.81681,
+                "percentDailyValue": "53",
+                "displayValue": "32",
+                "unit": "mg",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.60,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef8","spanich8","egg8"],
+                "raw_nutrition_top_list": ["milk8","kale8","tofu8"]
+            }
+        ]
+    },
+    {
+        "uuid": 1234,
+        "user_id": 1234,
+        "request_id": 1,
+        "request_time": "9/28/2020",
+        "user_selection": "recipe_1",
+        "recipe_rank": 2,
+        "recipe_name": "Scrumptious Baked Chicken and Potatoes",
+        "recipe_directions": "Prep\n15 m\nCook\n1 h\nReady In\n1 h 15 m\nPreheat oven to 400 degrees F (200 degrees C).\nBrush crust with melted butter. Sprinkle bacon inside crust. Place zucchini, eggs and cream in a blender; puree until smooth. Pour zucchini mixture into a bowl and stir in marjoram, onion salt, pepper, and cayenne. Fold in cheese and pour mixture into pie crust.\nBake in preheated oven for 15 minutes. Reduce heat to 300 degrees F (150 degrees C) and bake for an additional 45 minutes, or until set.",
+        "recipe_ingredients": ["chicken parts", "water", "potatoes", "olive oil", "crushed dried rosemary", "crushed dried thyme", "salt and ground black pepper to taste"],
+        "recipe_nutrition_result": [
+            {
+                "name": "Vitamin B6",
+                "amount": 1.066978,
+                "percentDailyValue": "67",
+                "displayValue": "1",
+                "unit": "mg",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.60,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef1","spanich1","egg1"],
+                "raw_nutrition_top_list": ["milk1","kale1","tofu1"]
+            },
+            {
+                "name": "Folate",
+                "amount": 40.67905,
+                "percentDailyValue": "23",
+                "displayValue": "41",
+                "unit": "mcg",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.70,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef2","spanich2","egg2"],
+                "raw_nutrition_top_list": ["milk2","kale2","tofu2"]
+            },
+            {
+                "name": "Calcium",
+                "amount": 53.15401,
+                "percentDailyValue": "7",
+                "displayValue": "53",
+                "unit": "mg",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.60,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef3","spanich3","egg3"],
+                "raw_nutrition_top_list": ["milk3","kale3","tofu3"]
+            },
+            {
+                "name": "Iron",
+                "amount": 4.333617,
+                "percentDailyValue": "43",
+                "displayValue": "4",
+                "unit": "mg",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.60,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef4","spanich4","egg4"],
+                "raw_nutrition_top_list": ["milk4","kale4","tofu4"]
+            },
+            {
+                "name": "Cholesterol",
+                "amount": 176.7,
+                "percentDailyValue": "59",
+                "displayValue": "177",
+                "unit": "mg",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.60,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef5","spanich5","egg5"],
+                "raw_nutrition_top_list": ["milk5","kale5","tofu5"]
+            },
+            {
+                "name": "Protein",
+                "amount": 50.8869,
+                "percentDailyValue": "102",
+                "displayValue": "50.9",
+                "unit": "g",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.60,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef6","spanich6","egg6"],
+                "raw_nutrition_top_list": ["milk6","kale6","tofu6"]
+            },
+            {
+                "name": "Vitamin A - IU",
+                "amount": 338.842,
+                "percentDailyValue": "7",
+                "displayValue": "339",
+                "unit": "IU",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.60,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef7","spanich7","egg7"],
+                "raw_nutrition_top_list": ["milk7","kale7","tofu7"]
+            },
+            {
+                "name": "Vitamin C",
+                "amount": 31.81681,
+                "percentDailyValue": "53",
+                "displayValue": "32",
+                "unit": "mg",
+                "benchmark": 1.9,
+                "benchmark_percentage": 0.60,
+                "benchmark_flag": "deficiency",
+                "cooccurrence_top_list": ["beef8","spanich8","egg8"],
+                "raw_nutrition_top_list": ["milk8","kale8","tofu8"]
+            }
+        ]
+    }
+]
