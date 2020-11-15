@@ -21,12 +21,18 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  easy_rich_text: '^0.5.2'
   direct_select: "^1.0.0"
   charts_flutter: ^0.8.1
   syncfusion_flutter_charts: ^18.3.40
-  flutter_form_builder: ^3.4.1
+  searchable_dropdown: ^1.1.3
+  http: ^0.12.2
+  flutter_form_builder: ^3.14.0-alpha.1
   intl: ">=0.14.0"
+  smart_select: ^4.3.2
   cupertino_radio_choice: ^1.0.0+2
+  shared_preferences: ^0.5.12
+  path_provider: ^1.6.24
   flutter:
     sdk: flutter
 
@@ -47,6 +53,9 @@ dev_dependencies:
 flutter:
   assets:
     - assets/recipes.json
+    - assets/b_recipelist_horizontal.json
+    - assets/d_heatmap_recommendation.json
+    - assets/b_recipelist_heatmap_recommendation_horizontal.json
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

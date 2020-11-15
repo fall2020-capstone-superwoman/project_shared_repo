@@ -1,0 +1,170 @@
+{
+    "uuid": 1234,
+    "user_id": 1234,
+    "request_id": 1,
+    "request_time": "9/28/2020",
+    "user_selection": "recipe_1",
+    "recipe_name": "Scrumptious Baked Chicken and Potatoes",
+    "nutrition_result": {
+        "vitaminB6": {
+            "name": "Vitamin B6",
+            "amount": 1.066978,
+            "percentDailyValue": "67",
+            "displayValue": "1",
+            "unit": "mg",
+            "benchmark": 1.9,
+            "benchmark_percentage": 0.60,
+            "benchmark_flag": "deficiency",
+            "cooccurrence_top_list": [
+                "beef1",
+                "spanich1",
+                "egg1"
+            ],
+            "raw_nutrition_top_list": [
+                "milk1",
+                "kale1",
+                "tofu1"
+            ]
+        },
+        "folate": {
+            "name": "Folate",
+            "amount": 40.67905,
+            "percentDailyValue": "23",
+            "displayValue": "41",
+            "unit": "mcg",
+            "benchmark": 1.9,
+            "benchmark_percentage": 0.70,
+            "benchmark_flag": "deficiency",
+            "cooccurrence_top_list": [
+                "beef2",
+                "spanich2",
+                "egg2"
+            ],
+            "raw_nutrition_top_list": [
+                "milk2",
+                "kale2",
+                "tofu2"
+            ]
+        },
+        "calcium": {
+            "name": "Calcium",
+            "amount": 53.15401,
+            "percentDailyValue": "7",
+            "displayValue": "53",
+            "unit": "mg",
+            "benchmark": 1.9,
+            "benchmark_percentage": 0.60,
+            "benchmark_flag": "deficiency",
+            "cooccurrence_top_list": [
+                "beef3",
+                "spanich3",
+                "egg3"
+            ],
+            "raw_nutrition_top_list": [
+                "milk3",
+                "kale3",
+                "tofu3"
+            ]
+        },
+        "iron": {
+            "name": "Iron",
+            "amount": 4.333617,
+            "percentDailyValue": "43",
+            "displayValue": "4",
+            "unit": "mg",
+            "benchmark": 1.9,
+            "benchmark_percentage": 0.60,
+            "benchmark_flag": "deficiency",
+            "cooccurrence_top_list": [
+                "beef4",
+                "spanich4",
+                "egg4"
+            ],
+            "raw_nutrition_top_list": [
+                "milk4",
+                "kale4",
+                "tofu4"
+            ]
+        },
+        "cholesterol": {
+            "name": "Cholesterol",
+            "amount": 176.7,
+            "percentDailyValue": "59",
+            "displayValue": "177",
+            "unit": "mg",
+            "benchmark": 1.9,
+            "benchmark_percentage": 0.60,
+            "benchmark_flag": "deficiency",
+            "cooccurrence_top_list": [
+                "beef5",
+                "spanich5",
+                "egg5"
+            ],
+            "raw_nutrition_top_list": [
+                "milk5",
+                "kale5",
+                "tofu5"
+            ]
+        },
+        "protein": {
+            "name": "Protein",
+            "amount": 50.8869,
+            "percentDailyValue": "102",
+            "displayValue": "50.9",
+            "unit": "g",
+            "benchmark": 1.9,
+            "benchmark_percentage": 0.60,
+            "benchmark_flag": "deficiency",
+            "cooccurrence_top_list": [
+                "beef6",
+                "spanich6",
+                "egg6"
+            ],
+            "raw_nutrition_top_list": [
+                "milk6",
+                "kale6",
+                "tofu6"
+            ]
+        },
+        "vitaminA": {
+            "name": "Vitamin A - IU",
+            "amount": 338.842,
+            "percentDailyValue": "7",
+            "displayValue": "339",
+            "unit": "IU",
+            "benchmark": 1.9,
+            "benchmark_percentage": 0.60,
+            "benchmark_flag": "deficiency",
+            "cooccurrence_top_list": [
+                "beef7",
+                "spanich7",
+                "egg7"
+            ],
+            "raw_nutrition_top_list": [
+                "milk7",
+                "kale7",
+                "tofu7"
+            ]
+        },
+        "vitaminC": {
+            "name": "Vitamin C",
+            "amount": 31.81681,
+            "percentDailyValue": "53",
+            "displayValue": "32",
+            "unit": "mg",
+            "benchmark": 1.9,
+            "benchmark_percentage": 0.60,
+            "benchmark_flag": "deficiency",
+            "cooccurrence_top_list": [
+                "beef8",
+                "spanich8",
+                "egg8"
+            ],
+            "raw_nutrition_top_list": [
+                "milk8",
+                "kale8",
+                "tofu8"
+            ]
+        }
+    }
+}

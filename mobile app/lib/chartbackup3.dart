@@ -1,64 +1,37 @@
-import 'dart:convert';
+import './jsonstructure.dart';
 import 'package:flutter/material.dart';
-import './chart_input.dart';
-import 'dart:async';
-import 'dart:core';
 import 'package:intl/intl.dart';
-import 'package:flutter/services.dart' show rootBundle;
+import 'package:syncfusion_flutter_charts/charts.dart';
+import './json_read.dart';
+import 'dart:core';
+import './recipeslist.dart';
+
+class ChartViewPage extends StatelessWidget {
 
 
-class ChartViewApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HomePage(),
-    );
+    // return Scaffold(
+    //   appBar: AppBar(
+    //     title: Text("Charts"),
+    //   ),
+    //   body:
+    return MyHomePage();
   }
 }
 
-class HomePage extends StatefulWidget {
+class MyHomePage extends StatefulWidget {
+  Set<int> data = Set<int>();
+  MyHomePage({Key key, Set<int> data}) : super(key: key);
+
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+var f = NumberFormat("#%");
 
-  List<Recipe> chartData = []; // list for storing the last parsed Json data
-  List<NutrientData> nutritionData = [];
-
-  Future<String> _loadRecipeAsset() async {
-    return await rootBundle.loadString('assets/recipes.json');
-  }
-
-  Future loadRecipes() async {
-    String jsonString = await _loadRecipeAsset();
-    final jsonResponse = json.decode(jsonString);
-    setState(() {
-      for(Map i in jsonResponse) {
-        chartData.add(Recipe.fromJson(i)); // Deserialization step
-      }
-    });
-
-  }
-  Future loadNutrientData() async{
-  loadRecipes();
-  for (int i = 0; i < chartData.length; i++) {
-  for (int j=0; j < chartData[i].nutrition_info.length; j++) {
-  nutritionData.add(NutrientData(chartData[i].recipe_title, chartData[i].nutrition_info[j].nutrient, chartData[i].nutrition_info[j].pct_daily));
-  }
-  }
-  return nutritionData;
-  }
-
-
-
-  var f = NumberFormat("#%");
-
+class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
@@ -68,56 +41,54 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter listview with json'),
-        ),
-        body: ListView.builder(
-          itemBuilder: (context, index) {
-            return Card(
-              child: Padding(
-                padding: const EdgeInsets.only(top: 32.0, bottom: 32.0, left: 16.0, right: 16.0),
-                child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        chartData[index].recipe_title,
-                        style: TextStyle(
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold
-                        ),
-                      ),
-                      ListView.builder(
-                          shrinkWrap: true,
-                          itemCount: chartData[index].nutrition_info.length,
-                          itemBuilder: (BuildContext ctxt, int i) {
-                            return Row(
-                                children: <Widget>[
-                                  Padding(
-                                    padding: EdgeInsets.all(8.0),
-                                    child: Text(chartData[index].nutrition_info[i].nutrient),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsets.all(8.0),
-                                    child: Text(chartData[index].nutrition_info[i].amount.toString()+chartData[index].nutrition_info[i].unit),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsets.all(8.0),
-                                    child: Text(f.format(chartData[index].nutrition_info[i].pct_daily)),
-                                  )
-                                ]);
-                          })
-                    ]),
+      appBar: AppBar(
+        title: Text("Charts"),
+      ),
+      body: Center(
+        child: Container(
+          child:
+          SfCartesianChart(
+              primaryXAxis: CategoryAxis(
               ),
-            );
-          },
-          itemCount: chartData.length,
-        )
+              primaryYAxis: NumericAxis(numberFormat: NumberFormat.percentPattern()),
+              title: ChartTitle(text: chartData[0].recipe_name + " vs. " + chartData[1].recipe_name),
+              tooltipBehavior: TooltipBehavior(enable: true),
+              zoomPanBehavior: ZoomPanBehavior(
+                  enablePanning: true
+              ),
+              series: <CartesianSeries>[
+                BarSeries<NutrientData, String>(
+                    dataSource: nutritionData[0],
+                    //widget.data.first
+                    xValueMapper: (NutrientData row, _) => row.nutrient,
+                    yValueMapper: (NutrientData row, _) => row.datapoint,
+                    dataLabelSettings: DataLabelSettings(
+                      // Renders the data label
+                      isVisible: true,
+                      labelAlignment: ChartDataLabelAlignment.top,
+                    )
+                ),
+                BarSeries<NutrientData, String>(
+                    dataSource: nutritionData[1],
+                    xValueMapper: (NutrientData row, _) => row.nutrient,
+                    yValueMapper: (NutrientData row, _) => row.datapoint,
+                    dataLabelSettings: DataLabelSettings(
+                      // Renders the data label
+                      isVisible: true,
+                      labelAlignment: ChartDataLabelAlignment.top,
+                    )
+                )
+              ]
+          ),
+        ),
+      ),
     );
   }
 }
-class NutrientData{
-  NutrientData(this.recipe_title, this.nutrient, this.pct_daily);
-  final String recipe_title;
-  final String nutrient;
-  final double pct_daily;
-}
+
+// class NutrientData{
+//   NutrientData(this.nutrient, this.pct_daily);
+//   final String nutrient;
+//   final double pct_daily;
+// }
+

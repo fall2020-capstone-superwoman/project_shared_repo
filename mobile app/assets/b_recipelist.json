@@ -1,0 +1,305 @@
+{
+    "uuid": 1234,
+    "recipe_title": "Scrumptious Baked Chicken and Potatoes",
+    "directions": "Prep\n15 m\nCook\n1 h\nReady In\n1 h 15 m\nPreheat oven to 400 degrees F (200 degrees C).\nBrush crust with melted butter. Sprinkle bacon inside crust. Place zucchini, eggs and cream in a blender; puree until smooth. Pour zucchini mixture into a bowl and stir in marjoram, onion salt, pepper, and cayenne. Fold in cheese and pour mixture into pie crust.\nBake in preheated oven for 15 minutes. Reduce heat to 300 degrees F (150 degrees C) and bake for an additional 45 minutes, or until set.",
+    "ingredients": ["chicken parts", "water", "potatoes", "olive oil", "crushed dried rosemary", "crushed dried thyme", "salt and ground black pepper to taste"],
+    "nutritionfacts": {
+                    "niacin": {
+                        "name": "Niacin Equivalents",
+                        "amount": 23.53895,
+                        "percentDailyValue": "181",
+                        "displayValue": "24",
+                        "unit": "mg"
+                    },
+                    "sugars": {
+                        "name": "Sugars",
+                        "amount": 1.252177,
+                        "percentDailyValue": "0",
+                        "displayValue": "1.3",
+                        "unit": "g"
+                    },
+                    "sodium": {
+                        "name": "Sodium",
+                        "amount": 170.473,
+                        "percentDailyValue": "7",
+                        "displayValue": "170",
+                        "unit": "mg"
+                    },
+                    "carbohydrates": {
+                        "name": "Carbohydrates",
+                        "amount": 28.31214,
+                        "percentDailyValue": "9",
+                        "displayValue": "28.3",
+                        "unit": "g"
+                    },
+                    "vitaminB6": {
+                        "name": "Vitamin B6",
+                        "amount": 1.066978,
+                        "percentDailyValue": "67",
+                        "displayValue": "1",
+                        "unit": "mg"
+                    },
+                    "calories": {
+                        "name": "Calories",
+                        "amount": 624.0342,
+                        "percentDailyValue": "31",
+                        "displayValue": "624",
+                        "unit": "kcal"
+                    },
+                    "thiamin": {
+                        "name": "Thiamin",
+                        "amount": 0.27112,
+                        "percentDailyValue": "27",
+                        "displayValue": "< 1",
+                        "unit": "mg"
+                    },
+                    "fat": {
+                        "name": "Fat",
+                        "amount": 33.01791,
+                        "percentDailyValue": "51",
+                        "displayValue": "33",
+                        "unit": "g"
+                    },
+                    "folate": {
+                        "name": "Folate",
+                        "amount": 40.67905,
+                        "percentDailyValue": "23",
+                        "displayValue": "41",
+                        "unit": "mcg"
+                    },
+                    "caloriesFromFat": {
+                        "name": "Calories from Fat",
+                        "amount": 297.1612,
+                        "percentDailyValue": "-",
+                        "displayValue": "297",
+                        "unit": "kcal"
+                    },
+                    "calcium": {
+                        "name": "Calcium",
+                        "amount": 53.15401,
+                        "percentDailyValue": "7",
+                        "displayValue": "53",
+                        "unit": "mg"
+                    },
+                    "fiber": {
+                        "name": "Dietary Fiber",
+                        "amount": 3.763257,
+                        "percentDailyValue": "15",
+                        "displayValue": "3.8",
+                        "unit": "g"
+                    },
+                    "magnesium": {
+                        "name": "Magnesium",
+                        "amount": 80.22649,
+                        "percentDailyValue": "29",
+                        "displayValue": "80",
+                        "unit": "mg"
+                    },
+                    "iron": {
+                        "name": "Iron",
+                        "amount": 4.333617,
+                        "percentDailyValue": "43",
+                        "displayValue": "4",
+                        "unit": "mg"
+                    },
+                        "cholesterol": {
+                        "name": "Cholesterol",
+                        "amount": 176.7,
+                        "percentDailyValue": "59",
+                        "displayValue": "177",
+                        "unit": "mg"
+                    },
+                    "protein": {
+                        "name": "Protein",
+                        "amount": 50.8869,
+                        "percentDailyValue": "102",
+                        "displayValue": "50.9",
+                        "unit": "g"
+                    },
+                    "vitaminA": {
+                        "name": "Vitamin A - IU",
+                        "amount": 338.842,
+                        "percentDailyValue": "7",
+                        "displayValue": "339",
+                        "unit": "IU"
+                    },
+                    "potassium": {
+                        "name": "Potassium",
+                        "amount": 1100.198,
+                        "percentDailyValue": "31",
+                        "displayValue": "1100",
+                        "unit": "mg"
+                    },
+                    "saturatedFat": {
+                        "name": "Saturated Fat",
+                        "amount": 8.764439,
+                        "percentDailyValue": "44",
+                        "displayValue": "8.8",
+                        "unit": "g"
+                    },
+                    "vitaminC": {
+                        "name": "Vitamin C",
+                        "amount": 31.81681,
+                        "percentDailyValue": "53",
+                        "displayValue": "32",
+                        "unit": "mg"
+                    }
+                }
+            }
+        },
+        {
+            "recipe_2": {
+                "name": "Scrumptious Baked Chicken and Potatoes 2",
+                "directions": "Prep\n15 m\nCook\n1 h\nReady In\n1 h 15 m\nPreheat oven to 400 degrees F (200 degrees C).\nBrush crust with melted butter. Sprinkle bacon inside crust. Place zucchini, eggs and cream in a blender; puree until smooth. Pour zucchini mixture into a bowl and stir in marjoram, onion salt, pepper, and cayenne. Fold in cheese and pour mixture into pie crust.\nBake in preheated oven for 15 minutes. Reduce heat to 300 degrees F (150 degrees C) and bake for an additional 45 minutes, or until set.",
+                "ingredients": ["chicken parts", "water", "potatoes", "olive oil", "crushed dried rosemary", "crushed dried thyme", "salt and ground black pepper to taste"],
+                "nutritionfacts": {
+                    "niacin": {
+                        "name": "Niacin Equivalents",
+                        "amount": 23.53895,
+                        "percentDailyValue": "181",
+                        "displayValue": "24",
+                        "unit": "mg"
+                    },
+                    "sugars": {
+                        "name": "Sugars",
+                        "amount": 1.252177,
+                        "percentDailyValue": "0",
+                        "displayValue": "1.3",
+                        "unit": "g"
+                    },
+                    "sodium": {
+                        "name": "Sodium",
+                        "amount": 170.473,
+                        "percentDailyValue": "7",
+                        "displayValue": "170",
+                        "unit": "mg"
+                    },
+                    "carbohydrates": {
+                        "name": "Carbohydrates",
+                        "amount": 28.31214,
+                        "percentDailyValue": "9",
+                        "displayValue": "28.3",
+                        "unit": "g"
+                    },
+                    "vitaminB6": {
+                        "name": "Vitamin B6",
+                        "amount": 1.066978,
+                        "percentDailyValue": "67",
+                        "displayValue": "1",
+                        "unit": "mg"
+                    },
+                    "calories": {
+                        "name": "Calories",
+                        "amount": 624.0342,
+                        "percentDailyValue": "31",
+                        "displayValue": "624",
+                        "unit": "kcal"
+                    },
+                    "thiamin": {
+                        "name": "Thiamin",
+                        "amount": 0.27112,
+                        "percentDailyValue": "27",
+                        "displayValue": "< 1",
+                        "unit": "mg"
+                    },
+                    "fat": {
+                        "name": "Fat",
+                        "amount": 33.01791,
+                        "percentDailyValue": "51",
+                        "displayValue": "33",
+                        "unit": "g"
+                    },
+                    "folate": {
+                        "name": "Folate",
+                        "amount": 40.67905,
+                        "percentDailyValue": "23",
+                        "displayValue": "41",
+                        "unit": "mcg"
+                    },
+                    "caloriesFromFat": {
+                        "name": "Calories from Fat",
+                        "amount": 297.1612,
+                        "percentDailyValue": "-",
+                        "displayValue": "297",
+                        "unit": "kcal"
+                    },
+                    "calcium": {
+                        "name": "Calcium",
+                        "amount": 53.15401,
+                        "percentDailyValue": "7",
+                        "displayValue": "53",
+                        "unit": "mg"
+                    },
+                    "fiber": {
+                        "name": "Dietary Fiber",
+                        "amount": 3.763257,
+                        "percentDailyValue": "15",
+                        "displayValue": "3.8",
+                        "unit": "g"
+                    },
+                    "magnesium": {
+                        "name": "Magnesium",
+                        "amount": 80.22649,
+                        "percentDailyValue": "29",
+                        "displayValue": "80",
+                        "unit": "mg"
+                    },
+                    "iron": {
+                        "name": "Iron",
+                        "amount": 4.333617,
+                        "percentDailyValue": "43",
+                        "displayValue": "4",
+                        "unit": "mg"
+                    },
+                        "cholesterol": {
+                        "name": "Cholesterol",
+                        "amount": 176.7,
+                        "percentDailyValue": "59",
+                        "displayValue": "177",
+                        "unit": "mg"
+                    },
+                    "protein": {
+                    "hasCompleteData": false,
+                    "name": "Protein",
+                    "amount": 50.8869,
+                    "percentDailyValue": "102",
+                    "displayValue": "50.9",
+                    "unit": "g"
+                    },
+                    "vitaminA": {
+                    "hasCompleteData": false,
+                    "name": "Vitamin A - IU",
+                    "amount": 338.842,
+                    "percentDailyValue": "7",
+                    "displayValue": "339",
+                    "unit": "IU"
+                    },
+                    "potassium": {
+                    "hasCompleteData": false,
+                    "name": "Potassium",
+                    "amount": 1100.198,
+                    "percentDailyValue": "31",
+                    "displayValue": "1100",
+                    "unit": "mg"
+                    },
+                    "saturatedFat": {
+                    "hasCompleteData": false,
+                    "name": "Saturated Fat",
+                    "amount": 8.764439,
+                    "percentDailyValue": "44",
+                    "displayValue": "8.8",
+                    "unit": "g"
+                    },
+                    "vitaminC": {
+                    "hasCompleteData": false,
+                    "name": "Vitamin C",
+                    "amount": 31.81681,
+                    "percentDailyValue": "53",
+                    "displayValue": "32",
+                    "unit": "mg"
+                    }
+                }
+            }
+        }
+    ]
+}
