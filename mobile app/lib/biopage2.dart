@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_form_builder/flutter_form_builder.dart';
-import 'package:intl/intl.dart';
+import 'package:searchable_dropdown/searchable_dropdown.dart';
+import 'package:smart_select/smart_select.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:path_provider/path_provider.dart';
+import 'dart:io';
 
 class BioPage extends StatelessWidget {
   @override
@@ -15,16 +18,105 @@ class BioPage extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key}) : super(key: key);
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  SharedPreferences prefs;
   var data;
   bool autoValidate = true;
-  bool readOnly = false;
-  bool showSegmentedControl = true;
-  final GlobalKey<FormBuilderState> _fbKey = GlobalKey<FormBuilderState>();
+
+  String selectedStatus;
+  String selectedVegValue;
+  List<int> selectedItems = [];
+  List<String> stringsList = [];
+  String selectedList;
+  String selectedNutrient;
+
+  @override
+  void initState() {
+    super.initState();
+    selectedStatus = "";
+    selectedVegValue = "";
+    stringsList= [];
+    _load();
+
+  }
+
+  Future<String> get _localPath async {
+    final directory = await getApplicationDocumentsDirectory();
+
+    return directory.path;
+  }
+
+  Future<File> get _localFile async {
+    final path = await _localPath;
+    return File('$path/mydetails.txt');
+  }
+
+  Future<void> _load() async{
+    prefs = await SharedPreferences.getInstance();
+    setState((){
+      selectedVegValue = prefs.getString('veg');
+      stringsList = prefs.getStringList('noIngredients');
+      if(stringsList!=null){
+        selectedList = stringsList.join(",");
+      } else {
+        selectedItems = [];
+      }
+      selectedStatus = prefs.getString('status');
+    });
+  }
+  void _remove() async {
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+    await preferences.clear();
+  }
+
+  void _save() async {
+    prefs = await SharedPreferences.getInstance();
+    setState(() {
+      prefs.setString('status', selectedStatus);
+      prefs.setString('veg', selectedVegValue);
+      stringsList=  selectedItems.map((i)=>items[i].value.toString()).toList();
+      prefs.setStringList('noIngredients', stringsList);
+      selectedList = stringsList.join(",");
+      // print(stringsList[0]);
+
+    });
+  }
+  List<S2Choice<String>> statusOptions = [
+    S2Choice<String>(value: 'Pregnant - First Trimester', title: 'Pregnant - First Trimester'),
+    S2Choice<String>(value: 'Pregnant - Second Trimester', title: 'Pregnant - Second Trimester'),
+    S2Choice<String>(value: 'Pregnant - Third Trimester', title: 'Pregnant - Third Trimester'),
+    S2Choice<String>(value: 'Lactating', title: 'Lactating'),
+  ];
+  List<S2Choice<String>> vegOptions = [
+    S2Choice<String>(value: 'Veg', title: 'Veg'),
+    S2Choice<String>(value: 'Nonveg', title: 'Nonveg'),
+    S2Choice<String>(value: 'No Preference', title: 'No Preference'),
+  ];
+  List<S2Choice<String>> priorityOptions = [
+    S2Choice<String>(value: 'Overall', title: 'Overall'),
+    S2Choice<String>(value: 'Protein', title: 'Protein'),
+    S2Choice<String>(value: 'Folate', title: 'Folate'),
+  ];
+  // final GlobalKey<FormBuilderState> _fbKey = GlobalKey<FormBuilderState>();
+  final List<DropdownMenuItem> items = [DropdownMenuItem(
+    child: Text("chicken"),
+    value: "chicken",
+  ), DropdownMenuItem(
+    child: Text("beef"),
+    value: "beef",
+  ), DropdownMenuItem(
+    child: Text("tomato"),
+    value: "tomato",
+  ), DropdownMenuItem(
+    child: Text("potato"),
+    value: "potato",
+  )];
+
 
   @override
   Widget build(BuildContext context) {
@@ -34,81 +126,117 @@ class _MyHomePageState extends State<MyHomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              FormBuilder(
-                key: _fbKey,
-                initialValue: {
-                  'date': DateTime.now(),
-                  'accept_terms': false,
-                },
-                autovalidate: true,
-                child: Column(
+                // key: _fbKey,
+                // initialValue: {
+                //   'date': DateTime.now(),
+                //   'accept_terms': false,
+                // },
+               Column(
                   children: <Widget>[
-                    FormBuilderDropdown(
-                      attribute: "status",
-                      decoration: InputDecoration(labelText: "Status"),
-                      // initialValue: 'Male',
-                      hint: Text('Select Status'),
-                      validators: [FormBuilderValidators.required()],
-                      items: ['Pregnant', 'Lactating']
-                          .map((gender) => DropdownMenuItem(
-                          value: gender, child: Text("$gender")))
-                          .toList(),
-                    ),FormBuilderDateTimePicker(
-                      attribute: "date",
-                      inputType: InputType.date,
-                      validators: [FormBuilderValidators.required()],
-                      format: DateFormat("dd-MM-yyyy"),
-                      decoration: InputDecoration(labelText: "Estimated Due Date"),
+                    SmartSelect<String>.single(
+                        title: selectedStatus??'Select Status',
+                        value: selectedStatus,
+                        choiceItems: statusOptions,
+                        onChange: (state) => setState(() => selectedStatus = state.value)
                     ),
-
-                    FormBuilderTextField(
-                      attribute: "age",
-                      decoration: InputDecoration(labelText: "Age"),
-                      keyboardType: TextInputType.number,
-                      validators: [
-                        FormBuilderValidators.numeric(),
-                        FormBuilderValidators.max(70),
-                      ],
+                Container(
+                  // padding: EdgeInsets.all(5),
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      side: BorderSide(
+                        color: Colors.grey,
+                        width: 1.0,
+                      ),
                     ),
-
-                    FormBuilderCheckboxGroup(
-                      decoration:
-                      InputDecoration(labelText: "What Nutrients Do You Want to Focus on?"),
-                      attribute: "nutrients",
-                      initialValue: ["Protein"],
-                      options: [
-                        FormBuilderFieldOption(value: "Protein"),
-                        FormBuilderFieldOption(value: "Calcium"),
-                        FormBuilderFieldOption(value: "Vitamin C"),
-                        FormBuilderFieldOption(value: "Iron")
-                      ],
+                    margin: EdgeInsets.all(10),
+                    child: Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget> [
+                      Text("Ingredients You Want to Exclude:", style: TextStyle(
+                          color: Colors.grey[600],
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15
+                      )),
+                      SearchableDropdown.multiple(
+                      items: items,
+                      selectedItems: selectedItems,
+                      hint: selectedList??'Select Items',
+                      searchHint: "Select items",
+                      onChanged: (value) {
+                        setState(() {
+                          selectedItems = value;
+                        });
+                      },
+                      closeButton: (selectedItems) {
+                        return (((selectedItems.length>1)&(selectedItems.length<6))
+                            ? "Save ${selectedItems.length == 1 ? '"' + items[selectedItems.first].value.toString() + '"' : '(' + selectedItems.length.toString() + ')'}"
+                            : "Save without selection");
+                      },
+                      isExpanded: true,
                     ),
                   ],
+                    ),
+                  ),
+                  ),
                 ),
-              ),
-              Row(
-                children: <Widget>[
-                  MaterialButton(
-                    child: Text("Submit"),
-                    onPressed: () {
-                      _fbKey.currentState.save();
-                      if (_fbKey.currentState.validate()) {
-                        print(_fbKey.currentState.value);
-                      }
-                    },
-                  ),
-                  MaterialButton(
-                    child: Text("Reset"),
-                    onPressed: () {
-                      _fbKey.currentState.reset();
-                    },
-                  ),
-                ],
-              )
+               Container(
+                  child: Column(
+                    children: <Widget>[
+                      SmartSelect<String>.single(
+                        title: selectedVegValue??'Veg/Nonveg Preferences',
+                        value: selectedVegValue,
+                        choiceItems: vegOptions,
+                        onChange: (state) => setState(() => selectedVegValue = state.value)
+                    ),
+                  //     SmartSelect<String>.single(
+                  //     title: 'Priorities',
+                  //     value: selectedNutrient,
+                  //     choiceItems: priorityOptions,
+                  //     onChange: (state) => setState(() => selectedNutrient = state.value)
+                  // ),
+                      SizedBox(height: 20),
+                      FloatingActionButton.extended(
+                        onPressed: () {
+                          // Navigator.pop(context);
+                          _save();
+                          // Navigator.push(
+                          //     context, MaterialPageRoute(builder: (context) => ListViewPage()));
+                        },
+                        label: Text('Save Details', style: TextStyle(
+                            fontSize: 20
+                        )),
+                        icon: Icon(Icons.arrow_forward_ios),
+                        backgroundColor: Colors.pink,
+                      ),
+              // Row(
+              //   children: <Widget>[
+              //     //
+              //     MaterialButton(
+              //       child: Text("Submit"),
+              //       onPressed: () {
+              //         _save();
+              //       },
+              //     ),
+              //     MaterialButton(
+              //       child: Text("Reset"),
+              //       onPressed: () {
+              //         _remove();
+              //       },
+              //     ),
+              //   ],
+              // )
             ],
           ),
         ),
-      ),
+      ],
+    ),
+    ],
+    ),
+    ),
+    ),
     );
   }
 }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import './recipeinputpage.dart';
-import './listviewpage_backup1.dart';
-import './chartviewpage.dart';
+import './recipeinputsearch.dart';
+import './recipeslist.dart';
 import './biopage2.dart';
 
 
@@ -41,7 +40,7 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    controller = new TabController(vsync: this, length:4);
+    controller = new TabController(vsync: this, length:3);
   }
 
   @override
@@ -58,10 +57,9 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
             child: new TabBar(
                 controller: controller,
                 tabs: <Tab>[
-                  new Tab(icon: new Icon(Icons.add_box), text: "Add Recipe",),
-                  new Tab(icon: new Icon(Icons.compare_arrows), text: "Compare"),
-                  new Tab(icon: new Icon(Icons.insert_chart), text: "Charts"),
                   new Tab(icon: new Icon(Icons.face), text: "My Details"),
+                  new Tab(icon: new Icon(Icons.add_box), text: "Search Recipes",),
+                  new Tab(icon: new Icon(Icons.assignment_returned_rounded), text: "Saved Recipes"),
                 ]
             )
 
@@ -69,10 +67,9 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
         body: new TabBarView(
             controller: controller,
             children: <Widget>[
+              new BioPage(),
               new RecipeInputPage(),
               new ListViewPage(),
-              new ChartViewPage(),
-              new BioPage(),
               // new recipe.main(),
             ]
         )
