@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:searchable_dropdown/searchable_dropdown.dart';
-import './recipeslist.dart';
-import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import './recipeslist.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import './jsonstructure.dart';
+import 'package:http_middleware/http_middleware.dart';
+import 'package:http_logger/http_logger.dart';
+import 'dart:io';
 
 
 
@@ -18,34 +23,64 @@ class _MyAppState extends State<RecipeInputPage> {
   // String selectedValue;
   List<int> selectedItems = [];
   String selectedNutrient;
+  SharedPreferences prefs;
+  String selectedStatus;
+  String selectedVegValue;
+  List<String> noIngredientsstringsList = [];
 
-  Future<http.Response> createList(List<String> ingredients, String selectedNutrient) {
+  Future<String> get _localPath async {
+    final directory = await getApplicationDocumentsDirectory();
+
+    return directory.path;
+  }
+
+  Future<File> get _localFile async {
+    final path = await _localPath;
+    return File('$path/test.txt');
+  }
+
+  Future<File> writeTest(int counter) async {
+    final file = await _localFile;
+
+    // Write the file.
+    return file.writeAsString('$counter');
+  }
+
+  Future<int> readTest() async {
+    try {
+      final file = await _localFile;
+
+      // Read the file
+      String contents = await file.readAsString();
+
+      return int.parse(contents);
+    } catch (e) {
+      // If encountering an error, return 0
+      return 0;
+    }
+  }
+  Future<http.Response> createList() {
+    List<String> selectedItemList = selectedItems.map((i)=>items[i].value.toString()).toList();
+    Preferences preferences = Preferences(selectedStatus, noIngredientsstringsList, selectedVegValue, selectedItemList, selectedNutrient);
+    String jsonPreferences = jsonEncode(preferences);
+
     return http.post(
-      'https://jsonplaceholder.typicode.com/albums',
+      'https://bbg5tf4j2d.execute-api.us-east-1.amazonaws.com/Test/ingredientstorecipes',
       headers: <String, String>{
         "content-Type": "application/json",
         "accept" : "application/json",
       },
-      body: jsonEncode(<String, dynamic>{
-        'ingredients': ingredients,
-        'preference': selectedNutrient,
-      }),
+      body: jsonPreferences
     );
   }
 
-  // final List<DropdownMenuItem> status = [DropdownMenuItem(
-  //   child: Text("Pregnant - 1st Trimester"),
-  //   value: "Pregnant - 1st Trimester",
-  // ), DropdownMenuItem(
-  //   child: Text("Pregnant - 2nd Trimester"),
-  //   value: "Pregnant - 2nd Trimester",
-  // ), DropdownMenuItem(
-  //   child: Text("Pregnant - 3rd Trimester"),
-  //   value: "Pregnant - 3rd Trimester",
-  // ), DropdownMenuItem(
-  //   child: Text("Lactating"),
-  //   value: "Lactating",
-  // )];
+  _print(){
+    List<String> selectedItemList = selectedItems.map((i)=>items[i].value.toString()).toList();
+    Preferences preferences = Preferences(selectedStatus, noIngredientsstringsList, selectedVegValue, selectedItemList, selectedNutrient);
+    String jsonPreferences = jsonEncode(preferences);
+    print(jsonPreferences);
+  }
+
   final List<DropdownMenuItem> items = [DropdownMenuItem(
   child: Text("chicken"),
   value: "chicken",
@@ -76,8 +111,19 @@ class _MyAppState extends State<RecipeInputPage> {
   @override
   void initState() {
     super.initState();
+    selectedStatus = "";
+    selectedVegValue = "";
+    noIngredientsstringsList= [];
+    _load();
   }
-
+  Future<void> _load() async{
+    prefs = await SharedPreferences.getInstance();
+    setState((){
+      selectedVegValue = prefs.getString('veg');
+      noIngredientsstringsList = prefs.getStringList('noIngredients');
+      selectedStatus = prefs.getString('status');
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -217,8 +263,11 @@ class _MyAppState extends State<RecipeInputPage> {
         floatingActionButton: FloatingActionButton.extended(
           onPressed: () {
             Navigator.pop(context);
+            // selectedItems.map((i)=>i.toString()).toList(),
+            _print();
+            createList();
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) => ListViewPage()));
+                context, MaterialPageRoute(builder: (context) => HomePage()));
           },
           label: Text('Search Recipes', style: TextStyle(
             fontSize: 20

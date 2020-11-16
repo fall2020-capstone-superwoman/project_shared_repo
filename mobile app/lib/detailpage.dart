@@ -1,32 +1,67 @@
 import 'package:flutter/material.dart';
-import 'package:charts_flutter/flutter.dart' as charts;
-import './recipeslist.dart';
 import './jsonstructure.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:intl/intl.dart';
-import 'dart:convert';
 import 'package:easy_rich_text/easy_rich_text.dart';
 
 class DetailPage extends StatelessWidget {
   final Recipe selectedRecipe;
   DetailPage({Key key, this.selectedRecipe}) : super(key: key);
   var f = NumberFormat("#%");
+  List<int> nutritionFactIndex = [];
+  List<SuggestionData> suggestionDataList = [];
 
   List<NutrientData> loadNutritionData(recipe) {
-    List<String> nutrients = ["Folate", "Calcium", "Iron", "Cholesterol","Protein", "Vitamin A - IU", "Vitamin C"];
-
+    List<String> nutrients = [
+      "Folate",
+      "Calcium",
+      "Iron",
+      "Cholesterol",
+      "Protein",
+      "Vitamin A - IU",
+      "Vitamin C"
+    ];
     List<NutrientData> nutritionDataChart = [];
+
     for (int i = 0; i < recipe.recipe_nutritionfacts.length; i++) {
-      if(nutrients.contains(recipe.recipe_nutritionfacts[i].name))
-      nutritionDataChart.add(NutrientData(
-              recipe.recipe_nutritionfacts[i].name,
-              recipe.recipe_nutritionfacts[i].benchmark_percentage));
+      if (nutrients.contains(recipe.recipe_nutritionfacts[i].name)) {
+        nutritionDataChart.add(NutrientData(
+            recipe.recipe_nutritionfacts[i].name,
+            recipe.recipe_nutritionfacts[i].benchmark_percentage));
+      }
     }
     return nutritionDataChart;
   }
 
+  void loadSuggestionData() {
+    List<String> nutrients = [
+      "Folate",
+      "Calcium",
+      "Iron",
+      "Cholesterol",
+      "Protein",
+      "Vitamin A - IU",
+      "Vitamin C"
+    ];
+
+
+    for (int i = 0; i < selectedRecipe.recipe_nutritionfacts.length; i++) {
+      if (nutrients.contains(selectedRecipe.recipe_nutritionfacts[i].name)) {
+        if (selectedRecipe.recipe_nutritionfacts[i].benchmark_flag == "deficiency") {
+          suggestionDataList.add(SuggestionData(
+              selectedRecipe.recipe_nutritionfacts[i].name,
+              selectedRecipe.recipe_nutritionfacts[i].benchmark,
+              selectedRecipe.recipe_nutritionfacts[i].benchmark_percentage,
+              selectedRecipe.recipe_nutritionfacts[i].cooccurrence_top_list,
+              selectedRecipe.recipe_nutritionfacts[i].raw_nutrition_top_list));
+        }
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    loadSuggestionData();
     // final levelIndicator = Container(
     //   child: Container(
     //     child: LinearProgressIndicator(
@@ -36,12 +71,6 @@ class DetailPage extends StatelessWidget {
     //   ),
     // );
 
-    final coursePrice = Container(
-      padding: const EdgeInsets.all(7.0),
-      decoration: new BoxDecoration(
-          border: new Border.all(color: Colors.white),
-          borderRadius: BorderRadius.circular(5.0)),
-    );
 
     final nutritionGraph = Column(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -105,7 +134,7 @@ class DetailPage extends StatelessWidget {
           decoration: BoxDecoration(color: Colors.white),
           child: Center(
             child: Column(
-            children: <Widget> [nutritionGraph, SizedBox(height:10.0), saveButton, SizedBox(height:25.0)]
+            children: <Widget> [nutritionGraph]
           ),
           ),
         ),
@@ -170,6 +199,21 @@ class DetailPage extends StatelessWidget {
         ),
       );
 
+    final suggestionsContent =
+      Container(
+        child: new ListView.builder(
+          shrinkWrap: true,
+      itemBuilder: (context, index) {
+              return ListTile(
+                        title: Text(suggestionDataList[index].name),
+                        subtitle: Text(suggestionDataList[index].cooccurrencetoplist.join(", ")),
+                      );
+      },
+      itemCount: suggestionDataList.length,
+    ),
+    );
+
+
       return Scaffold(
         appBar: AppBar(
             title: Text('Recipe Detail'),
@@ -181,7 +225,7 @@ class DetailPage extends StatelessWidget {
           child: Center(
             child: SingleChildScrollView(
               child: Column(
-                children: <Widget>[recipeContent, graphContent],
+                children: <Widget>[recipeContent, graphContent, suggestionsContent, SizedBox(height:10.0), saveButton, SizedBox(height:25.0)],
               ),
             ),
           ),

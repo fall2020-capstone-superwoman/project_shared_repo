@@ -90,3 +90,30 @@ class NutrientData{
   final String nutrient;
   final double datapoint;
 }
+
+class SuggestionData{
+  SuggestionData(this.name, this.benchmark, this.benchmark_percentage, this.cooccurrencetoplist, this.rawnutritiontoplist);
+  final String name;
+  final double benchmark;
+  final double benchmark_percentage;
+  final List<String> cooccurrencetoplist;
+  final List<String> rawnutritiontoplist;
+}
+
+class Preferences{
+  String status;
+  List <String> excludeIngredients;
+  String vegnonveg;
+  List <String> includeIngredients;
+  String nutritionPriority;
+
+  Preferences(this.status, this.excludeIngredients, this.vegnonveg, this.includeIngredients, this.nutritionPriority);
+
+  Map<String, dynamic> toJson() => {
+  'status': status,
+  'excludeIngredients': excludeIngredients,
+  'vegnonveg': vegnonveg,
+  'includeIngredients': includeIngredients,
+  'nutritionPriority': nutritionPriority,
+  };
+}

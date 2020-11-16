@@ -31,10 +31,10 @@ class _HomePageState extends State<HomePage> {
   final _savedRecipes = Set<String>();
   List<Recipe> data = List<Recipe>();
   Recipe selectedRecipe;
-
-  Future<String> _loadRecipeAsset() async {
-    return await rootBundle.loadString('assets/b_recipelist_heatmap_recommendation_horizontal.json');
-  }
+  //
+  // Future<String> _loadRecipeAsset() async {
+  //   return await rootBundle.loadString('assets/b_recipelist_heatmap_recommendation_horizontal.json');
+  // }
   //
   // Future loadChartData() async {
   //   String jsonString = await _loadRecipeAsset();
@@ -79,10 +79,6 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         appBar: AppBar(
           title: Text('Recipes'),
-          actions: <Widget>[
-            IconButton(
-                icon: Icon(Icons.compare_arrows), onPressed: _pushData)
-          ],
         ),
         body: ListView.builder(
           itemBuilder: (context, index) {

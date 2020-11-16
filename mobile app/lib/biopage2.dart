@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:searchable_dropdown/searchable_dropdown.dart';
 import 'package:smart_select/smart_select.dart';
-import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:path_provider/path_provider.dart';
 import 'dart:io';
@@ -34,12 +32,15 @@ class _MyHomePageState extends State<MyHomePage> {
   String selectedVegValue;
   List<int> selectedItems = [];
   List<String> stringsList = [];
+  String selectedList;
   String selectedNutrient;
 
   @override
   void initState() {
     super.initState();
-    SharedPreferences.setMockInitialValues ({});
+    selectedStatus = "";
+    selectedVegValue = "";
+    stringsList= [];
     _load();
 
   }
@@ -58,27 +59,31 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<void> _load() async{
     prefs = await SharedPreferences.getInstance();
     setState((){
-      selectedVegValue = prefs.getString('veg') ?? '';
-      if (prefs.getStringList('noIngredients')!=null){
-        selectedItems = prefs.getStringList('noIngredients').map((i)=>int.parse(i)).toList();
+      selectedVegValue = prefs.getString('veg');
+      stringsList = prefs.getStringList('noIngredients');
+      if(stringsList!=null){
+        selectedList = stringsList.join(",");
       } else {
         selectedItems = [];
       }
-      selectedNutrient = prefs.getString('priorities') ?? 'Overall';
-      selectedStatus = prefs.getString('status') ?? '';
+      selectedStatus = prefs.getString('status');
     });
+  }
+  void _remove() async {
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+    await preferences.clear();
   }
 
   void _save() async {
     prefs = await SharedPreferences.getInstance();
-    print(selectedStatus);
-    print(selectedNutrient);
     setState(() {
       prefs.setString('status', selectedStatus);
-      prefs.setString('priorities', selectedNutrient);
       prefs.setString('veg', selectedVegValue);
-      List<String> stringsList=  selectedItems.map((i)=>i.toString()).toList();
+      stringsList=  selectedItems.map((i)=>items[i].value.toString()).toList();
       prefs.setStringList('noIngredients', stringsList);
+      selectedList = stringsList.join(",");
+      // print(stringsList[0]);
+
     });
   }
   List<S2Choice<String>> statusOptions = [
@@ -88,9 +93,9 @@ class _MyHomePageState extends State<MyHomePage> {
     S2Choice<String>(value: 'Lactating', title: 'Lactating'),
   ];
   List<S2Choice<String>> vegOptions = [
-    S2Choice<String>(value: 'veg', title: 'Veg'),
-    S2Choice<String>(value: 'nonveg', title: 'Nonveg'),
-    S2Choice<String>(value: 'none', title: 'No preference'),
+    S2Choice<String>(value: 'Veg', title: 'Veg'),
+    S2Choice<String>(value: 'Nonveg', title: 'Nonveg'),
+    S2Choice<String>(value: 'No Preference', title: 'No Preference'),
   ];
   List<S2Choice<String>> priorityOptions = [
     S2Choice<String>(value: 'Overall', title: 'Overall'),
@@ -121,16 +126,15 @@ class _MyHomePageState extends State<MyHomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              FormBuilder(
                 // key: _fbKey,
                 // initialValue: {
                 //   'date': DateTime.now(),
                 //   'accept_terms': false,
                 // },
-                child: Column(
+               Column(
                   children: <Widget>[
                     SmartSelect<String>.single(
-                        title: 'Status',
+                        title: selectedStatus??'Select Status',
                         value: selectedStatus,
                         choiceItems: statusOptions,
                         onChange: (state) => setState(() => selectedStatus = state.value)
@@ -159,7 +163,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       SearchableDropdown.multiple(
                       items: items,
                       selectedItems: selectedItems,
-                      hint: Text("Select items"),
+                      hint: selectedList??'Select Items',
                       searchHint: "Select items",
                       onChanged: (value) {
                         setState(() {
@@ -182,39 +186,52 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Column(
                     children: <Widget>[
                       SmartSelect<String>.single(
-                        title: 'Preferences',
+                        title: selectedVegValue??'Veg/Nonveg Preferences',
                         value: selectedVegValue,
                         choiceItems: vegOptions,
                         onChange: (state) => setState(() => selectedVegValue = state.value)
                     ),
-                      SmartSelect<String>.single(
-                      title: 'Priorities',
-                      value: selectedNutrient,
-                      choiceItems: priorityOptions,
-                      onChange: (state) => setState(() => selectedNutrient = state.value)
-                  ),
-
-              Row(
-                children: <Widget>[
-                  MaterialButton(
-                    child: Text("Submit"),
-                    onPressed: () {
-                      _save();
-                    },
-                  ),
-                  MaterialButton(
-                    child: Text("Reset"),
-                    onPressed: () {
-                      _load();
-                    },
-                  ),
-                ],
-              )
+                  //     SmartSelect<String>.single(
+                  //     title: 'Priorities',
+                  //     value: selectedNutrient,
+                  //     choiceItems: priorityOptions,
+                  //     onChange: (state) => setState(() => selectedNutrient = state.value)
+                  // ),
+                      SizedBox(height: 20),
+                      FloatingActionButton.extended(
+                        onPressed: () {
+                          // Navigator.pop(context);
+                          _save();
+                          // Navigator.push(
+                          //     context, MaterialPageRoute(builder: (context) => ListViewPage()));
+                        },
+                        label: Text('Save Details', style: TextStyle(
+                            fontSize: 20
+                        )),
+                        icon: Icon(Icons.arrow_forward_ios),
+                        backgroundColor: Colors.pink,
+                      ),
+              // Row(
+              //   children: <Widget>[
+              //     //
+              //     MaterialButton(
+              //       child: Text("Submit"),
+              //       onPressed: () {
+              //         _save();
+              //       },
+              //     ),
+              //     MaterialButton(
+              //       child: Text("Reset"),
+              //       onPressed: () {
+              //         _remove();
+              //       },
+              //     ),
+              //   ],
+              // )
             ],
           ),
         ),
       ],
-    ),
     ),
     ],
     ),
