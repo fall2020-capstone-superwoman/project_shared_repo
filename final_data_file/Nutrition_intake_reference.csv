@@ -1,0 +1,79 @@
+Stage,nutrient,priority_acog,priority_app,unit,unit1,unit2,original,numeric,numeric_min,numeric_max,validation_source
+pregnancy_trimester_1,Omega-3 (+DHA),1,0,mg,mg,milligram,250 mg (+ 100–200 mg),400,350,450,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_1,Iron,1,1,mg,mg,milligram,27 mg,27,27,27,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_1,Iodine,0,0,µg,mcg,microgram,220 µg (AI) ,220,220,220,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_1,Calcium,1,1,mg,mg,milligram,1000 mg,1000,1000,1000,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_1,Folic acid,1,1,µg,mcg,microgram,600 - 800 µg,600,800,600,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_1,Protein,1,1,g,gram,gram,"70–100 grams (g) per day, increasing each trimester",85,70,100,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_1,Choline,1,1,mg,milligram,milligram,450 milligrams,450,450,450,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_1,Vitamin A,0,0,µg,mcg,microgram,770 micrograms for ages 19 to 50 years,770,770,770,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_1,Vitamin C,1,1,mg,milligram,milligram,85 milligrams for ages 19 to 50 years,85,85,85,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_1,Vitamin D,1,0,iu,Internation unit,Internation unit,600 international units,600,600,600,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_1,Vitamin B6,1,1,mg,milligram,milligram,1.9 milligrams,1.9,1.9,1.9,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_1,Vitamin B12,1,0,µg,mcg,microgram,2.6 micrograms,2.6,2.6,2.6,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_1,Total Calories,0,0,Cal,Cal,Calorie,,,,,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_2,Omega-3 (+DHA),1,0,mg,mg,milligram,250 mg (+ 100–200 mg),400,350,450,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_2,Iron,1,1,mg,mg,milligram,27 mg,27,27,27,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_2,Iodine,0,0,µg,mcg,microgram,220 µg (AI) ,220,220,220,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_2,Calcium,1,1,mg,mg,milligram,1000 mg,1000,1000,1000,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_2,Folic acid,1,1,µg,mcg,microgram,600 - 800 µg,600,800,600,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_2,Protein,1,1,g,gram,gram,"70–100 grams (g) per day, increasing each trimester",85,70,100,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_2,Choline,1,1,mg,milligram,milligram,450 milligrams,450,450,450,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_2,Vitamin A,0,0,µg,mcg,microgram,770 micrograms for ages 19 to 50 years,770,770,770,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_2,Vitamin C,1,1,mg,milligram,milligram,85 milligrams for ages 19 to 50 years,85,85,85,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_2,Vitamin D,1,0,iu,Internation unit,Internation unit,600 international units,600,600,600,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_2,Vitamin B6,1,1,mg,milligram,milligram,1.9 milligrams,1.9,1.9,1.9,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_2,Vitamin B12,1,0,µg,mcg,microgram,2.6 micrograms,2.6,2.6,2.6,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_2,Total Calories,0,0,Cal,Cal,Calorie,,,,,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_3,Omega-3 (+DHA),1,0,mg,mg,milligram,250 mg (+ 100–200 mg),400,350,450,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_3,Iron,1,1,mg,mg,milligram,27 mg,27,27,27,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_3,Iodine,0,0,µg,mcg,microgram,220 µg (AI) ,220,220,220,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_3,Calcium,1,1,mg,mg,milligram,1000 mg,1000,1000,1000,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_3,Folic acid,1,1,µg,mcg,microgram,600 - 800 µg,600,800,600,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_3,Protein,1,1,g,gram,gram,"70–100 grams (g) per day, increasing each trimester",85,70,100,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_3,Choline,1,1,mg,milligram,milligram,450 milligrams,450,450,450,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_3,Vitamin A,0,0,µg,mcg,microgram,770 micrograms for ages 19 to 50 years,770,770,770,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_3,Vitamin C,1,1,mg,milligram,milligram,85 milligrams for ages 19 to 50 years,85,85,85,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_3,Vitamin D,1,0,iu,Internation unit,Internation unit,600 international units,600,600,600,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_3,Vitamin B6,1,1,mg,milligram,milligram,1.9 milligrams,1.9,1.9,1.9,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_3,Vitamin B12,1,0,µg,mcg,microgram,2.6 micrograms,2.6,2.6,2.6,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+pregnancy_trimester_3,Total Calories,0,0,Cal,Cal,Calorie,,,,,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+breastfeeding,Omega-3 (+DHA),1,0,mg,mg,milligram,250 mg (+ 100–200 mg),400,350,450,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+breastfeeding,Iron,1,1,mg,mg,milligram,27 mg,27,27,27,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+breastfeeding,Iodine,0,0,µg,mcg,microgram,220 µg (AI) ,220,220,220,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+breastfeeding,Calcium,1,1,mg,mg,milligram,1000 mg,1000,1000,1000,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+breastfeeding,Folic acid,1,1,µg,mcg,microgram,600 - 800 µg,600,800,600,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+breastfeeding,Protein,1,1,g,gram,gram,"70–100 grams (g) per day, increasing each trimester",85,70,100,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+breastfeeding,Choline,1,1,mg,milligram,milligram,450 milligrams,450,450,450,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+breastfeeding,Vitamin A,0,0,µg,mcg,microgram,770 micrograms for ages 19 to 50 years,770,770,770,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+breastfeeding,Vitamin C,1,1,mg,milligram,milligram,85 milligrams for ages 19 to 50 years,85,85,85,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+breastfeeding,Vitamin D,1,0,iu,Internation unit,Internation unit,600 international units,600,600,600,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+breastfeeding,Vitamin B6,1,1,mg,milligram,milligram,1.9 milligrams,1.9,1.9,1.9,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+breastfeeding,Vitamin B12,1,0,µg,mcg,microgram,2.6 micrograms,2.6,2.6,2.6,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+breastfeeding,Total Calories,0,0,Cal,Cal,Calorie,,,,,https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy
+women_general,Omega-3 (+DHA),1,0,mg,mg,milligram,,,,,
+women_general,Iron,1,1,mg,mg,milligram,,,,,
+women_general,Iodine,0,0,µg,mcg,microgram,,,,,
+women_general,Calcium,1,1,mg,mg,milligram,,,,,
+women_general,Folic acid,1,1,µg,mcg,microgram,,,,,
+women_general,Protein,1,1,g,gram,gram,,,,,
+women_general,Choline,1,1,mg,milligram,milligram,,,,,
+women_general,Vitamin A,0,0,µg,mcg,microgram,,,,,
+women_general,Vitamin C,1,1,mg,milligram,milligram,,,,,
+women_general,Vitamin D,1,0,iu,Internation unit,Internation unit,,,,,
+women_general,Vitamin B6,1,1,mg,milligram,milligram,,,,,
+women_general,Vitamin B12,1,0,µg,mcg,microgram,,,,,
+women_general,Total Calories,0,0,Cal,Cal,Calorie,,,,,
+adult_general,Omega-3 (+DHA),1,0,mg,mg,milligram,,,,,
+adult_general,Iron,1,1,mg,mg,milligram,,,,,
+adult_general,Iodine,0,0,µg,mcg,microgram,,,,,
+adult_general,Calcium,1,1,mg,mg,milligram,,,,,
+adult_general,Folic acid,1,1,µg,mcg,microgram,,,,,
+adult_general,Protein,1,1,g,gram,gram,,,,,
+adult_general,Choline,1,1,mg,milligram,milligram,,,,,
+adult_general,Vitamin A,0,0,µg,mcg,microgram,,,,,
+adult_general,Vitamin C,1,1,mg,milligram,milligram,,,,,
+adult_general,Vitamin D,1,0,iu,Internation unit,Internation unit,,,,,
+adult_general,Vitamin B6,1,1,mg,milligram,milligram,,,,,
+adult_general,Vitamin B12,1,0,µg,mcg,microgram,,,,,
+adult_general,Total Calories,0,0,Cal,Cal,Calorie,,,,,
