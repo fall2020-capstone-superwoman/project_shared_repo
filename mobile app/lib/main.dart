@@ -1,8 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import './recipeinputsearch.dart';
 import './recipeslist.dart';
 import './biopage2.dart';
-
+import './detailpage.dart';
 
 void main() {
   runApp(MyApp());
@@ -33,46 +34,95 @@ class MyTabs extends StatefulWidget {
   MyTabsState createState() => new MyTabsState();
 }
 
-class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
+class MyTabsState extends State<MyTabs>{
+    // with SingleTickerProviderStateMixin {
+  int _selectedIndex = 0;
 
-  TabController controller;
+  List<Widget> _widgetOptions = <Widget>[
+    BioPage(),
+    RecipeInputPage(),
+  ];
 
-  @override
-  void initState() {
-    super.initState();
-    controller = new TabController(vsync: this, length:3);
-  }
+  // TabController controller;
 
-  @override
-  void dispose() {
-    controller.dispose();
-    super.dispose();
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   controller = new TabController(vsync: this, length:2);
+  // }
+
+  // @override
+  // void dispose() {
+  //   controller.dispose();
+  //   super.dispose();
+  // }
 
   @override
   Widget build(BuildContext context){
     return new Scaffold(
-        bottomNavigationBar: new Material(
-            color: Color(0xFFF37280),
-            child: new TabBar(
-                controller: controller,
-                tabs: <Tab>[
-                  new Tab(icon: new Icon(Icons.face), text: "My Details"),
-                  new Tab(icon: new Icon(Icons.add_box), text: "Search Recipes",),
-                  new Tab(icon: new Icon(Icons.assignment_returned_rounded), text: "Saved Recipes"),
-                ]
-            )
-
+      backgroundColor: Color(0xFFF37280),
+      bottomNavigationBar:
+        BottomNavigationBar(
+          backgroundColor:  Color(0xFFF37280),
+          currentIndex: _selectedIndex,
+          showSelectedLabels: true,
+          showUnselectedLabels: false,
+          selectedItemColor: Colors.white,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.face,
+                color: Colors.white,
+              ),
+                label: 'My Details',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.add_box,
+                  color: Colors.white,
+                ),
+                label: 'Search Recipes',
+              ),
+            ],
+            onTap: (index) {
+              setState(() {
+              _selectedIndex = index;
+              });
+            },
+          ),
+    body: Stack(
+        children: [
+          _buildOffstageNavigator(0),
+          _buildOffstageNavigator(1),
+         ],
         ),
-        body: new TabBarView(
-            controller: controller,
-            children: <Widget>[
-              new BioPage(),
-              new RecipeInputPage(),
-              new ListViewPage(),
-              // new recipe.main(),
-            ]
-        )
+    );
+    }
+
+  Map<String, WidgetBuilder> _routeBuilders(BuildContext context, int index) {
+    return {
+      '/': (context) {
+        return [
+          BioPage(),
+          RecipeInputPage(),
+        ].elementAt(index);
+      },
+    };
+  }
+  Widget _buildOffstageNavigator(int index) {
+    var routeBuilders = _routeBuilders(context, index);
+
+    return Offstage(
+      offstage: _selectedIndex != index,
+      child: Navigator(
+        onGenerateRoute: (routeSettings) {
+          return MaterialPageRoute(
+            builder: (context) => routeBuilders[routeSettings.name](context),
+          );
+        },
+      ),
     );
   }
 }
+
+

@@ -9,7 +9,8 @@ import 'chartviewpage.dart';
 import './json_read.dart';
 import './detailpage.dart';
 import 'package:http/http.dart' as http;
-
+import './recipeinputsearch.dart';
+import './biopage2.dart';
 
 class ListViewPage extends StatelessWidget {
   @override
@@ -31,11 +32,14 @@ class _HomePageState extends State<HomePage> {
   final _savedRecipes = Set<String>();
   List<Recipe> data = List<Recipe>();
   Recipe selectedRecipe;
-  //
-  // Future<String> _loadRecipeAsset() async {
-  //   return await rootBundle.loadString('assets/b_recipelist_heatmap_recommendation_horizontal.json');
-  // }
-  //
+  bool loading = false;
+  int _currentIndex = 0;
+  final List<Widget> _children = [BioPage(), RecipeInputPage()];
+
+  Future<String> _loadRecipeAsset() async {
+    return await rootBundle.loadString('assets/b_recipelist_heatmap_recommendation_horizontal.json');
+  }
+
   // Future loadChartData() async {
   //   String jsonString = await _loadRecipeAsset();
   //   final jsonResponse = json.decode(jsonString);
@@ -70,27 +74,38 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    super.initState();
+    loading = true;
+    // super.initState();
     loadChartData();
+    loading = false;
   }
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
         appBar: AppBar(
           title: Text('Recipes'),
         ),
-        body: ListView.builder(
+        body: Center(
+        child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          loading == true
+          ? CircularProgressIndicator()
+          : Expanded(
+            flex:1,
+            child: ListView.builder(
           itemBuilder: (context, index) {
             return Card(
               child: Padding(
                 padding: const EdgeInsets.only(
-                    top: 15.0, bottom: 15.0, left: 16.0, right: 16.0),
+                    top: 10.0, bottom: 10.0, left: 8.0, right: 16.0),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       ListTile(
-                        title: Text(chartData[index].recipe_name),
+                        title: Text(chartData[index].recipe_name, style: TextStyle(fontSize: 16.0)),
                         onTap: () {
                           Navigator.of(context).push(
                               MaterialPageRoute(builder: (context) => DetailPage(selectedRecipe: chartData[index])));
@@ -100,7 +115,32 @@ class _HomePageState extends State<HomePage> {
                 )));
             },
           itemCount: chartData.length,
-        )
+        )),
+        ],
+    )),
+    // bottomNavigationBar: BottomNavigationBar(
+    //   type: BottomNavigationBarType.fixed,
+    //   currentIndex: _currentIndex,
+    //   // backgroundColor: colorScheme.surface,
+    //   // selectedItemColor: colorScheme.onSurface,
+    //   // unselectedItemColor: colorScheme.onSurface.withOpacity(.60),
+    //   // selectedLabelStyle: textTheme.caption,
+    //   // unselectedLabelStyle: textTheme.caption,
+    //   onTap: (value) {
+    //     // Respond to item press.
+    //     setState(() => _currentIndex = value);
+    //   },
+    //   items: [
+    //     BottomNavigationBarItem(
+    //       label: 'My Details',
+    //       icon: Icon(Icons.face),
+    //     ),
+    //     BottomNavigationBarItem(
+    //       label: 'Search Recipes',
+    //       icon: Icon(Icons.add_box_rounded),
+    //     ),
+    //   ],
+    // ),
     );
   }
 
@@ -136,9 +176,6 @@ class _HomePageState extends State<HomePage> {
       nutritionPerRecipe = [];
       for (int j = data[i].recipe_nutritionfacts.length - 1; j >= 0; j--) {
         print(data[i].recipe_nutritionfacts[j].percentDailyValue);
-      //   nutritionPerRecipe.add(NutrientData(
-      //       data[i].recipe_nutritionfacts[j].name,
-      //       double.parse(data[i].recipe_nutritionfacts[j].percentDailyValue)));
       }
       nutritionDataChart.add(nutritionPerRecipe);
     }
@@ -152,7 +189,7 @@ class _HomePageState extends State<HomePage> {
             final Iterable<ListTile> tiles = _savedRecipes.map((
                 String recipe_title) {
               return ListTile(
-                title: Text(recipe_title, style: TextStyle(fontSize: 16.0)),
+                title: Text(recipe_title, style: TextStyle(fontSize: 20.0)),
               );
             });
             final List<Widget> divided = ListTile.divideTiles(
@@ -167,3 +204,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+
+//Bottom Navigation Bar
+//

@@ -4,6 +4,7 @@ import 'package:smart_select/smart_select.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:path_provider/path_provider.dart';
 import 'dart:io';
+import 'package:flutter/services.dart' show rootBundle;
 
 class BioPage extends StatelessWidget {
   @override
@@ -34,6 +35,8 @@ class _MyHomePageState extends State<MyHomePage> {
   List<String> stringsList = [];
   String selectedList;
   String selectedNutrient;
+  String dropdownString;
+  List<String> ingredients = [];
 
   @override
   void initState() {
@@ -43,6 +46,12 @@ class _MyHomePageState extends State<MyHomePage> {
     stringsList= [];
     _load();
 
+  }
+
+  Future<String> _loadIngredients() async {
+    final path = await _localPath;
+    print(path);
+    return await rootBundle.loadString('assets/ingredients.txt');
   }
 
   Future<String> get _localPath async {
@@ -58,15 +67,23 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> _load() async{
     prefs = await SharedPreferences.getInstance();
-    setState((){
+    dropdownString = await _loadIngredients();
+    setState(() {
       selectedVegValue = prefs.getString('veg');
       stringsList = prefs.getStringList('noIngredients');
-      if(stringsList!=null){
+      if (stringsList != null) {
         selectedList = stringsList.join(",");
       } else {
         selectedItems = [];
       }
       selectedStatus = prefs.getString('status');
+      ingredients = dropdownString.split('\n');
+      for (String i in ingredients) {
+        items.add(DropdownMenuItem(
+          child: Text(i),
+          value: i,
+        ));
+      }
     });
   }
   void _remove() async {

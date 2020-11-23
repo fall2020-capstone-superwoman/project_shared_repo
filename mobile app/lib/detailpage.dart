@@ -1,8 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import './jsonstructure.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:intl/intl.dart';
 import 'package:easy_rich_text/easy_rich_text.dart';
+import 'package:cupertino_icons/cupertino_icons.dart';
 
 class DetailPage extends StatelessWidget {
   final Recipe selectedRecipe;
@@ -47,7 +49,7 @@ class DetailPage extends StatelessWidget {
 
     for (int i = 0; i < selectedRecipe.recipe_nutritionfacts.length; i++) {
       if (nutrients.contains(selectedRecipe.recipe_nutritionfacts[i].name)) {
-        if (selectedRecipe.recipe_nutritionfacts[i].benchmark_flag == "deficiency") {
+        if (selectedRecipe.recipe_nutritionfacts[i].benchmark_flag == "deficient") {
           suggestionDataList.add(SuggestionData(
               selectedRecipe.recipe_nutritionfacts[i].name,
               selectedRecipe.recipe_nutritionfacts[i].benchmark,
@@ -81,7 +83,7 @@ class DetailPage extends StatelessWidget {
               padding: const EdgeInsets.all(7.0),
               child:
               SfCartesianChart(
-                  primaryXAxis: CategoryAxis(),
+                  primaryXAxis: CategoryAxis(isInversed: true),
                   primaryYAxis: NumericAxis(numberFormat: NumberFormat.percentPattern()),
                   tooltipBehavior: TooltipBehavior(enable: true),
                   zoomPanBehavior: ZoomPanBehavior(
@@ -199,15 +201,48 @@ class DetailPage extends StatelessWidget {
         ),
       );
 
+    final suggestionsText =
+    Container(
+        padding: EdgeInsets.all(20),
+        decoration: BoxDecoration(
+            color: Color(0xFFF37280),
+            border: Border.all(width:2, color: Colors.white)),
+        child: Center(
+            child: RichText(
+      text: TextSpan(
+        text: "Did You Enjoy the Recipe?\n",
+        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 20,),
+        children: <TextSpan>[
+          TextSpan(
+            text: "Do you want tips to make this recipe even better?",
+            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 15),),
+          // TextSpan(
+          //     text: selectedRecipe.recipe_ingredients.join(", "),
+          //     style: TextStyle(fontWeight: FontWeight.normal, color: Colors.black, fontSize: 15)
+          // ),
+        ],
+      ),
+    )));
+
+
     final suggestionsContent =
       Container(
+        height: 600,
         child: new ListView.builder(
+          scrollDirection: Axis.vertical,
+          physics: AlwaysScrollableScrollPhysics(),
           shrinkWrap: true,
       itemBuilder: (context, index) {
-              return ListTile(
-                        title: Text(suggestionDataList[index].name),
-                        subtitle: Text(suggestionDataList[index].cooccurrencetoplist.join(", ")),
-                      );
+              return Container(
+                padding: const EdgeInsets.all(8.0),
+                decoration: BoxDecoration(
+                    // color: Color(0xFFF37280),
+                    border: Border.all(width:2, color: Colors.white)),
+                child: Center(child:  ListTile(
+                  // leading: Icon(Icons.warning, color: Colors.white, size: 50.0),
+                  title: Text("This recipe is low in "+suggestionDataList[index].name, style: TextStyle(color: Color(0xFFF37280), fontSize: 15.0,  fontWeight: FontWeight.bold)),
+                  subtitle: Text("Consider adding or using "+suggestionDataList[index].cooccurrencetoplist.join(", ")+". \nIn general, try eating more "+suggestionDataList[index].rawnutritiontoplist.join(", ")+".", style: TextStyle(color: Colors.black,fontSize: 12.0)
+                  ))));
       },
       itemCount: suggestionDataList.length,
     ),
@@ -225,7 +260,7 @@ class DetailPage extends StatelessWidget {
           child: Center(
             child: SingleChildScrollView(
               child: Column(
-                children: <Widget>[recipeContent, graphContent, suggestionsContent, SizedBox(height:10.0), saveButton, SizedBox(height:25.0)],
+                children: <Widget>[recipeContent, graphContent, SizedBox(height: 20), suggestionsText, suggestionsContent],
               ),
             ),
           ),

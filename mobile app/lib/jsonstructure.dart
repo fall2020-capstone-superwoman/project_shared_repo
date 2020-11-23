@@ -1,11 +1,7 @@
 class Recipe {
-  final int uuid;
-  final int user_id;
-  final int request_id;
-  final String request_time;
-  final String user_selection;
-  final int recipe_rank;
-  final int recipe_score;
+  final int recipe_id;
+  final double aver_rate;
+  final int review_nums;
   final String recipe_name;
   final String recipe_directions;
   final List<String> recipe_ingredients;
@@ -13,7 +9,7 @@ class Recipe {
 
 
   Recipe(
-      {this.uuid, this.user_id, this.request_id, this.request_time, this.user_selection, this.recipe_rank, this.recipe_score, this.recipe_name, this.recipe_directions, this.recipe_ingredients, this.recipe_nutritionfacts});
+      {this.recipe_id, this.aver_rate, this.review_nums, this.recipe_name, this.recipe_directions, this.recipe_ingredients, this.recipe_nutritionfacts});
 
 
   factory Recipe.fromJson(Map<String, dynamic> parsedJson) {
@@ -24,13 +20,9 @@ class Recipe {
     List<Nutrition_info> nutritionlist = list.map((i) => Nutrition_info.fromJson(i)).toList();
 
     return Recipe(
-        uuid: parsedJson['uuid'],
-        user_id: parsedJson['user_id'],
-        request_id: parsedJson['request_id'],
-        request_time: parsedJson['request_time'],
-        user_selection: parsedJson['user_selection'],
-        recipe_rank: parsedJson['recipe_rank'],
-        recipe_score: parsedJson['recipe_score'],
+        recipe_id: parsedJson['recipe_id'],
+        aver_rate: parsedJson ['aver_rate'],
+        review_nums: parsedJson ['review_nums'],
         recipe_name: parsedJson['recipe_name'],
         recipe_directions: parsedJson['recipe_directions'],
         recipe_ingredients: ingredientlist,

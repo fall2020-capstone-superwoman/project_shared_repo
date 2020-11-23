@@ -27,11 +27,12 @@ dependencies:
   http: ^0.11.3+16
   intl: ">=0.14.0"
   smart_select: ^4.3.2
-  cupertino_radio_choice: ^1.0.0+2
   shared_preferences: ^0.5.12
   path_provider: ^1.6.24
   http_middleware: ^1.0.0
   http_logger: ^1.0.0
+  modal_progress_hud: ^0.1.3
+  cupertino_tabbar: ^1.1.1
   flutter:
     sdk: flutter
 
@@ -39,7 +40,7 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.3
+  cupertino_icons: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -51,10 +52,8 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   assets:
-    - assets/recipes.json
-    - assets/b_recipelist_horizontal.json
-    - assets/d_heatmap_recommendation.json
     - assets/b_recipelist_heatmap_recommendation_horizontal.json
+    - assets/ingredients.txt
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
