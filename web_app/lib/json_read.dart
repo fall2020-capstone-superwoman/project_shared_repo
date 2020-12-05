@@ -50,8 +50,7 @@ Future loadRecipes() async {
       nutritionPerRecipe = [];
       for (int j = chartData[i].recipe_nutritionfacts.length - 1; j >= 0; j--) {
         nutritionPerRecipe.add(NutrientData(
-            chartData[i].recipe_nutritionfacts[j].name,
-            double.parse(chartData[i].recipe_nutritionfacts[j].percentDailyValue)));
+            chartData[i].recipe_nutritionfacts[j].name, chartData[i].recipe_nutritionfacts[j].benchmark_percentage));
       }
       nutritionData.add(nutritionPerRecipe);
     }

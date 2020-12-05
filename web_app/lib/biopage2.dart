@@ -30,20 +30,38 @@ class _MyHomePageState extends State<MyHomePage> {
   bool autoValidate = true;
 
   String selectedStatus;
-  String selectedVegValue;
   List<int> selectedItems = [];
   List<String> stringsList = [];
+  List<String> allergies = [];
   String selectedList;
   String selectedNutrient;
   String dropdownString;
   List<String> ingredients = [];
+  bool milk = false;
+  bool eggs = false;
+  bool fish = false;
+  bool shellfish = false;
+  bool treenuts = false;
+  bool peanuts = false;
+  bool wheat = false;
+  bool soybean = false;
+  bool nonspicy = false;
+
 
   @override
   void initState() {
     super.initState();
     selectedStatus = "";
-    selectedVegValue = "";
     stringsList= [];
+    milk = false;
+    eggs = false;
+    fish = false;
+    shellfish = false;
+    treenuts = false;
+    peanuts = false;
+    wheat = false;
+    soybean = false;
+    nonspicy = false;
     _load();
 
   }
@@ -67,8 +85,16 @@ class _MyHomePageState extends State<MyHomePage> {
     prefs = await SharedPreferences.getInstance();
     dropdownString = await _loadIngredients();
     setState(() {
-      selectedVegValue = prefs.getString('veg');
       stringsList = prefs.getStringList('noIngredients');
+      milk = prefs.getBool('milk');
+      eggs = prefs.getBool('eggs');
+      fish = prefs.getBool('fish');
+      shellfish = prefs.getBool('shellfish');
+      treenuts = prefs.getBool('treenuts');
+      peanuts = prefs.getBool('peanuts');
+      wheat = prefs.getBool('wheat');
+      soybean = prefs.getBool('soybean');
+      nonspicy = prefs.getBool('soybean');
       if (stringsList != null) {
         selectedList = stringsList.join(",");
       } else {
@@ -93,7 +119,15 @@ class _MyHomePageState extends State<MyHomePage> {
     prefs = await SharedPreferences.getInstance();
     setState(() {
       prefs.setString('status', selectedStatus);
-      prefs.setString('veg', selectedVegValue);
+      prefs.setBool('milk', milk);
+      prefs.setBool('eggs', eggs);
+      prefs.setBool('fish', fish);
+      prefs.setBool('shellfish', shellfish);
+      prefs.setBool('treenuts', treenuts);
+      prefs.setBool('peanuts', peanuts);
+      prefs.setBool('wheat', wheat);
+      prefs.setBool('soybean', soybean);
+      prefs.setBool('nonspicy', nonspicy);
       stringsList=  selectedItems.map((i)=>items[i].value.toString()).toList();
       prefs.setStringList('noIngredients', stringsList);
       selectedList = stringsList.join(",");
@@ -118,19 +152,20 @@ class _MyHomePageState extends State<MyHomePage> {
     S2Choice<String>(value: 'Folate', title: 'Folate'),
   ];
   // final GlobalKey<FormBuilderState> _fbKey = GlobalKey<FormBuilderState>();
-  final List<DropdownMenuItem> items = [DropdownMenuItem(
-    child: Text("chicken"),
-    value: "chicken",
-  ), DropdownMenuItem(
-    child: Text("beef"),
-    value: "beef",
-  ), DropdownMenuItem(
-    child: Text("tomato"),
-    value: "tomato",
-  ), DropdownMenuItem(
-    child: Text("potato"),
-    value: "potato",
-  )];
+  final List<DropdownMenuItem> items = [];
+  // [DropdownMenuItem(
+  //   child: Text("chicken"),
+  //   value: "chicken",
+  // ), DropdownMenuItem(
+  //   child: Text("beef"),
+  //   value: "beef",
+  // ), DropdownMenuItem(
+  //   child: Text("tomato"),
+  //   value: "tomato",
+  // ), DropdownMenuItem(
+  //   child: Text("potato"),
+  //   value: "potato",
+  // )];
 
 
   @override
@@ -149,7 +184,7 @@ class _MyHomePageState extends State<MyHomePage> {
                Column(
                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    SizedBox(height:20),
+                    SizedBox(height:10),
                     Text("Select Status:", textAlign: TextAlign.left,
                         style: TextStyle(
                         color: Colors.grey[600],
@@ -157,13 +192,13 @@ class _MyHomePageState extends State<MyHomePage> {
                         fontSize: 15
                     )),
                     SmartSelect<String>.single(
-                        title: selectedStatus??'Select Status',
+                        title: 'Select Status',
                         value: selectedStatus,
                         choiceItems: statusOptions,
                         onChange: (state) => setState(() => selectedStatus = state.value)
                     ),
-                SizedBox(height: 20),
-                    Text("Ingredients You Want to Exclude:", style: TextStyle(
+                SizedBox(height: 10),
+                    Text("Allergies:", style: TextStyle(
                         color: Colors.grey[600],
                         fontWeight: FontWeight.bold,
                         fontSize: 15
@@ -172,64 +207,219 @@ class _MyHomePageState extends State<MyHomePage> {
                   // padding: EdgeInsets.all(5),
                   child: Card(
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(5),
                       side: BorderSide(
                         color: Colors.grey,
                         width: 1.0,
                       ),
                     ),
-                    margin: EdgeInsets.all(20),
+                    margin: EdgeInsets.all(5),
                     child: Padding(
-                    padding: const EdgeInsets.all(5.0),
+                    padding: const EdgeInsets.all(2.0),
                     child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget> [
-                      // Text("Ingredients You Want to Exclude:", style: TextStyle(
-                      //     color: Colors.grey[600],
-                      //     fontWeight: FontWeight.bold,
-                      //     fontSize: 15
-                      // )),
-                      SearchableDropdown.multiple(
-                      items: items,
-                      selectedItems: selectedItems,
-                      hint: selectedList??'Select Items',
-                      searchHint: "Select items",
-                      onChanged: (value) {
-                        setState(() {
-                          selectedItems = value;
-                        });
-                      },
-                      closeButton: (selectedItems) {
-                        return (((selectedItems.length>1)&(selectedItems.length<6))
-                            ? "Save ${selectedItems.length == 1 ? '"' + items[selectedItems.first].value.toString() + '"' : '(' + selectedItems.length.toString() + ')'}"
-                            : "Save without selection");
-                      },
-                      isExpanded: true,
-                    ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: <Widget>[
+                        Row(
+                            children: <Widget>[
+                              Checkbox(
+                              value: milk?? false,
+                              onChanged: (bool value) {
+                              setState(() {
+                                milk = value;
+                              });
+                              },
+                              ),
+                              Text("Milk\t\t\t\t\t\t\t\t\t"),
+                              ],
+                        ),
+                        Row(
+                          children: <Widget>[
+                            Checkbox(
+                            value: eggs?? false,
+                            onChanged: (bool value) {
+                              setState(() {
+                                eggs = value;
+                              });
+                            },
+                          ),
+                          Text("Eggs\t\t\t\t\t\t\t\t "),
+                          ],
+                        ),
+                          Row(
+                            children: <Widget>[
+                              Checkbox(
+                            value: fish?? false,
+                            onChanged: (bool value) {
+                              setState(() {
+                                fish = value;
+                              });
+                            },
+                          ),
+                          Text("Fish\t"),
+                            ],
+                          ),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: <Widget>[
+                          Row(
+                            children:<Widget>[
+                            Checkbox(
+                            value: shellfish?? false,
+                            onChanged: (bool value) {
+                              setState(() {
+                                shellfish = value;
+                              });
+                            },
+                          ),
+                          Text("Shellfish\t"),
+                          ],),
+                          Row(
+                            children: <Widget>[
+                            Checkbox(
+                            value: treenuts?? false,
+                            onChanged: (bool value) {
+                              setState(() {
+                                treenuts = value;
+                              });
+                            },
+                          ),
+                          Text("Treenuts  "),
+                          ],
+                          ),
+                          Row(
+                            children: <Widget>[
+                          Checkbox(
+                            value: peanuts?? false,
+                            onChanged: (bool value) {
+                              setState(() {
+                                peanuts = value;
+                              });
+                            },
+                          ),
+                          Text("Peanuts"),
+                            ],
+                          ),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: <Widget>[
+                          Row(
+                            children: <Widget>[
+                            Checkbox(
+                            value: wheat?? false,
+                            onChanged: (bool value) {
+                              setState(() {
+                                wheat = value;
+                              });
+                            },
+                          ),
+                          Text("Wheat\t\t\t\t\t"),
+                          ],
+                          ),
+                          Row(
+                            children: <Widget>[
+                            Checkbox(
+                            value: soybean?? false,
+                            onChanged: (bool value) {
+                              setState(() {
+                                soybean = value;
+                              });
+                            },
+                          ),
+                          Text("Soybean"),
+                          ],
+                          ),
+                        ],
+                      ),
                   ],
                     ),
                   ),
                   ),
                 ),
+                    SizedBox(height: 20),
+                    Text("Other Foods to Exclude:", style: TextStyle(
+                        color: Colors.grey[600],
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15
+                    )),
+                    Container(
+                      // padding: EdgeInsets.all(5),
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5),
+                          side: BorderSide(
+                            color: Colors.grey,
+                            width: 1.0,
+                          ),
+                        ),
+                        margin: EdgeInsets.all(5),
+                        child: Padding(
+                          padding: const EdgeInsets.all(2.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget> [
+                              SearchableDropdown.multiple(
+                                items: items,
+                                selectedItems: selectedItems,
+                                hint: selectedList??'Select Items',
+                                searchHint: "Select items",
+                                onChanged: (value) {
+                                  setState(() {
+                                    selectedItems = value;
+                                  });
+                                },
+                                closeButton: (selectedItems) {
+                                  return (((selectedItems.length>1)&(selectedItems.length<6))
+                                      ? "Save ${selectedItems.length == 1 ? '"' + items[selectedItems.first].value.toString() + '"' : '(' + selectedItems.length.toString() + ')'}"
+                                      : "Save without selection");
+                                },
+                                isExpanded: true,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
                Container(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       SizedBox(height: 20),
-                      Text("Select Dietary Preferences:", textAlign: TextAlign.left,
+                      Text("Other:", textAlign: TextAlign.left,
                           style: TextStyle(
                           color: Colors.grey[600],
                           fontWeight: FontWeight.bold,
                           fontSize: 15
                       )),
+                 Row(
+                   mainAxisAlignment: MainAxisAlignment.start,
+                   children: <Widget>[
+                     Checkbox(
+                       value: nonspicy?? false,
+                       onChanged: (bool value) {
+                         setState(() {
+                           nonspicy = value;
+                         });
+                       },
+                     ),
+                     Text("Prefer non-spicy items"),
+                  ],
+                 ),
 
-                      SmartSelect<String>.single(
-                        title: selectedVegValue??'Veg/Nonveg Preferences',
-                        value: selectedVegValue,
-                        choiceItems: vegOptions,
-                        onChange: (state) => setState(() => selectedVegValue = state.value)
-                    ),
+
                   //     SmartSelect<String>.single(
+                  //       title: 'Veg/Nonveg Preferences',
+                  //       value: selectedVegValue,
+                  //       choiceItems: vegOptions,
+                  //       onChange: (state) => setState(() => selectedVegValue = state.value)
+                  //   ),
+                  // //     SmartSelect<String>.single(
                   //     title: 'Priorities',
                   //     value: selectedNutrient,
                   //     choiceItems: priorityOptions,

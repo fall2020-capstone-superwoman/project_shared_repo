@@ -24,7 +24,7 @@ dependencies:
   easy_rich_text: '^0.5.2'
   syncfusion_flutter_charts: ^18.3.40
   searchable_dropdown: ^1.1.3
-  http: ^0.11.3+16
+  http: ^0.12.1
   intl: ">=0.14.0"
   smart_select: ^4.3.2
   shared_preferences: ^0.5.12
@@ -50,6 +50,7 @@ flutter:
   assets:
     - assets/b_recipelist_heatmap_recommendation_horizontal.json
     - assets/ingredients.txt
+    - assets/chili.png
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

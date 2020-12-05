@@ -45,20 +45,24 @@ class _HomePageState extends State<HomePage> {
   //   setState(() {
   //     for (Map i in jsonResponse) {
   //       chartData.add(Recipe.fromJson(i)); // Deserialization step
+  //       print(i);
   //     }
   //   });
   // }
 
   Future loadChartData() async {
     final response = await http.post(
-        'https://bbg5tf4j2d.execute-api.us-east-1.amazonaws.com/Test/ingredientstorecipes');
+        'https://cors-anywhere.herokuapp.com/https://bbg5tf4j2d.execute-api.us-east-1.amazonaws.com/Test/ingredientstorecipes');
 
     if (response.statusCode == 200) {
+
       // If the server did return a 200 OK response,
       // then parse the JSON.
+
       final jsonResponse = json.decode(response.body);
         setState(() {
           for (Map i in jsonResponse) {
+            // print(i);
             chartData.add(Recipe.fromJson(i)); // Deserialization step
           }
         });
@@ -99,13 +103,22 @@ class _HomePageState extends State<HomePage> {
             return Card(
               child: Padding(
                 padding: const EdgeInsets.only(
-                    top: 10.0, bottom: 10.0, left: 8.0, right: 16.0),
+                    top: 10.0, bottom: 10.0, right: 16.0),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       ListTile(
-                        title: Text(chartData[index].recipe_name, style: TextStyle(fontSize: 16.0)),
-                        onTap: () {
+                        contentPadding:EdgeInsets.all(0),
+                        title: Row(
+                          children: <Widget>[
+                            SizedBox(width:7),
+                            Image.asset("assets/chili.png", color: chartData[index].spicy == 1? Colors.red: Colors.white, height: 20),
+                            SizedBox(width:10),
+                            Text(chartData[index].recipe_name, style: TextStyle(fontSize: 16.0)),
+                          ],
+                        ),
+                        onTap: ()
+                         {
                           Navigator.of(context).push(
                               MaterialPageRoute(builder: (context) => DetailPage(selectedRecipe: chartData[index])));
                           },

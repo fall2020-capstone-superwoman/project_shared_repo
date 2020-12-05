@@ -8,7 +8,6 @@ import './recipeslist.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import './jsonstructure.dart';
-import 'dart:io';
 import 'package:flutter/services.dart' show rootBundle;
 
 class RecipeInputPage extends StatefulWidget {
@@ -20,14 +19,23 @@ class _MyAppState extends State<RecipeInputPage> {
   bool asTabs = false;
   // String selectedValue;
   List<int> selectedItems = [];
+  List<String> allergies = [];
   String selectedNutrient;
   SharedPreferences prefs;
   String selectedStatus;
-  String selectedVegValue;
   List<String> noIngredientsstringsList = [];
   String dropdownString;
   List<String> ingredients = [];
   bool _loading = false;
+  bool milk = false;
+  bool eggs = false;
+  bool fish = false;
+  bool shellfish = false;
+  bool treenuts = false;
+  bool peanuts = false;
+  bool wheat = false;
+  bool soybean = false;
+  bool nonspicy = false;
 
 
 
@@ -66,7 +74,7 @@ class _MyAppState extends State<RecipeInputPage> {
 
   Future<http.Response> createList() {
     List<String> selectedItemList = selectedItems.map((i)=>items[i].value.toString()).toList();
-    Preferences preferences = Preferences(selectedStatus, noIngredientsstringsList, selectedVegValue, selectedItemList, selectedNutrient);
+    Preferences preferences =  Preferences(selectedStatus, milk, eggs, fish, shellfish, treenuts, peanuts, wheat, soybean, nonspicy, noIngredientsstringsList, selectedItemList, selectedNutrient);
     String jsonPreferences = jsonEncode(preferences);
     return http.post(
       'https://bbg5tf4j2d.execute-api.us-east-1.amazonaws.com/Test/ingredientstorecipes',
@@ -80,7 +88,7 @@ class _MyAppState extends State<RecipeInputPage> {
 
   _print(){
     List<String> selectedItemList = selectedItems.map((i)=>items[i].value.toString()).toList();
-    Preferences preferences = Preferences(selectedStatus, noIngredientsstringsList, selectedVegValue, selectedItemList, selectedNutrient);
+    Preferences preferences = Preferences(selectedStatus, milk, eggs, fish, shellfish, treenuts, peanuts, wheat, soybean, nonspicy, noIngredientsstringsList, selectedItemList, selectedNutrient);
     String jsonPreferences = jsonEncode(preferences);
     print(jsonPreferences);
   }
@@ -122,7 +130,15 @@ class _MyAppState extends State<RecipeInputPage> {
   void initState() {
     super.initState();
     selectedStatus = "";
-    selectedVegValue = "";
+    milk = false;
+    eggs = false;
+    fish = false;
+    shellfish = false;
+    treenuts = false;
+    peanuts = false;
+    wheat = false;
+    soybean = false;
+    nonspicy = false;
     noIngredientsstringsList= [];
     _load();
 
@@ -134,9 +150,17 @@ class _MyAppState extends State<RecipeInputPage> {
     prefs = await SharedPreferences.getInstance();
     if (mounted) {
       setState(() {
-        selectedVegValue = prefs.getString('veg');
         noIngredientsstringsList = prefs.getStringList('noIngredients');
         selectedStatus = prefs.getString('status');
+        milk = prefs.getBool('milk');
+        eggs = prefs.getBool('eggs');
+        fish = prefs.getBool('fish');
+        shellfish = prefs.getBool('shellfish');
+        treenuts = prefs.getBool('treenuts');
+        peanuts = prefs.getBool('peanuts');
+        wheat = prefs.getBool('wheat');
+        soybean = prefs.getBool('soybean');
+        nonspicy = prefs.getBool('soybean');
         ingredients = dropdownString.split('\n');
         for (String i in ingredients) {
           items.add(DropdownMenuItem(
@@ -159,8 +183,8 @@ class _MyAppState extends State<RecipeInputPage> {
         hint: Text("Select items"),
         searchHint: "Select items",
         validator: (selectedItemsForValidator) {
-          if (selectedItemsForValidator.length < 3) {
-            return ("Must select at least 3 items");
+          if (selectedItemsForValidator.length != 3) {
+            return ("Must select 3 items");
           }
           return (null);
         },
@@ -176,6 +200,7 @@ class _MyAppState extends State<RecipeInputPage> {
         },
         isExpanded: true,
       ),
+
       "Nutrients Focus": SearchableDropdown.single(
         items: nutrients,
         value: selectedNutrient,
@@ -290,7 +315,7 @@ class _MyAppState extends State<RecipeInputPage> {
           onPressed: () {
             // Navigator.pop(context);
             // selectedItems.map((i)=>i.toString()).toList(),
-            // _print();
+            _print();
             createList();
             Navigator.push(
                 context, MaterialPageRoute(builder: (context) => ListViewPage()));

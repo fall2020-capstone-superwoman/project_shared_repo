@@ -48,10 +48,9 @@ class DetailPage extends StatelessWidget {
 
     for (int i = 0; i < selectedRecipe.recipe_nutritionfacts.length; i++) {
       if (nutrients.contains(selectedRecipe.recipe_nutritionfacts[i].name)) {
-        if (selectedRecipe.recipe_nutritionfacts[i].benchmark_flag == "deficient") {
+        if (selectedRecipe.recipe_nutritionfacts[i].benchmark_flag == 1) {
           suggestionDataList.add(SuggestionData(
               selectedRecipe.recipe_nutritionfacts[i].name,
-              selectedRecipe.recipe_nutritionfacts[i].benchmark,
               selectedRecipe.recipe_nutritionfacts[i].benchmark_percentage,
               selectedRecipe.recipe_nutritionfacts[i].cooccurrence_top_list,
               selectedRecipe.recipe_nutritionfacts[i].raw_nutrition_top_list));
@@ -62,6 +61,7 @@ class DetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final _scrollController = ScrollController();
     loadSuggestionData();
     // final levelIndicator = Container(
     //   child: Container(
@@ -257,10 +257,15 @@ class DetailPage extends StatelessWidget {
 
         body: Container(
           child: Center(
+            child: Scrollbar(
+              controller:_scrollController,
+              isAlwaysShown: true,
             child: SingleChildScrollView(
+              controller: _scrollController,
               child: Column(
                 children: <Widget>[recipeContent, graphContent, SizedBox(height: 20), suggestionsText, suggestionsContent],
               ),
+            ),
             ),
           ),
         ),

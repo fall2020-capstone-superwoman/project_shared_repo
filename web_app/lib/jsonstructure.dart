@@ -2,6 +2,7 @@ class Recipe {
   final int recipe_id;
   final double aver_rate;
   final int review_nums;
+  final int spicy;
   final String recipe_name;
   final String recipe_directions;
   final List<String> recipe_ingredients;
@@ -9,7 +10,7 @@ class Recipe {
 
 
   Recipe(
-      {this.recipe_id, this.aver_rate, this.review_nums, this.recipe_name, this.recipe_directions, this.recipe_ingredients, this.recipe_nutritionfacts});
+      {this.recipe_id, this.aver_rate, this.review_nums, this.spicy, this.recipe_name, this.recipe_directions, this.recipe_ingredients, this.recipe_nutritionfacts});
 
 
   factory Recipe.fromJson(Map<String, dynamic> parsedJson) {
@@ -23,6 +24,7 @@ class Recipe {
         recipe_id: parsedJson['recipe_id'],
         aver_rate: parsedJson ['aver_rate'],
         review_nums: parsedJson ['review_nums'],
+        spicy: parsedJson['spicy'],
         recipe_name: parsedJson['recipe_name'],
         recipe_directions: parsedJson['recipe_directions'],
         recipe_ingredients: ingredientlist,
@@ -34,20 +36,20 @@ class Recipe {
 class Nutrition_info{
   final String name;
   final double amount;
-  final String percentDailyValue;
-  final String displayValue;
-  final String unit;
   final double benchmark;
+  // final String percentDailyValue;
+  // final String displayValue;
+  final String unit;
   final double benchmark_percentage;
-  final String benchmark_flag;
+  final int benchmark_flag;
   final List<String> cooccurrence_top_list;
   final List<String> raw_nutrition_top_list;
 
   Nutrition_info({
     this.name,
     this.amount,
-    this.percentDailyValue,
-    this.displayValue,
+    // this.percentDailyValue,
+    // this.displayValue,
     this.unit,
     this.benchmark,
     this.benchmark_percentage,
@@ -65,8 +67,8 @@ class Nutrition_info{
     return Nutrition_info(
       name: parsedJson['name'],
       amount: parsedJson['amount'],
-      percentDailyValue: parsedJson['percentDailyValue'],
-      displayValue: parsedJson['displayValue'],
+      // percentDailyValue: parsedJson['percentDailyValue'],
+      // displayValue: parsedJson['displayValue'],
       unit: parsedJson['unit'],
       benchmark: parsedJson['benchmark'],
       benchmark_percentage: parsedJson['benchmark_percentage'],
@@ -84,9 +86,8 @@ class NutrientData{
 }
 
 class SuggestionData{
-  SuggestionData(this.name, this.benchmark, this.benchmark_percentage, this.cooccurrencetoplist, this.rawnutritiontoplist);
+  SuggestionData(this.name, this.benchmark_percentage, this.cooccurrencetoplist, this.rawnutritiontoplist);
   final String name;
-  final double benchmark;
   final double benchmark_percentage;
   final List<String> cooccurrencetoplist;
   final List<String> rawnutritiontoplist;
@@ -94,17 +95,33 @@ class SuggestionData{
 
 class Preferences{
   String status;
+  bool milk;
+  bool eggs;
+  bool fish;
+  bool shellfish;
+  bool treenuts;
+  bool peanuts;
+  bool wheat;
+  bool soybean;
+  bool nonspicy;
   List <String> excludeIngredients;
-  String vegnonveg;
   List <String> includeIngredients;
   String nutritionPriority;
 
-  Preferences(this.status, this.excludeIngredients, this.vegnonveg, this.includeIngredients, this.nutritionPriority);
+  Preferences(this.status, this.milk, this.eggs, this.fish, this.shellfish, this.treenuts, this.peanuts, this.wheat, this.soybean, this.nonspicy, this.excludeIngredients, this.includeIngredients, this.nutritionPriority);
 
   Map<String, dynamic> toJson() => {
   'status': status,
+  'milk': milk,
+  'eggs': eggs,
+  'fish': fish,
+  'shellfish': shellfish,
+  'treenuts': treenuts,
+  'peanuts': peanuts,
+  'wheat': wheat,
+  'soybean': soybean,
+  'nonspicy': nonspicy,
   'excludeIngredients': excludeIngredients,
-  'vegnonveg': vegnonveg,
   'includeIngredients': includeIngredients,
   'nutritionPriority': nutritionPriority,
   };
