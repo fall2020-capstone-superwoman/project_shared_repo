@@ -1,0 +1,123 @@
+artichoke
+arugula
+asparagus
+bamboo shoot
+bell pepper
+bok choy
+broccoli
+brussel sprout
+butternut squash
+cabbage
+carrot
+cauliflower
+celery
+chili pepper
+cilantro
+cucumber
+daikon
+eggplant
+garlic
+ginger
+kale
+leek
+lettuce
+mushroom
+okra
+onion
+parsley
+parsnip
+pea
+pickle
+potato
+pumpkin
+radish
+sauerkraut
+shallot
+snow pea
+spinach
+sweet potato
+tomato
+tomato paste
+turnip
+water chestnut
+zucchini
+almond
+cashew
+coconut milk
+hazelnut
+peanut
+pecan
+pine nut
+pistachio
+walnut
+bacon
+beef roast
+beef shank
+steak
+beef
+chicken
+chicken breast
+chicken leg
+chicken thigh
+chicken wing
+chorizo
+ham
+hot dog
+lamb
+lamb chop
+lamb shoulder
+oxtail
+pepperoni
+polish sausage
+pork
+pork chop
+pork loin
+pork rib
+pork roast
+pork shoulder
+salami
+sausage
+turkey
+veal
+brown rice
+corn
+cornmeal
+noodle
+quinoa
+rice
+oat
+crab
+lobster
+mussel
+oyster
+prawn
+salmon
+scallop
+shrimp
+whitefish
+almond milk
+cottage cheese
+egg
+pepper jack
+american cheese
+blue cheese
+butter
+buttermilk
+cream
+cream cheese
+ghee
+goat cheese
+gouda
+milk
+mozzarella
+parmesan
+provolone cheese
+swiss cheese
+yoghurt
+chickpea
+kidney bean
+lentil
+miso
+navy bean
+peanut butter
+tofu
