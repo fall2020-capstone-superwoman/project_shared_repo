@@ -1,0 +1,5 @@
+{
+    "uuid": 1234,
+    "ingredient_list": ["chicken", "tomato"],
+    "nutrition_focus": "full-eval",
+}
