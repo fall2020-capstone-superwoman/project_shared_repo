@@ -1,1 +1,1 @@
-# Capstone_Fall2020_Nutrition
+# Recipe recommendation model

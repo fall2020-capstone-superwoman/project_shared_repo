@@ -1,0 +1,1474 @@
+ingredient,co_ingredient,Protein,Calcium,Iron,VitaminA,VitaminC,VitaminB6,Folate
+almond,banana,1.09,5,0.26,64,8.7,0.367,20
+almond,blueberry,0.42,8,0.18,46,2.5,0.059,7
+almond,coconut,0.61,12,1.18,3,4.1,0.218,0
+almond,cranberry,0.46,8,0.23,63,14,0.057,1
+almond,currant,3.43,88,1.88,73,4.7,0.296,10
+almond,oat,16.89,54,4.72,0,0,0.119,56
+almond,peach,0.91,6,0.25,326,6.6,0.025,4
+almond,pecan,9.17,70,2.53,56,1.1,0.21,22
+almond,pistachio,20.16,105,3.92,516,5.6,1.7,51
+almond,plum,0.7,6,0.17,345,9.5,0.029,5
+almond,raspberry,1.2,25,0.69,33,26.2,0.055,21
+almond,strawberry,0.67,16,0.41,12,58.8,0.047,24
+almond,yogurt,3.47,121,0.05,99,0.5,0.032,7
+almond milk,buttermilk,3.21,115,0.03,165,0,0.036,5
+almond milk,butternut squash,1,48,0.7,10630,21,0.154,27
+almond milk,dill,3.46,208,6.59,7718,85,0.185,150
+almond milk,hazelnut,14.95,114,4.7,20,6.3,0.563,113
+almond milk,margarine,0.9,30,0,3577,0.2,0.009,1
+almond milk,oxtail,30.8,13,3.65,0,0,0.288,6
+almond milk,parmesan,28.42,853,0.49,974,0,0.081,6
+almond milk,pork chop,26.54,51,0.81,13,0,0.488,0
+almond milk,pork roast,26.86,19,0.98,0,0.6,0.512,6
+almond milk,safflower oil,0,0,0,0,0,0,0
+almond milk,salmon,19.93,26,0.25,453,4,0.4,30
+artichoke,anchovy,20.35,147,3.25,50,0,0.143,9
+artichoke,arugula,2.58,160,1.46,2373,15,0.073,97
+artichoke,catfish,16.38,14,0.3,50,0.7,0.116,10
+artichoke,cottage cheese,10.49,78,0.07,0,0,0.043,11
+artichoke,eggplant,0.98,9,0.23,23,2.2,0.084,22
+artichoke,halibut,14.37,3,0.66,47,0,0.42,1
+artichoke,mozzarella,22.17,505,0.44,676,0,0.037,7
+artichoke,pear,0.36,9,0.18,25,4.3,0.029,7
+artichoke,pesto,9.83,306,0.57,1544,0,0.133,16
+artichoke,pine nut,13.69,16,5.53,29,0.8,0.094,34
+artichoke,salami,21.7,10,1.52,0,0,0.55,2
+artichoke,scallop,20.54,10,0.58,5,0,0.112,20
+artichoke,spinach,2.86,99,2.71,9377,28.1,0.195,194
+artichoke,tomato,0.88,10,0.27,833,13.7,0.08,15
+artichoke,watercress,2.3,120,0.2,3191,43,0.129,9
+arugula,anchovy,20.35,147,3.25,50,0,0.143,9
+arugula,artichoke,2.87,21,0.61,0,7.4,0.081,88
+arugula,blue cheese,21.4,528,0.31,721,0,0.166,36
+arugula,chicken,26.79,14,0.73,0,0,0.247,10
+arugula,cucumber,0.65,16,0.28,105,2.8,0.04,7
+arugula,goat cheese,18.52,140,1.9,1033,0,0.25,12
+arugula,mozzarella,22.17,505,0.44,676,0,0.037,7
+arugula,pepperoni,19.25,19,1.33,0,0,0.362,5
+arugula,pesto,9.83,306,0.57,1544,0,0.133,16
+arugula,pine nut,13.69,16,5.53,29,0.8,0.094,34
+arugula,salami,21.7,10,1.52,0,0,0.55,2
+arugula,spinach,2.86,99,2.71,9377,28.1,0.195,194
+arugula,tomato,0.88,10,0.27,833,13.7,0.08,15
+arugula,watercress,2.3,120,0.2,3191,43,0.129,9
+asparagu,artichoke,2.87,21,0.61,0,7.4,0.081,88
+asparagu,arugula,2.58,160,1.46,2373,15,0.073,97
+asparagu,fennel,1.24,49,0.73,963,12,0.047,27
+asparagu,mozzarella,22.17,505,0.44,676,0,0.037,7
+asparagu,mushroom,1.49,15,3.47,0,0,0.044,2
+asparagu,pesto,9.83,306,0.57,1544,0,0.133,16
+asparagu,potato,1.4,5,1.26,2,5.1,0.19,6
+asparagu,sausage,13.9,12,1.77,0,0,0,0
+asparagu,spinach,2.86,99,2.71,9377,28.1,0.195,194
+asparagu,tomato,0.88,10,0.27,833,13.7,0.08,15
+bacon,butter,0.85,24,0.02,2499,0,0.003,3
+bacon,celery,0.69,40,0.2,449,3.1,0.074,36
+bacon,chicken,26.79,14,0.73,0,0,0.247,10
+bacon,lard,0,0,0,0,0,0,0
+bacon,mozzarella,22.17,505,0.44,676,0,0.037,7
+bacon,paprika,14.14,229,21.14,49254,0.9,2.141,49
+bacon,parsley,2.97,138,6.2,8424,133,0.09,152
+bacon,pork,27.69,8,0.51,0,0,0.558,0
+bacon,potato,1.4,5,1.26,2,5.1,0.19,6
+bacon,sauerkraut,0.91,30,1.47,18,14.7,0.13,24
+bacon,sausage,13.9,12,1.77,0,0,0,0
+bamboo shoot,bok choy,1.5,105,0.8,4468,45,0.194,66
+bamboo shoot,broccoli,2.82,47,0.73,623,89.2,0.175,63
+bamboo shoot,mushroom,1.49,15,3.47,0,0,0.044,2
+bamboo shoot,peanut butter,24,41,1.9,0,0,0.45,92
+bamboo shoot,snow pea,2.8,43,2.08,1087,60,0.16,42
+bamboo shoot,tofu,9.04,201,1.61,0,0.2,0.071,19
+beef roast,cherry,1.06,13,0.36,64,7,0.049,4
+beef roast,chicken thigh,16.52,7,0.68,78,0,0.347,3
+beef roast,chorizo,13.63,19,1.41,0,0,0.313,0
+beef roast,goat cheese,18.52,140,1.9,1033,0,0.25,12
+beef roast,milk,3.15,113,0.03,162,0,0.036,5
+beef roast,noodle,1.79,4,0.14,0,0,0.006,1
+beef roast,onion,1.1,23,0.21,2,7.4,0.12,19
+beef roast,pork chop,26.54,51,0.81,13,0,0.488,0
+beef roast,potato,1.4,5,1.26,2,5.1,0.19,6
+beef roast,sausage,13.9,12,1.77,0,0,0,0
+beef roast,scallop,20.54,10,0.58,5,0,0.112,20
+beef shank,artichoke,2.87,21,0.61,0,7.4,0.081,88
+beef shank,balsamic vinegar,0.49,27,0.72,0,0,0,0
+beef shank,chicken,26.79,14,0.73,0,0,0.247,10
+beef shank,eggplant,0.98,9,0.23,23,2.2,0.084,22
+beef shank,halibut,14.37,3,0.66,47,0,0.42,1
+beef shank,parmesan,28.42,853,0.49,974,0,0.081,6
+beef shank,pesto,9.83,306,0.57,1544,0,0.133,16
+beef shank,pine nut,13.69,16,5.53,29,0.8,0.094,34
+beef shank,rosemary,3.31,317,6.65,2924,21.8,0.336,109
+beef shank,salsa,0.71,11,0.23,0,10.8,0.091,12
+beef shank,tomato,0.88,10,0.27,833,13.7,0.08,15
+bell pepper,brown rice,2.32,10,0.53,0,0,0.149,4
+bell pepper,carrot,0.93,33,0.3,16706,5.9,0.138,19
+bell pepper,cashew,14.85,44,5.82,0,0,0.248,67
+bell pepper,celery,0.69,40,0.2,449,3.1,0.074,36
+bell pepper,chicken,26.79,14,0.73,0,0,0.247,10
+bell pepper,chicken breast,22.5,5,0.37,30,0,0.811,9
+bell pepper,chicken thigh,16.52,7,0.68,78,0,0.347,3
+bell pepper,chorizo,13.63,19,1.41,0,0,0.313,0
+bell pepper,kidney bean,8.67,35,2.22,0,1.2,0.12,130
+bell pepper,okra,1.93,82,0.62,716,23,0.215,60
+bell pepper,sausage,13.9,12,1.77,0,0,0,0
+bell pepper,shrimp,22.78,91,0.32,301,0,0.242,24
+bell pepper,squash,1.01,21,0.44,150,19.3,0.104,19
+black bean,beansprout,4.57,31,0.9,0,9.6,0.072,49
+black bean,bell pepper,1.04,7,0.47,2760,162.8,0.364,2
+black bean,brown rice,2.32,10,0.53,0,0,0.149,4
+black bean,butternut squash,1,48,0.7,10630,21,0.154,27
+black bean,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+black bean,chicken thigh,16.52,7,0.68,78,0,0.347,3
+black bean,chorizo,13.63,19,1.41,0,0,0.313,0
+black bean,cilantro,2.13,67,1.77,6748,27,0.149,62
+black bean,coconut milk,2.02,18,3.3,0,1,0.028,14
+black bean,fennel,1.24,49,0.73,963,12,0.047,27
+black bean,ginger,1.82,16,0.6,0,5,0.16,11
+black bean,grapefruit,0.63,12,0.09,927,34.4,0.042,10
+black bean,lamb,6.92,23,1.14,0,0,0.03,3
+black bean,lemon,1.1,26,0.6,22,53,0.08,11
+black bean,lentil,24.63,35,6.51,39,4.5,0.54,479
+black bean,lime,0.7,33,0.6,50,29.1,0.043,8
+black bean,orange juice,0.7,11,0.2,200,50,0.04,30
+black bean,peanut,24.35,58,1.58,0,0,0.466,97
+black bean,potato,1.4,5,1.26,2,5.1,0.19,6
+black bean,rice,2.69,10,1.2,0,0,0.093,58
+black bean,salsa,0.71,11,0.23,0,10.8,0.091,12
+black bean,squash,1.01,21,0.44,150,19.3,0.104,19
+black bean,tomato,0.88,10,0.27,833,13.7,0.08,15
+blue cheese,artichoke,2.87,21,0.61,0,7.4,0.081,88
+blue cheese,arugula,2.58,160,1.46,2373,15,0.073,97
+blue cheese,chicken,26.79,14,0.73,0,0,0.247,10
+blue cheese,garlic,6.36,181,1.7,9,31.2,1.235,3
+blue cheese,halibut,14.37,3,0.66,47,0,0.42,1
+blue cheese,lettuce,1.39,62,0.9,0,11.5,0.066,129
+blue cheese,mozzarella,22.17,505,0.44,676,0,0.037,7
+blue cheese,pear,0.36,9,0.18,25,4.3,0.029,7
+blue cheese,pepperoni,19.25,19,1.33,0,0,0.362,5
+blue cheese,pesto,9.83,306,0.57,1544,0,0.133,16
+blue cheese,pine nut,13.69,16,5.53,29,0.8,0.094,34
+bok choy,bamboo shoot,3.45,17,0.66,0,4.5,0.302,7
+bok choy,beansprout,4.57,31,0.9,0,9.6,0.072,49
+bok choy,broccoli,2.82,47,0.73,623,89.2,0.175,63
+bok choy,daikon,1.1,27,0.8,0,29,0.075,14
+bok choy,mushroom,1.49,15,3.47,0,0,0.044,2
+bok choy,noodle,1.79,4,0.14,0,0,0.006,1
+bok choy,peanut,24.35,58,1.58,0,0,0.466,97
+bok choy,peanut butter,24,41,1.9,0,0,0.45,92
+bok choy,snow pea,2.8,43,2.08,1087,60,0.16,42
+bok choy,tofu,9.04,201,1.61,0,0.2,0.071,19
+bok choy,water chestnut,1.38,6,1.36,0,2,0.248,9
+broccoli,bamboo shoot,3.45,17,0.66,0,4.5,0.302,7
+broccoli,bok choy,1.5,105,0.8,4468,45,0.194,66
+broccoli,cashew,14.85,44,5.82,0,0,0.248,67
+broccoli,mushroom,1.49,15,3.47,0,0,0.044,2
+broccoli,noodle,1.79,4,0.14,0,0,0.006,1
+broccoli,onion,1.1,23,0.21,2,7.4,0.12,19
+broccoli,peanut,24.35,58,1.58,0,0,0.466,97
+broccoli,peanut butter,24,41,1.9,0,0,0.45,92
+broccoli,pork loin,27.32,19,0.87,7,0.6,0.464,5
+broccoli,snow pea,2.8,43,2.08,1087,60,0.16,42
+broccoli,tofu,9.04,201,1.61,0,0.2,0.071,19
+brown rice,beansprout,4.57,31,0.9,0,9.6,0.072,49
+brown rice,bell pepper,1.04,7,0.47,2760,162.8,0.364,2
+brown rice,bok choy,1.5,105,0.8,4468,45,0.194,66
+brown rice,broccoli,2.82,47,0.73,623,89.2,0.175,63
+brown rice,butternut squash,1,48,0.7,10630,21,0.154,27
+brown rice,chickpea,4.92,35,1.23,15,0.1,0.473,25
+brown rice,chorizo,13.63,19,1.41,0,0,0.313,0
+brown rice,cilantro,2.13,67,1.77,6748,27,0.149,62
+brown rice,coconut milk,2.02,18,3.3,0,1,0.028,14
+brown rice,lentil,24.63,35,6.51,39,4.5,0.54,479
+brown rice,lime,0.7,33,0.6,50,29.1,0.043,8
+brown rice,noodle,1.79,4,0.14,0,0,0.006,1
+brown rice,okra,1.93,82,0.62,716,23,0.215,60
+brown rice,peanut,24.35,58,1.58,0,0,0.466,97
+brown rice,pepper jack,24.12,716,0.74,0,0,0.079,18
+brown rice,plantain,1.3,3,0.55,1127,18.4,0.242,22
+brown rice,potato,1.4,5,1.26,2,5.1,0.19,6
+brown rice,rice,2.69,10,1.2,0,0,0.093,58
+brown rice,shrimp,22.78,91,0.32,301,0,0.242,24
+brown rice,squash,1.01,21,0.44,150,19.3,0.104,19
+brussel sprout,asparagu,2.2,24,2.14,756,5.6,0.091,52
+brussel sprout,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+brussel sprout,chicken leg,16.37,9,0.69,92,0.2,0.318,4
+brussel sprout,cod,17.81,16,0.38,40,1,0.245,7
+brussel sprout,cucumber,0.65,16,0.28,105,2.8,0.04,7
+brussel sprout,egg,12.3,64,1.69,0,0,0.157,34
+brussel sprout,eggplant,0.98,9,0.23,23,2.2,0.084,22
+brussel sprout,lamb,6.92,23,1.14,0,0,0.03,3
+brussel sprout,mushroom,1.49,15,3.47,0,0,0.044,2
+brussel sprout,noodle,1.79,4,0.14,0,0,0.006,1
+brussel sprout,pecan,9.17,70,2.53,56,1.1,0.21,22
+brussel sprout,pork chop,26.54,51,0.81,13,0,0.488,0
+brussel sprout,pumpkin,1,21,0.8,8513,9,0.061,16
+brussel sprout,salami,21.7,10,1.52,0,0,0.55,2
+brussel sprout,sweet potato,1.57,30,0.61,14187,2.4,0.209,11
+brussel sprout,turkey,21.64,11,0.86,56,0,0.599,7
+butter,bacon,13.66,6,0.38,37,0,0.266,0
+butter,corn oil,0,0,0,0,0,0,0
+butter,ghee,0.28,4,0,3069,0,0.001,0
+butter,margarine,0.9,30,0,3577,0.2,0.009,1
+butter,oxtail,30.8,13,3.65,0,0,0.288,6
+butter,parsley,2.97,138,6.2,8424,133,0.09,152
+butter,safflower oil,0,0,0,0,0,0,0
+butter,shortening,0,0,0,0,0,0,0
+buttermilk,almond,20.96,268,3.73,1,0,0.136,55
+buttermilk,almond paste,9,172,1.6,0,0.1,0.036,73
+buttermilk,currant,3.43,88,1.88,73,4.7,0.296,10
+buttermilk,egg,12.3,64,1.69,0,0,0.157,34
+buttermilk,milk,3.15,113,0.03,162,0,0.036,5
+buttermilk,oat,16.89,54,4.72,0,0,0.119,56
+buttermilk,pecan,9.17,70,2.53,56,1.1,0.21,22
+buttermilk,plum,0.7,6,0.17,345,9.5,0.029,5
+buttermilk,raisin,3.3,62,1.79,0,2.3,0.174,5
+butternut squash,brown rice,2.32,10,0.53,0,0,0.149,4
+butternut squash,cashew,14.85,44,5.82,0,0,0.248,67
+butternut squash,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+butternut squash,chickpea,4.92,35,1.23,15,0.1,0.473,25
+butternut squash,cilantro,2.13,67,1.77,6748,27,0.149,62
+butternut squash,grapefruit,0.63,12,0.09,927,34.4,0.042,10
+butternut squash,lemon,1.1,26,0.6,22,53,0.08,11
+butternut squash,lentil,24.63,35,6.51,39,4.5,0.54,479
+butternut squash,lime,0.7,33,0.6,50,29.1,0.043,8
+butternut squash,lobster,26.41,63,1.41,20,2.1,0.173,1
+butternut squash,mint,3.75,243,5.08,4248,31.8,0.129,114
+butternut squash,mushroom,1.49,15,3.47,0,0,0.044,2
+butternut squash,orange juice,0.7,11,0.2,200,50,0.04,30
+butternut squash,potato,1.4,5,1.26,2,5.1,0.19,6
+butternut squash,quinoa,14.12,47,4.57,14,0,0.487,184
+butternut squash,salmon,19.93,26,0.25,453,4,0.4,30
+butternut squash,salsa,0.71,11,0.23,0,10.8,0.091,12
+butternut squash,tomato,0.88,10,0.27,833,13.7,0.08,15
+butternut squash,turkey,21.64,11,0.86,56,0,0.599,7
+cabbage,bok choy,1.5,105,0.8,4468,45,0.194,66
+cabbage,broccoli,2.82,47,0.73,623,89.2,0.175,63
+cabbage,carrot,0.93,33,0.3,16706,5.9,0.138,19
+cabbage,cashew,14.85,44,5.82,0,0,0.248,67
+cabbage,daikon,1.1,27,0.8,0,29,0.075,14
+cabbage,lard,0,0,0,0,0,0,0
+cabbage,leek,0.81,30,1.1,812,4.2,0.113,24
+cabbage,miso,12.79,57,2.49,87,0,0.199,19
+cabbage,mushroom,1.49,15,3.47,0,0,0.044,2
+cabbage,noodle,1.79,4,0.14,0,0,0.006,1
+cabbage,pea,5.42,25,1.47,765,40,0.169,65
+cabbage,pork,27.69,8,0.51,0,0,0.558,0
+cabbage,potato,1.4,5,1.26,2,5.1,0.19,6
+cabbage,raisin,3.3,62,1.79,0,2.3,0.174,5
+cabbage,sauerkraut,0.91,30,1.47,18,14.7,0.13,24
+cabbage,snow pea,2.8,43,2.08,1087,60,0.16,42
+cabbage,tofu,9.04,201,1.61,0,0.2,0.071,19
+carrot,bacon,13.66,6,0.38,37,0,0.266,0
+carrot,beansprout,4.57,31,0.9,0,9.6,0.072,49
+carrot,bell pepper,1.04,7,0.47,2760,162.8,0.364,2
+carrot,cabbage,1.28,40,0.47,98,36.6,0.124,43
+carrot,lard,0,0,0,0,0,0,0
+carrot,mushroom,1.49,15,3.47,0,0,0.044,2
+carrot,noodle,1.79,4,0.14,0,0,0.006,1
+carrot,pea,5.42,25,1.47,765,40,0.169,65
+carrot,pork,27.69,8,0.51,0,0,0.558,0
+carrot,potato,1.4,5,1.26,2,5.1,0.19,6
+carrot,rice,2.69,10,1.2,0,0,0.093,58
+carrot,sauerkraut,0.91,30,1.47,18,14.7,0.13,24
+carrot,sausage,13.9,12,1.77,0,0,0,0
+carrot,squash,1.01,21,0.44,150,19.3,0.104,19
+carrot,tofu,9.04,201,1.61,0,0.2,0.071,19
+carrot,tomato,0.88,10,0.27,833,13.7,0.08,15
+cashew,broccoli,2.82,47,0.73,623,89.2,0.175,63
+cashew,butternut squash,1,48,0.7,10630,21,0.154,27
+cashew,miso,12.79,57,2.49,87,0,0.199,19
+cashew,mushroom,1.49,15,3.47,0,0,0.044,2
+cashew,noodle,1.79,4,0.14,0,0,0.006,1
+cashew,oxtail,30.8,13,3.65,0,0,0.288,6
+cashew,peanut,24.35,58,1.58,0,0,0.466,97
+cashew,pork,27.69,8,0.51,0,0,0.558,0
+cashew,pork shoulder,22.54,7,0.89,0,0,0.722,0
+cashew,salmon,19.93,26,0.25,453,4,0.4,30
+cashew,sesame oil,0,0,0,0,0,0,0
+cashew,water chestnut,1.38,6,1.36,0,2,0.248,9
+cauliflower,asparagu,2.2,24,2.14,756,5.6,0.091,52
+cauliflower,celery,0.69,40,0.2,449,3.1,0.074,36
+cauliflower,chickpea,4.92,35,1.23,15,0.1,0.473,25
+cauliflower,fennel,1.24,49,0.73,963,12,0.047,27
+cauliflower,kidney bean,8.67,35,2.22,0,1.2,0.12,130
+cauliflower,parsnip,1.32,37,0.58,0,13,0.093,58
+cauliflower,pea,5.42,25,1.47,765,40,0.169,65
+cauliflower,pork,27.69,8,0.51,0,0,0.558,0
+cauliflower,potato,1.4,5,1.26,2,5.1,0.19,6
+cauliflower,rice,2.69,10,1.2,0,0,0.093,58
+cauliflower,squash,1.01,21,0.44,150,19.3,0.104,19
+cauliflower,veal,9.4,6,0.45,0,0,0.11,5
+celery,chicken,26.79,14,0.73,0,0,0.247,10
+celery,chicken thigh,16.52,7,0.68,78,0,0.347,3
+celery,ham,20.53,8,1.37,0,14,0.3,5
+celery,mushroom,1.49,15,3.47,0,0,0.044,2
+celery,okra,1.93,82,0.62,716,23,0.215,60
+celery,oxtail,30.8,13,3.65,0,0,0.288,6
+celery,paprika,14.14,229,21.14,49254,0.9,2.141,49
+celery,parsley,2.97,138,6.2,8424,133,0.09,152
+celery,pork,27.69,8,0.51,0,0,0.558,0
+celery,potato,1.4,5,1.26,2,5.1,0.19,6
+celery,sausage,13.9,12,1.77,0,0,0,0
+celery,shrimp,22.78,91,0.32,301,0,0.242,24
+chicken,celery,0.69,40,0.2,449,3.1,0.074,36
+chicken,cilantro,2.13,67,1.77,6748,27,0.149,62
+chicken,coconut milk,2.02,18,3.3,0,1,0.028,14
+chicken,eggplant,0.98,9,0.23,23,2.2,0.084,22
+chicken,grapefruit,0.63,12,0.09,927,34.4,0.042,10
+chicken,lamb,6.92,23,1.14,0,0,0.03,3
+chicken,mushroom,1.49,15,3.47,0,0,0.044,2
+chicken,noodle,1.79,4,0.14,0,0,0.006,1
+chicken,oxtail,30.8,13,3.65,0,0,0.288,6
+chicken,pea,5.42,25,1.47,765,40,0.169,65
+chicken,pumpkin,1,21,0.8,8513,9,0.061,16
+chicken,rice,2.69,10,1.2,0,0,0.093,58
+chicken,shrimp,22.78,91,0.32,301,0,0.242,24
+chicken,yoghurt,3.47,121,0.05,99,0.5,0.032,7
+chicken breast,bell pepper,1.04,7,0.47,2760,162.8,0.364,2
+chicken breast,bok choy,1.5,105,0.8,4468,45,0.194,66
+chicken breast,broccoli,2.82,47,0.73,623,89.2,0.175,63
+chicken breast,brown rice,2.32,10,0.53,0,0,0.149,4
+chicken breast,cashew,14.85,44,5.82,0,0,0.248,67
+chicken breast,celery,0.69,40,0.2,449,3.1,0.074,36
+chicken breast,chicken,26.79,14,0.73,0,0,0.247,10
+chicken breast,chicken thigh,16.52,7,0.68,78,0,0.347,3
+chicken breast,chicken wing,17.52,11,0.46,29,0,0.528,7
+chicken breast,cilantro,2.13,67,1.77,6748,27,0.149,62
+chicken breast,eggplant,0.98,9,0.23,23,2.2,0.084,22
+chicken breast,honey,0.3,6,0.42,0,0.5,0.024,2
+chicken breast,lettuce,1.39,62,0.9,0,11.5,0.066,129
+chicken breast,mushroom,1.49,15,3.47,0,0,0.044,2
+chicken breast,noodle,1.79,4,0.14,0,0,0.006,1
+chicken breast,orange juice,0.7,11,0.2,200,50,0.04,30
+chicken breast,peanut,24.35,58,1.58,0,0,0.466,97
+chicken breast,peanut butter,24,41,1.9,0,0,0.45,92
+chicken breast,pork loin,27.32,19,0.87,7,0.6,0.464,5
+chicken breast,pumpkin,1,21,0.8,8513,9,0.061,16
+chicken breast,salmon,19.93,26,0.25,453,4,0.4,30
+chicken breast,shrimp,22.78,91,0.32,301,0,0.242,24
+chicken breast,squash,1.01,21,0.44,150,19.3,0.104,19
+chicken breast,tofu,9.04,201,1.61,0,0.2,0.071,19
+chicken leg,chicken,26.79,14,0.73,0,0,0.247,10
+chicken leg,chicken thigh,16.52,7,0.68,78,0,0.347,3
+chicken leg,chickpea,4.92,35,1.23,15,0.1,0.473,25
+chicken leg,chorizo,13.63,19,1.41,0,0,0.313,0
+chicken leg,crab,17.41,46,0.37,90,3.5,0.15,44
+chicken leg,eggplant,0.98,9,0.23,23,2.2,0.084,22
+chicken leg,lamb,6.92,23,1.14,0,0,0.03,3
+chicken leg,lemon,1.1,26,0.6,22,53,0.08,11
+chicken leg,mushroom,1.49,15,3.47,0,0,0.044,2
+chicken leg,noodle,1.79,4,0.14,0,0,0.006,1
+chicken leg,pork chop,26.54,51,0.81,13,0,0.488,0
+chicken leg,pork rib,21.75,25,1,8,0.3,0.419,4
+chicken leg,salmon,19.93,26,0.25,453,4,0.4,30
+chicken leg,sausage,13.9,12,1.77,0,0,0,0
+chicken leg,scallop,20.54,10,0.58,5,0,0.112,20
+chicken leg,sweet potato,1.57,30,0.61,14187,2.4,0.209,11
+chicken leg,tilapia,20.08,10,0.56,0,0,0.162,24
+chicken leg,turkey,21.64,11,0.86,56,0,0.599,7
+chicken thigh,bell pepper,1.04,7,0.47,2760,162.8,0.364,2
+chicken thigh,cardamom,10.76,383,13.97,0,21,0.23,0
+chicken thigh,celery,0.69,40,0.2,449,3.1,0.074,36
+chicken thigh,chicken,26.79,14,0.73,0,0,0.247,10
+chicken thigh,chicken breast,22.5,5,0.37,30,0,0.811,9
+chicken thigh,chorizo,13.63,19,1.41,0,0,0.313,0
+chicken thigh,cilantro,2.13,67,1.77,6748,27,0.149,62
+chicken thigh,mushroom,1.49,15,3.47,0,0,0.044,2
+chicken thigh,noodle,1.79,4,0.14,0,0,0.006,1
+chicken thigh,okra,1.93,82,0.62,716,23,0.215,60
+chicken thigh,oxtail,30.8,13,3.65,0,0,0.288,6
+chicken thigh,potato,1.4,5,1.26,2,5.1,0.19,6
+chicken thigh,prawn,17.37,69,0.24,0,0,0.185,18
+chicken thigh,shrimp,22.78,91,0.32,301,0,0.242,24
+chicken wing,almond paste,9,172,1.6,0,0.1,0.036,73
+chicken wing,banana,1.09,5,0.26,64,8.7,0.367,20
+chicken wing,buttermilk,3.21,115,0.03,165,0,0.036,5
+chicken wing,egg,12.3,64,1.69,0,0,0.157,34
+chicken wing,honey,0.3,6,0.42,0,0.5,0.024,2
+chicken wing,milk,3.15,113,0.03,162,0,0.036,5
+chicken wing,oat,16.89,54,4.72,0,0,0.119,56
+chicken wing,peach,0.91,6,0.25,326,6.6,0.025,4
+chicken wing,pork chop,26.54,51,0.81,13,0,0.488,0
+chicken wing,pork loin,27.32,19,0.87,7,0.6,0.464,5
+chicken wing,pork rib,21.75,25,1,8,0.3,0.419,4
+chicken wing,salmon,19.93,26,0.25,453,4,0.4,30
+chicken wing,scallop,20.54,10,0.58,5,0,0.112,20
+chickpea,artichoke,2.87,21,0.61,0,7.4,0.081,88
+chickpea,butternut squash,1,48,0.7,10630,21,0.154,27
+chickpea,chicken,26.79,14,0.73,0,0,0.247,10
+chickpea,chicken leg,16.37,9,0.69,92,0.2,0.318,4
+chickpea,chorizo,13.63,19,1.41,0,0,0.313,0
+chickpea,cilantro,2.13,67,1.77,6748,27,0.149,62
+chickpea,cucumber,0.65,16,0.28,105,2.8,0.04,7
+chickpea,eggplant,0.98,9,0.23,23,2.2,0.084,22
+chickpea,fennel,1.24,49,0.73,963,12,0.047,27
+chickpea,grapefruit,0.63,12,0.09,927,34.4,0.042,10
+chickpea,kidney bean,8.67,35,2.22,0,1.2,0.12,130
+chickpea,lemon,1.1,26,0.6,22,53,0.08,11
+chickpea,lentil,24.63,35,6.51,39,4.5,0.54,479
+chickpea,lime,0.7,33,0.6,50,29.1,0.043,8
+chickpea,mint,3.75,243,5.08,4248,31.8,0.129,114
+chickpea,mozzarella,22.17,505,0.44,676,0,0.037,7
+chickpea,pesto,9.83,306,0.57,1544,0,0.133,16
+chickpea,plantain,1.3,3,0.55,1127,18.4,0.242,22
+chickpea,pork chop,26.54,51,0.81,13,0,0.488,0
+chickpea,pumpkin,1,21,0.8,8513,9,0.061,16
+chickpea,quinoa,14.12,47,4.57,14,0,0.487,184
+chickpea,squash,1.01,21,0.44,150,19.3,0.104,19
+chickpea,sweet potato,1.57,30,0.61,14187,2.4,0.209,11
+chickpea,turkey,21.64,11,0.86,56,0,0.599,7
+chili pepper,cashew,14.85,44,5.82,0,0,0.248,67
+chili pepper,chicken thigh,16.52,7,0.68,78,0,0.347,3
+chili pepper,cilantro,2.13,67,1.77,6748,27,0.149,62
+chili pepper,coconut milk,2.02,18,3.3,0,1,0.028,14
+chili pepper,ghee,0.28,4,0,3069,0,0.001,0
+chili pepper,mushroom,1.49,15,3.47,0,0,0.044,2
+chili pepper,peanut,24.35,58,1.58,0,0,0.466,97
+chili pepper,prawn,17.37,69,0.24,0,0,0.185,18
+chili pepper,pumpkin,1,21,0.8,8513,9,0.061,16
+chili pepper,yoghurt,3.47,121,0.05,99,0.5,0.032,7
+chorizo,catfish,16.38,14,0.3,50,0.7,0.116,10
+chorizo,corn,9.42,7,2.71,0,0,0.622,0
+chorizo,crab,17.41,46,0.37,90,3.5,0.15,44
+chorizo,goat cheese,18.52,140,1.9,1033,0,0.25,12
+chorizo,gouda,24.94,700,0.24,563,0,0.08,21
+chorizo,lamb,6.92,23,1.14,0,0,0.03,3
+chorizo,milk,3.15,113,0.03,162,0,0.036,5
+chorizo,monterey jack cheese,24.48,746,0.72,769,0,0.079,18
+chorizo,mozzarella,22.17,505,0.44,676,0,0.037,7
+chorizo,mussel,23.7,52,7.08,0,12.7,0.09,63
+chorizo,onion,1.1,23,0.21,2,7.4,0.12,19
+chorizo,polish sausage,17.6,12,0.88,0,0,0.19,2
+chorizo,potato,1.4,5,1.26,2,5.1,0.19,6
+chorizo,sausage,13.9,12,1.77,0,0,0,0
+chorizo,scallop,20.54,10,0.58,5,0,0.112,20
+chorizo,tilapia,20.08,10,0.56,0,0,0.162,24
+chorizo,veal,9.4,6,0.45,0,0,0.11,5
+cilantro,avocado,1.96,13,0.61,147,8.8,0.287,89
+cilantro,brown rice,2.32,10,0.53,0,0,0.149,4
+cilantro,butternut squash,1,48,0.7,10630,21,0.154,27
+cilantro,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+cilantro,chicken,26.79,14,0.73,0,0,0.247,10
+cilantro,chickpea,4.92,35,1.23,15,0.1,0.473,25
+cilantro,coconut milk,2.02,18,3.3,0,1,0.028,14
+cilantro,corn tortilla,5.7,81,1.23,2,0,0.219,5
+cilantro,cucumber,0.65,16,0.28,105,2.8,0.04,7
+cilantro,daikon,1.1,27,0.8,0,29,0.075,14
+cilantro,lentil,24.63,35,6.51,39,4.5,0.54,479
+cilantro,lime,0.7,33,0.6,50,29.1,0.043,8
+cilantro,mango,0.82,11,0.16,1082,36.4,0.119,43
+cilantro,mint,3.75,243,5.08,4248,31.8,0.129,114
+cilantro,orange juice,0.7,11,0.2,200,50,0.04,30
+cilantro,pumpkin,1,21,0.8,8513,9,0.061,16
+cilantro,quinoa,14.12,47,4.57,14,0,0.487,184
+cilantro,rice,2.69,10,1.2,0,0,0.093,58
+cilantro,squash,1.01,21,0.44,150,19.3,0.104,19
+cilantro,sweet potato,1.57,30,0.61,14187,2.4,0.209,11
+coconut milk,cashew,14.85,44,5.82,0,0,0.248,67
+coconut milk,cilantro,2.13,67,1.77,6748,27,0.149,62
+coconut milk,coconut oil,0,1,0.05,0,0,0,0
+coconut milk,daikon,1.1,27,0.8,0,29,0.075,14
+coconut milk,lentil,24.63,35,6.51,39,4.5,0.54,479
+coconut milk,lime,0.7,33,0.6,50,29.1,0.043,8
+coconut milk,mint,3.75,243,5.08,4248,31.8,0.129,114
+coconut milk,mushroom,1.49,15,3.47,0,0,0.044,2
+coconut milk,peanut,24.35,58,1.58,0,0,0.466,97
+coconut milk,pumpkin,1,21,0.8,8513,9,0.061,16
+coconut milk,rice,2.69,10,1.2,0,0,0.093,58
+coconut milk,tofu,9.04,201,1.61,0,0.2,0.071,19
+coconut milk,yoghurt,3.47,121,0.05,99,0.5,0.032,7
+corn,anchovy,20.35,147,3.25,50,0,0.143,9
+corn,apple,0.26,6,0.12,54,4.6,0.041,3
+corn,bread,8.85,144,3.61,1,0,0.087,111
+corn,carrot,0.93,33,0.3,16706,5.9,0.138,19
+corn,chicken,26.79,14,0.73,0,0,0.247,10
+corn,chicken breast,22.5,5,0.37,30,0,0.811,9
+corn,chorizo,13.63,19,1.41,0,0,0.313,0
+corn,gouda,24.94,700,0.24,563,0,0.08,21
+corn,kidney bean,8.67,35,2.22,0,1.2,0.12,130
+corn,leek,0.81,30,1.1,812,4.2,0.113,24
+corn,monterey jack cheese,24.48,746,0.72,769,0,0.079,18
+corn,onion,1.1,23,0.21,2,7.4,0.12,19
+corn,pesto,9.83,306,0.57,1544,0,0.133,16
+corn,potato,1.4,5,1.26,2,5.1,0.19,6
+corn,sausage,13.9,12,1.77,0,0,0,0
+corn,scallop,20.54,10,0.58,5,0,0.112,20
+corn,shrimp,22.78,91,0.32,301,0,0.242,24
+corn,veal,9.4,6,0.45,0,0,0.11,5
+cornmeal,chicken,26.79,14,0.73,0,0,0.247,10
+cornmeal,cod,17.81,16,0.38,40,1,0.245,7
+cornmeal,crab,17.41,46,0.37,90,3.5,0.15,44
+cornmeal,gouda,24.94,700,0.24,563,0,0.08,21
+cornmeal,ham,20.53,8,1.37,0,14,0.3,5
+cornmeal,lamb,6.92,23,1.14,0,0,0.03,3
+cornmeal,lemon,1.1,26,0.6,22,53,0.08,11
+cornmeal,milk,3.15,113,0.03,162,0,0.036,5
+cornmeal,mushroom,1.49,15,3.47,0,0,0.044,2
+cornmeal,navy bean,8.23,69,2.36,0,0.9,0.138,140
+cornmeal,shortening,0,0,0,0,0,0,0
+cornmeal,turkey,21.64,11,0.86,56,0,0.599,7
+cornmeal,veal,9.4,6,0.45,0,0,0.11,5
+cornmeal,yeast,40.44,30,2.17,0,0.3,1.5,2340
+cottage cheese,artichoke,2.87,21,0.61,0,7.4,0.081,88
+cottage cheese,eggplant,0.98,9,0.23,23,2.2,0.084,22
+cottage cheese,garlic,6.36,181,1.7,9,31.2,1.235,3
+cottage cheese,mozzarella,22.17,505,0.44,676,0,0.037,7
+cottage cheese,peach,0.91,6,0.25,326,6.6,0.025,4
+cottage cheese,pear,0.36,9,0.18,25,4.3,0.029,7
+cottage cheese,pecan,9.17,70,2.53,56,1.1,0.21,22
+cottage cheese,pepperoni,19.25,19,1.33,0,0,0.362,5
+cottage cheese,spinach,2.86,99,2.71,9377,28.1,0.195,194
+crab,corn oil,0,0,0,0,0,0,0
+crab,halibut,14.37,3,0.66,47,0,0.42,1
+crab,lamb,6.92,23,1.14,0,0,0.03,3
+crab,mozzarella,22.17,505,0.44,676,0,0.037,7
+crab,navy bean,8.23,69,2.36,0,0.9,0.138,140
+crab,pork rib,21.75,25,1,8,0.3,0.419,4
+cream,almond,20.96,268,3.73,1,0,0.136,55
+cream,almond paste,9,172,1.6,0,0.1,0.036,73
+cream,banana,1.09,5,0.26,64,8.7,0.367,20
+cream,cardamom,10.76,383,13.97,0,21,0.23,0
+cream,cinnamon,3.99,1002,8.32,295,3.8,0.158,6
+cream,currant,3.43,88,1.88,73,4.7,0.296,10
+cream,egg,12.3,64,1.69,0,0,0.157,34
+cream,lamb,6.92,23,1.14,0,0,0.03,3
+cream,oat,16.89,54,4.72,0,0,0.119,56
+cream,pistachio,20.16,105,3.92,516,5.6,1.7,51
+cream,plum,0.7,6,0.17,345,9.5,0.029,5
+cream,potato,1.4,5,1.26,2,5.1,0.19,6
+cream,raisin,3.3,62,1.79,0,2.3,0.174,5
+cream,saffron,11.43,111,11.1,530,80.8,1.01,93
+cream,yoghurt,3.47,121,0.05,99,0.5,0.032,7
+cream cheese,blue cheese,21.4,528,0.31,721,0,0.166,36
+cream cheese,bread,8.85,144,3.61,1,0,0.087,111
+cream cheese,mozzarella,22.17,505,0.44,676,0,0.037,7
+cream cheese,pepperoni,19.25,19,1.33,0,0,0.362,5
+cream cheese,pine nut,13.69,16,5.53,29,0.8,0.094,34
+cucumber,artichoke,2.87,21,0.61,0,7.4,0.081,88
+cucumber,avocado,1.96,13,0.61,147,8.8,0.287,89
+cucumber,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+cucumber,chickpea,4.92,35,1.23,15,0.1,0.473,25
+cucumber,dill,3.46,208,6.59,7718,85,0.185,150
+cucumber,lettuce,1.39,62,0.9,0,11.5,0.066,129
+cucumber,lime,0.7,33,0.6,50,29.1,0.043,8
+cucumber,mint,3.75,243,5.08,4248,31.8,0.129,114
+cucumber,mozzarella,22.17,505,0.44,676,0,0.037,7
+cucumber,quinoa,14.12,47,4.57,14,0,0.487,184
+cucumber,spinach,2.86,99,2.71,9377,28.1,0.195,194
+cucumber,squash,1.01,21,0.44,150,19.3,0.104,19
+cucumber,tomato,0.88,10,0.27,833,13.7,0.08,15
+cucumber,zucchini,1.21,16,0.37,200,17.9,0.163,24
+daikon,bamboo shoot,3.45,17,0.66,0,4.5,0.302,7
+daikon,bok choy,1.5,105,0.8,4468,45,0.194,66
+daikon,broccoli,2.82,47,0.73,623,89.2,0.175,63
+daikon,cashew,14.85,44,5.82,0,0,0.248,67
+daikon,cilantro,2.13,67,1.77,6748,27,0.149,62
+daikon,coconut milk,2.02,18,3.3,0,1,0.028,14
+daikon,coconut oil,0,1,0.05,0,0,0,0
+daikon,mushroom,1.49,15,3.47,0,0,0.044,2
+daikon,noodle,1.79,4,0.14,0,0,0.006,1
+daikon,peanut,24.35,58,1.58,0,0,0.466,97
+daikon,peanut butter,24,41,1.9,0,0,0.45,92
+daikon,radish,0.68,25,0.34,7,14.8,0.071,25
+daikon,rice,2.69,10,1.2,0,0,0.093,58
+daikon,snow pea,2.8,43,2.08,1087,60,0.16,42
+daikon,tofu,9.04,201,1.61,0,0.2,0.071,19
+egg,almond milk,0.59,197,0.35,0,0,0.015,1
+egg,bread,8.85,144,3.61,1,0,0.087,111
+egg,buttermilk,3.21,115,0.03,165,0,0.036,5
+egg,monterey jack cheese,24.48,746,0.72,769,0,0.079,18
+egg,pecan,9.17,70,2.53,56,1.1,0.21,22
+egg,pistachio,20.16,105,3.92,516,5.6,1.7,51
+egg,plum,0.7,6,0.17,345,9.5,0.029,5
+egg,potato,1.4,5,1.26,2,5.1,0.19,6
+egg,yeast,40.44,30,2.17,0,0.3,1.5,2340
+eggplant,chicken,26.79,14,0.73,0,0,0.247,10
+eggplant,chicken leg,16.37,9,0.69,92,0.2,0.318,4
+eggplant,chicken thigh,16.52,7,0.68,78,0,0.347,3
+eggplant,chickpea,4.92,35,1.23,15,0.1,0.473,25
+eggplant,chorizo,13.63,19,1.41,0,0,0.313,0
+eggplant,cilantro,2.13,67,1.77,6748,27,0.149,62
+eggplant,fennel,1.24,49,0.73,963,12,0.047,27
+eggplant,halibut,14.37,3,0.66,47,0,0.42,1
+eggplant,lentil,24.63,35,6.51,39,4.5,0.54,479
+eggplant,pine nut,13.69,16,5.53,29,0.8,0.094,34
+eggplant,pumpkin,1,21,0.8,8513,9,0.061,16
+eggplant,sausage,13.9,12,1.77,0,0,0,0
+eggplant,spinach,2.86,99,2.71,9377,28.1,0.195,194
+eggplant,squash,1.01,21,0.44,150,19.3,0.104,19
+garlic,chorizo,13.63,19,1.41,0,0,0.313,0
+garlic,cod,17.81,16,0.38,40,1,0.245,7
+garlic,lamb,6.92,23,1.14,0,0,0.03,3
+garlic,mahi mahi,18.5,15,1.13,180,0,0.4,5
+garlic,miso,12.79,57,2.49,87,0,0.199,19
+garlic,noodle,1.79,4,0.14,0,0,0.006,1
+garlic,pineapple,0.55,13,0.25,52,16.9,0.106,11
+garlic,potato,1.4,5,1.26,2,5.1,0.19,6
+garlic,radish,0.68,25,0.34,7,14.8,0.071,25
+garlic,turnip,0.71,33,0.18,0,11.6,0.067,9
+ghee,cardamom,10.76,383,13.97,0,21,0.23,0
+ghee,cashew,14.85,44,5.82,0,0,0.248,67
+ghee,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+ghee,cilantro,2.13,67,1.77,6748,27,0.149,62
+ghee,cinnamon,3.99,1002,8.32,295,3.8,0.158,6
+ghee,coconut milk,2.02,18,3.3,0,1,0.028,14
+ghee,cream,2.84,66,0.1,1470,0.6,0.035,4
+ghee,fennel,1.24,49,0.73,963,12,0.047,27
+ghee,lamb,6.92,23,1.14,0,0,0.03,3
+ghee,safflower oil,0,0,0,0,0,0,0
+ghee,saffron,11.43,111,11.1,530,80.8,1.01,93
+ghee,vegetable oil,0,0,0,0,0,0,0
+ghee,yoghurt,3.47,121,0.05,99,0.5,0.032,7
+ginger,beansprout,4.57,31,0.9,0,9.6,0.072,49
+ginger,bok choy,1.5,105,0.8,4468,45,0.194,66
+ginger,butternut squash,1,48,0.7,10630,21,0.154,27
+ginger,cashew,14.85,44,5.82,0,0,0.248,67
+ginger,chicken thigh,16.52,7,0.68,78,0,0.347,3
+ginger,fennel,1.24,49,0.73,963,12,0.047,27
+ginger,lime,0.7,33,0.6,50,29.1,0.043,8
+ginger,mushroom,1.49,15,3.47,0,0,0.044,2
+ginger,noodle,1.79,4,0.14,0,0,0.006,1
+ginger,peanut,24.35,58,1.58,0,0,0.466,97
+ginger,pork,27.69,8,0.51,0,0,0.558,0
+ginger,pork shoulder,22.54,7,0.89,0,0,0.722,0
+ginger,prawn,17.37,69,0.24,0,0,0.185,18
+ginger,rice,2.69,10,1.2,0,0,0.093,58
+ginger,snow pea,2.8,43,2.08,1087,60,0.16,42
+ginger,tofu,9.04,201,1.61,0,0.2,0.071,19
+goat cheese,anchovy,20.35,147,3.25,50,0,0.143,9
+goat cheese,artichoke,2.87,21,0.61,0,7.4,0.081,88
+goat cheese,arugula,2.58,160,1.46,2373,15,0.073,97
+goat cheese,catfish,16.38,14,0.3,50,0.7,0.116,10
+goat cheese,chicken,26.79,14,0.73,0,0,0.247,10
+goat cheese,chorizo,13.63,19,1.41,0,0,0.313,0
+goat cheese,cottage cheese,10.49,78,0.07,0,0,0.043,11
+goat cheese,lamb,6.92,23,1.14,0,0,0.03,3
+goat cheese,lemon,1.1,26,0.6,22,53,0.08,11
+goat cheese,mozzarella,22.17,505,0.44,676,0,0.037,7
+goat cheese,pesto,9.83,306,0.57,1544,0,0.133,16
+goat cheese,potato,1.4,5,1.26,2,5.1,0.19,6
+goat cheese,salami,21.7,10,1.52,0,0,0.55,2
+goat cheese,salsa,0.71,11,0.23,0,10.8,0.091,12
+goat cheese,sausage,13.9,12,1.77,0,0,0,0
+goat cheese,scallop,20.54,10,0.58,5,0,0.112,20
+goat cheese,spinach,2.86,99,2.71,9377,28.1,0.195,194
+goat cheese,watercress,2.3,120,0.2,3191,43,0.129,9
+gouda,bread,8.85,144,3.61,1,0,0.087,111
+gouda,catfish,16.38,14,0.3,50,0.7,0.116,10
+gouda,chicken,26.79,14,0.73,0,0,0.247,10
+gouda,chorizo,13.63,19,1.41,0,0,0.313,0
+gouda,corn,9.42,7,2.71,0,0,0.622,0
+gouda,cornmeal,7.11,3,4.36,3,0,0.182,209
+gouda,ham,20.53,8,1.37,0,14,0.3,5
+gouda,kale,2.92,254,1.6,4812,93.4,0.147,62
+gouda,monterey jack cheese,24.48,746,0.72,769,0,0.079,18
+gouda,navy bean,8.23,69,2.36,0,0.9,0.138,140
+gouda,pesto,9.83,306,0.57,1544,0,0.133,16
+gouda,spinach,2.86,99,2.71,9377,28.1,0.195,194
+gouda,swiss cheese,26.96,890,0.13,1047,0,0.071,10
+gouda,tilapia,20.08,10,0.56,0,0,0.162,24
+gouda,veal,9.4,6,0.45,0,0,0.11,5
+ham,bread,8.85,144,3.61,1,0,0.087,111
+ham,chicken breast,22.5,5,0.37,30,0,0.811,9
+ham,gouda,24.94,700,0.24,563,0,0.08,21
+ham,horseradish,1.18,56,0.42,2,24.9,0.073,57
+ham,leek,0.81,30,1.1,812,4.2,0.113,24
+ham,monterey jack cheese,24.48,746,0.72,769,0,0.079,18
+ham,navy bean,8.23,69,2.36,0,0.9,0.138,140
+ham,potato,1.4,5,1.26,2,5.1,0.19,6
+ham,spinach,2.86,99,2.71,9377,28.1,0.195,194
+ham,swiss cheese,26.96,890,0.13,1047,0,0.071,10
+hazelnut,almond,20.96,268,3.73,1,0,0.136,55
+hazelnut,almond paste,9,172,1.6,0,0.1,0.036,73
+hazelnut,blueberry,0.42,8,0.18,46,2.5,0.059,7
+hazelnut,cranberry,0.46,8,0.23,63,14,0.057,1
+hazelnut,egg,12.3,64,1.69,0,0,0.157,34
+hazelnut,grape,0.63,14,0.29,100,4,0.11,4
+hazelnut,oat,16.89,54,4.72,0,0,0.119,56
+hazelnut,pecan,9.17,70,2.53,56,1.1,0.21,22
+hazelnut,raspberry,1.2,25,0.69,33,26.2,0.055,21
+hazelnut,shortening,0,0,0,0,0,0,0
+hazelnut,strawberry,0.67,16,0.41,12,58.8,0.047,24
+hazelnut,walnut,15.23,98,2.91,20,1.3,0.537,98
+hazelnut,yogurt,3.47,121,0.05,99,0.5,0.032,7
+hot dog,artichoke,2.87,21,0.61,0,7.4,0.081,88
+hot dog,cherry,1.06,13,0.36,64,7,0.049,4
+hot dog,chicken,26.79,14,0.73,0,0,0.247,10
+hot dog,cod,17.81,16,0.38,40,1,0.245,7
+hot dog,eggplant,0.98,9,0.23,23,2.2,0.084,22
+hot dog,lamb,6.92,23,1.14,0,0,0.03,3
+hot dog,lemon,1.1,26,0.6,22,53,0.08,11
+hot dog,mushroom,1.49,15,3.47,0,0,0.044,2
+hot dog,pecan,9.17,70,2.53,56,1.1,0.21,22
+hot dog,pork chop,26.54,51,0.81,13,0,0.488,0
+hot dog,salami,21.7,10,1.52,0,0,0.55,2
+hot dog,scallop,20.54,10,0.58,5,0,0.112,20
+hot dog,whitefish,24.47,33,0.47,131,0,0.346,17
+kale,bread,8.85,144,3.61,1,0,0.087,111
+kale,caper,2.36,40,1.67,138,4.3,0.023,23
+kale,chicken,26.79,14,0.73,0,0,0.247,10
+kale,gouda,24.94,700,0.24,563,0,0.08,21
+kale,mozzarella,22.17,505,0.44,676,0,0.037,7
+kale,navy bean,8.23,69,2.36,0,0.9,0.138,140
+kale,pepperoni,19.25,19,1.33,0,0,0.362,5
+kale,pesto,9.83,306,0.57,1544,0,0.133,16
+kale,salami,21.7,10,1.52,0,0,0.55,2
+kale,shrimp,22.78,91,0.32,301,0,0.242,24
+kale,spinach,2.86,99,2.71,9377,28.1,0.195,194
+kale,sweet potato,1.57,30,0.61,14187,2.4,0.209,11
+kale,tomato,0.88,10,0.27,833,13.7,0.08,15
+kale,veal,9.4,6,0.45,0,0,0.11,5
+kidney bean,bacon,13.66,6,0.38,37,0,0.266,0
+kidney bean,brown rice,2.32,10,0.53,0,0,0.149,4
+kidney bean,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+kidney bean,celery,0.69,40,0.2,449,3.1,0.074,36
+kidney bean,chickpea,4.92,35,1.23,15,0.1,0.473,25
+kidney bean,corn,9.42,7,2.71,0,0,0.622,0
+kidney bean,leek,0.81,30,1.1,812,4.2,0.113,24
+kidney bean,lentil,24.63,35,6.51,39,4.5,0.54,479
+kidney bean,navy bean,8.23,69,2.36,0,0.9,0.138,140
+kidney bean,okra,1.93,82,0.62,716,23,0.215,60
+kidney bean,parsnip,1.32,37,0.58,0,13,0.093,58
+kidney bean,potato,1.4,5,1.26,2,5.1,0.19,6
+kidney bean,rice,2.69,10,1.2,0,0,0.093,58
+kidney bean,shrimp,22.78,91,0.32,301,0,0.242,24
+kidney bean,veal,9.4,6,0.45,0,0,0.11,5
+lamb,buttermilk,3.21,115,0.03,165,0,0.036,5
+lamb,cardamom,10.76,383,13.97,0,21,0.23,0
+lamb,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+lamb,chicken,26.79,14,0.73,0,0,0.247,10
+lamb,cilantro,2.13,67,1.77,6748,27,0.149,62
+lamb,cream,2.84,66,0.1,1470,0.6,0.035,4
+lamb,currant,3.43,88,1.88,73,4.7,0.296,10
+lamb,dill,3.46,208,6.59,7718,85,0.185,150
+lamb,egg,12.3,64,1.69,0,0,0.157,34
+lamb,eggplant,0.98,9,0.23,23,2.2,0.084,22
+lamb,ghee,0.28,4,0,3069,0,0.001,0
+lamb,lemon,1.1,26,0.6,22,53,0.08,11
+lamb,lime,0.7,33,0.6,50,29.1,0.043,8
+lamb,lobster,26.41,63,1.41,20,2.1,0.173,1
+lamb,mint,3.75,243,5.08,4248,31.8,0.129,114
+lamb,mozzarella,22.17,505,0.44,676,0,0.037,7
+lamb,orange,0.91,43,0.13,247,59.1,0.079,34
+lamb,orange juice,0.7,11,0.2,200,50,0.04,30
+lamb,parsley,2.97,138,6.2,8424,133,0.09,152
+lamb,pear,0.36,9,0.18,25,4.3,0.029,7
+lamb,pecan,9.17,70,2.53,56,1.1,0.21,22
+lamb,plum,0.7,6,0.17,345,9.5,0.029,5
+lamb,pork,27.69,8,0.51,0,0,0.558,0
+lamb,pork shoulder,22.54,7,0.89,0,0,0.722,0
+lamb,pumpkin,1,21,0.8,8513,9,0.061,16
+lamb,salmon,19.93,26,0.25,453,4,0.4,30
+lamb,scallop,20.54,10,0.58,5,0,0.112,20
+lamb,yoghurt,3.47,121,0.05,99,0.5,0.032,7
+lamb,yogurt,3.47,121,0.05,99,0.5,0.032,7
+lamb shoulder,crab,17.41,46,0.37,90,3.5,0.15,44
+lamb shoulder,cucumber,0.65,16,0.28,105,2.8,0.04,7
+lamb shoulder,halibut,14.37,3,0.66,47,0,0.42,1
+lamb shoulder,lamb,6.92,23,1.14,0,0,0.03,3
+lamb shoulder,lobster,26.41,63,1.41,20,2.1,0.173,1
+lamb shoulder,navy bean,8.23,69,2.36,0,0.9,0.138,140
+lamb shoulder,noodle,1.79,4,0.14,0,0,0.006,1
+lamb shoulder,pork rib,21.75,25,1,8,0.3,0.419,4
+lamb shoulder,turkey,21.64,11,0.86,56,0,0.599,7
+leek,celery,0.69,40,0.2,449,3.1,0.074,36
+leek,corn,9.42,7,2.71,0,0,0.622,0
+leek,ham,20.53,8,1.37,0,14,0.3,5
+leek,kidney bean,8.67,35,2.22,0,1.2,0.12,130
+leek,navy bean,8.23,69,2.36,0,0.9,0.138,140
+leek,noodle,1.79,4,0.14,0,0,0.006,1
+leek,onion,1.1,23,0.21,2,7.4,0.12,19
+leek,parsley,2.97,138,6.2,8424,133,0.09,152
+leek,parsnip,1.32,37,0.58,0,13,0.093,58
+leek,potato,1.4,5,1.26,2,5.1,0.19,6
+leek,rosemary,3.31,317,6.65,2924,21.8,0.336,109
+leek,sauerkraut,0.91,30,1.47,18,14.7,0.13,24
+leek,shrimp,22.78,91,0.32,301,0,0.242,24
+leek,veal,9.4,6,0.45,0,0,0.11,5
+lentil,avocado,1.96,13,0.61,147,8.8,0.287,89
+lentil,brown rice,2.32,10,0.53,0,0,0.149,4
+lentil,butternut squash,1,48,0.7,10630,21,0.154,27
+lentil,caper,2.36,40,1.67,138,4.3,0.023,23
+lentil,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+lentil,chickpea,4.92,35,1.23,15,0.1,0.473,25
+lentil,cilantro,2.13,67,1.77,6748,27,0.149,62
+lentil,coconut milk,2.02,18,3.3,0,1,0.028,14
+lentil,eggplant,0.98,9,0.23,23,2.2,0.084,22
+lentil,kidney bean,8.67,35,2.22,0,1.2,0.12,130
+lentil,lime,0.7,33,0.6,50,29.1,0.043,8
+lentil,mint,3.75,243,5.08,4248,31.8,0.129,114
+lentil,potato,1.4,5,1.26,2,5.1,0.19,6
+lentil,quinoa,14.12,47,4.57,14,0,0.487,184
+lentil,rice,2.69,10,1.2,0,0,0.093,58
+lentil,squash,1.01,21,0.44,150,19.3,0.104,19
+lentil,zucchini,1.21,16,0.37,200,17.9,0.163,24
+lettuce,artichoke,2.87,21,0.61,0,7.4,0.081,88
+lettuce,avocado,1.96,13,0.61,147,8.8,0.287,89
+lettuce,blue cheese,21.4,528,0.31,721,0,0.166,36
+lettuce,cucumber,0.65,16,0.28,105,2.8,0.04,7
+lettuce,mozzarella,22.17,505,0.44,676,0,0.037,7
+lettuce,pesto,9.83,306,0.57,1544,0,0.133,16
+lettuce,spinach,2.86,99,2.71,9377,28.1,0.195,194
+lettuce,squash,1.01,21,0.44,150,19.3,0.104,19
+lettuce,zucchini,1.21,16,0.37,200,17.9,0.163,24
+lobster,halibut,14.37,3,0.66,47,0,0.42,1
+lobster,lamb,6.92,23,1.14,0,0,0.03,3
+lobster,mozzarella,22.17,505,0.44,676,0,0.037,7
+lobster,pear,0.36,9,0.18,25,4.3,0.029,7
+lobster,polish sausage,17.6,12,0.88,0,0,0.19,2
+lobster,pork chop,26.54,51,0.81,13,0,0.488,0
+lobster,tomato,0.88,10,0.27,833,13.7,0.08,15
+lobster,turkey,21.64,11,0.86,56,0,0.599,7
+milk,almond,20.96,268,3.73,1,0,0.136,55
+milk,apple,0.26,6,0.12,54,4.6,0.041,3
+milk,bacon,13.66,6,0.38,37,0,0.266,0
+milk,currant,3.43,88,1.88,73,4.7,0.296,10
+milk,plum,0.7,6,0.17,345,9.5,0.029,5
+milk,raisin,3.3,62,1.79,0,2.3,0.174,5
+milk,sauerkraut,0.91,30,1.47,18,14.7,0.13,24
+miso,cucumber,0.65,16,0.28,105,2.8,0.04,7
+miso,daikon,1.1,27,0.8,0,29,0.075,14
+miso,garlic,6.36,181,1.7,9,31.2,1.235,3
+miso,noodle,1.79,4,0.14,0,0,0.006,1
+miso,pork,27.69,8,0.51,0,0,0.558,0
+miso,radish,0.68,25,0.34,7,14.8,0.071,25
+miso,tofu,9.04,201,1.61,0,0.2,0.071,19
+miso,water chestnut,1.38,6,1.36,0,2,0.248,9
+mozzarella,artichoke,2.87,21,0.61,0,7.4,0.081,88
+mozzarella,arugula,2.58,160,1.46,2373,15,0.073,97
+mozzarella,halibut,14.37,3,0.66,47,0,0.42,1
+mozzarella,lemon,1.1,26,0.6,22,53,0.08,11
+mozzarella,pepperoni,19.25,19,1.33,0,0,0.362,5
+mozzarella,pesto,9.83,306,0.57,1544,0,0.133,16
+mozzarella,salami,21.7,10,1.52,0,0,0.55,2
+mozzarella,spinach,2.86,99,2.71,9377,28.1,0.195,194
+mozzarella,turkey,21.64,11,0.86,56,0,0.599,7
+mushroom,cabbage,1.28,40,0.47,98,36.6,0.124,43
+mushroom,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+mushroom,celery,0.69,40,0.2,449,3.1,0.074,36
+mushroom,chicken,26.79,14,0.73,0,0,0.247,10
+mushroom,chicken breast,22.5,5,0.37,30,0,0.811,9
+mushroom,ham,20.53,8,1.37,0,14,0.3,5
+mushroom,miso,12.79,57,2.49,87,0,0.199,19
+mushroom,noodle,1.79,4,0.14,0,0,0.006,1
+mushroom,pea,5.42,25,1.47,765,40,0.169,65
+mushroom,pork,27.69,8,0.51,0,0,0.558,0
+mushroom,potato,1.4,5,1.26,2,5.1,0.19,6
+mushroom,rice,2.69,10,1.2,0,0,0.093,58
+mushroom,sausage,13.9,12,1.77,0,0,0,0
+mushroom,shrimp,22.78,91,0.32,301,0,0.242,24
+mushroom,squash,1.01,21,0.44,150,19.3,0.104,19
+mushroom,water chestnut,1.38,6,1.36,0,2,0.248,9
+mussel,artichoke,2.87,21,0.61,0,7.4,0.081,88
+mussel,bread,8.85,144,3.61,1,0,0.087,111
+mussel,catfish,16.38,14,0.3,50,0.7,0.116,10
+mussel,chorizo,13.63,19,1.41,0,0,0.313,0
+mussel,milk,3.15,113,0.03,162,0,0.036,5
+mussel,mozzarella,22.17,505,0.44,676,0,0.037,7
+mussel,pepperoni,19.25,19,1.33,0,0,0.362,5
+mussel,pistachio,20.16,105,3.92,516,5.6,1.7,51
+mussel,polish sausage,17.6,12,0.88,0,0,0.19,2
+mussel,sausage,13.9,12,1.77,0,0,0,0
+mussel,scallop,20.54,10,0.58,5,0,0.112,20
+mussel,tilapia,20.08,10,0.56,0,0,0.162,24
+mussel,tomato,0.88,10,0.27,833,13.7,0.08,15
+mussel,watercress,2.3,120,0.2,3191,43,0.129,9
+mussel,whitefish,24.47,33,0.47,131,0,0.346,17
+navy bean,crab,17.41,46,0.37,90,3.5,0.15,44
+navy bean,ham,20.53,8,1.37,0,14,0.3,5
+navy bean,kidney bean,8.67,35,2.22,0,1.2,0.12,130
+navy bean,lamb,6.92,23,1.14,0,0,0.03,3
+navy bean,mozzarella,22.17,505,0.44,676,0,0.037,7
+navy bean,mushroom,1.49,15,3.47,0,0,0.044,2
+navy bean,parsnip,1.32,37,0.58,0,13,0.093,58
+navy bean,potato,1.4,5,1.26,2,5.1,0.19,6
+noodle,broccoli,2.82,47,0.73,623,89.2,0.175,63
+noodle,cashew,14.85,44,5.82,0,0,0.248,67
+noodle,ginger,1.82,16,0.6,0,5,0.16,11
+noodle,mushroom,1.49,15,3.47,0,0,0.044,2
+noodle,onion,1.1,23,0.21,2,7.4,0.12,19
+noodle,peanut,24.35,58,1.58,0,0,0.466,97
+noodle,pork,27.69,8,0.51,0,0,0.558,0
+noodle,pork loin,27.32,19,0.87,7,0.6,0.464,5
+noodle,pork rib,21.75,25,1,8,0.3,0.419,4
+noodle,prawn,17.37,69,0.24,0,0,0.185,18
+noodle,sauerkraut,0.91,30,1.47,18,14.7,0.13,24
+oat,almond,20.96,268,3.73,1,0,0.136,55
+oat,almond paste,9,172,1.6,0,0.1,0.036,73
+oat,banana,1.09,5,0.26,64,8.7,0.367,20
+oat,blueberry,0.42,8,0.18,46,2.5,0.059,7
+oat,cherry,1.06,13,0.36,64,7,0.049,4
+oat,cranberry,0.46,8,0.23,63,14,0.057,1
+oat,currant,3.43,88,1.88,73,4.7,0.296,10
+oat,egg,12.3,64,1.69,0,0,0.157,34
+oat,peach,0.91,6,0.25,326,6.6,0.025,4
+oat,pecan,9.17,70,2.53,56,1.1,0.21,22
+oat,pistachio,20.16,105,3.92,516,5.6,1.7,51
+oat,plum,0.7,6,0.17,345,9.5,0.029,5
+oat,raspberry,1.2,25,0.69,33,26.2,0.055,21
+oat,strawberry,0.67,16,0.41,12,58.8,0.047,24
+oat,walnut,15.23,98,2.91,20,1.3,0.537,98
+oat,yogurt,3.47,121,0.05,99,0.5,0.032,7
+okra,bell pepper,1.04,7,0.47,2760,162.8,0.364,2
+okra,brown rice,2.32,10,0.53,0,0,0.149,4
+okra,celery,0.69,40,0.2,449,3.1,0.074,36
+okra,chicken thigh,16.52,7,0.68,78,0,0.347,3
+okra,kidney bean,8.67,35,2.22,0,1.2,0.12,130
+okra,parsley,2.97,138,6.2,8424,133,0.09,152
+okra,pea,5.42,25,1.47,765,40,0.169,65
+okra,rice,2.69,10,1.2,0,0,0.093,58
+okra,sausage,13.9,12,1.77,0,0,0,0
+okra,shrimp,22.78,91,0.32,301,0,0.242,24
+onion,bamboo shoot,3.45,17,0.66,0,4.5,0.302,7
+onion,broccoli,2.82,47,0.73,623,89.2,0.175,63
+onion,chorizo,13.63,19,1.41,0,0,0.313,0
+onion,leek,0.81,30,1.1,812,4.2,0.113,24
+onion,noodle,1.79,4,0.14,0,0,0.006,1
+onion,okra,1.93,82,0.62,716,23,0.215,60
+onion,pepper jack,24.12,716,0.74,0,0,0.079,18
+onion,potato,1.4,5,1.26,2,5.1,0.19,6
+onion,prawn,17.37,69,0.24,0,0,0.185,18
+onion,rosemary,3.31,317,6.65,2924,21.8,0.336,109
+onion,shallot,2.5,37,1.2,4,8,0.345,34
+onion,shrimp,22.78,91,0.32,301,0,0.242,24
+oxtail,almond milk,0.59,197,0.35,0,0,0.015,1
+oxtail,cashew,14.85,44,5.82,0,0,0.248,67
+oxtail,celery,0.69,40,0.2,449,3.1,0.074,36
+oxtail,chicken,26.79,14,0.73,0,0,0.247,10
+oxtail,chicken thigh,16.52,7,0.68,78,0,0.347,3
+oxtail,mushroom,1.49,15,3.47,0,0,0.044,2
+oxtail,parsley,2.97,138,6.2,8424,133,0.09,152
+oxtail,pork,27.69,8,0.51,0,0,0.558,0
+oxtail,pork shoulder,22.54,7,0.89,0,0,0.722,0
+oxtail,safflower oil,0,0,0,0,0,0,0
+oxtail,salmon,19.93,26,0.25,453,4,0.4,30
+oxtail,sesame oil,0,0,0,0,0,0,0
+oyster,halibut,14.37,3,0.66,47,0,0.42,1
+oyster,lamb,6.92,23,1.14,0,0,0.03,3
+oyster,mozzarella,22.17,505,0.44,676,0,0.037,7
+oyster,pear,0.36,9,0.18,25,4.3,0.029,7
+oyster,polish sausage,17.6,12,0.88,0,0,0.19,2
+oyster,pork chop,26.54,51,0.81,13,0,0.488,0
+oyster,tomato,0.88,10,0.27,833,13.7,0.08,15
+oyster,turkey,21.64,11,0.86,56,0,0.599,7
+parmesan,basil,3.15,177,3.17,5275,18,0.155,68
+parmesan,blue cheese,21.4,528,0.31,721,0,0.166,36
+parmesan,mozzarella,22.17,505,0.44,676,0,0.037,7
+parmesan,parsley,2.97,138,6.2,8424,133,0.09,152
+parmesan,pesto,9.83,306,0.57,1544,0,0.133,16
+parmesan,potato,1.4,5,1.26,2,5.1,0.19,6
+parmesan,sausage,13.9,12,1.77,0,0,0,0
+parsley,bacon,13.66,6,0.38,37,0,0.266,0
+parsley,basil,3.15,177,3.17,5275,18,0.155,68
+parsley,caper,2.36,40,1.67,138,4.3,0.023,23
+parsley,celery,0.69,40,0.2,449,3.1,0.074,36
+parsley,mozzarella,22.17,505,0.44,676,0,0.037,7
+parsley,potato,1.4,5,1.26,2,5.1,0.19,6
+parsley,rosemary,3.31,317,6.65,2924,21.8,0.336,109
+parsley,sausage,13.9,12,1.77,0,0,0,0
+parsley,shrimp,22.78,91,0.32,301,0,0.242,24
+parsnip,bacon,13.66,6,0.38,37,0,0.266,0
+parsnip,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+parsnip,celery,0.69,40,0.2,449,3.1,0.074,36
+parsnip,crab,17.41,46,0.37,90,3.5,0.15,44
+parsnip,kidney bean,8.67,35,2.22,0,1.2,0.12,130
+parsnip,lamb,6.92,23,1.14,0,0,0.03,3
+parsnip,lamb shoulder,17.07,16,1.53,0,0,0.14,19
+parsnip,lard,0,0,0,0,0,0,0
+parsnip,leek,0.81,30,1.1,812,4.2,0.113,24
+parsnip,mushroom,1.49,15,3.47,0,0,0.044,2
+parsnip,navy bean,8.23,69,2.36,0,0.9,0.138,140
+parsnip,pork,27.69,8,0.51,0,0,0.558,0
+parsnip,potato,1.4,5,1.26,2,5.1,0.19,6
+parsnip,tomato,0.88,10,0.27,833,13.7,0.08,15
+parsnip,turnip,0.71,33,0.18,0,11.6,0.067,9
+parsnip,veal,9.4,6,0.45,0,0,0.11,5
+pea,cabbage,1.28,40,0.47,98,36.6,0.124,43
+pea,cashew,14.85,44,5.82,0,0,0.248,67
+pea,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+pea,chicken,26.79,14,0.73,0,0,0.247,10
+pea,cilantro,2.13,67,1.77,6748,27,0.149,62
+pea,lard,0,0,0,0,0,0,0
+pea,okra,1.93,82,0.62,716,23,0.215,60
+pea,parsnip,1.32,37,0.58,0,13,0.093,58
+pea,pork,27.69,8,0.51,0,0,0.558,0
+pea,potato,1.4,5,1.26,2,5.1,0.19,6
+pea,rice,2.69,10,1.2,0,0,0.093,58
+pea,sausage,13.9,12,1.77,0,0,0,0
+pea,yoghurt,3.47,121,0.05,99,0.5,0.032,7
+peanut,beansprout,4.57,31,0.9,0,9.6,0.072,49
+peanut,bok choy,1.5,105,0.8,4468,45,0.194,66
+peanut,broccoli,2.82,47,0.73,623,89.2,0.175,63
+peanut,coconut milk,2.02,18,3.3,0,1,0.028,14
+peanut,coconut oil,0,1,0.05,0,0,0,0
+peanut,lime,0.7,33,0.6,50,29.1,0.043,8
+peanut,mushroom,1.49,15,3.47,0,0,0.044,2
+peanut,noodle,1.79,4,0.14,0,0,0.006,1
+peanut,rice,2.69,10,1.2,0,0,0.093,58
+peanut,snow pea,2.8,43,2.08,1087,60,0.16,42
+peanut,tofu,9.04,201,1.61,0,0.2,0.071,19
+peanut,water chestnut,1.38,6,1.36,0,2,0.248,9
+peanut butter,bamboo shoot,3.45,17,0.66,0,4.5,0.302,7
+peanut butter,beansprout,4.57,31,0.9,0,9.6,0.072,49
+peanut butter,bok choy,1.5,105,0.8,4468,45,0.194,66
+peanut butter,broccoli,2.82,47,0.73,623,89.2,0.175,63
+peanut butter,chicken thigh,16.52,7,0.68,78,0,0.347,3
+peanut butter,honey,0.3,6,0.42,0,0.5,0.024,2
+peanut butter,lime,0.7,33,0.6,50,29.1,0.043,8
+peanut butter,mushroom,1.49,15,3.47,0,0,0.044,2
+peanut butter,noodle,1.79,4,0.14,0,0,0.006,1
+peanut butter,peanut,24.35,58,1.58,0,0,0.466,97
+peanut butter,pumpkin,1,21,0.8,8513,9,0.061,16
+peanut butter,tofu,9.04,201,1.61,0,0.2,0.071,19
+peanut butter,whitefish,24.47,33,0.47,131,0,0.346,17
+pecan,almond,20.96,268,3.73,1,0,0.136,55
+pecan,almond paste,9,172,1.6,0,0.1,0.036,73
+pecan,banana,1.09,5,0.26,64,8.7,0.367,20
+pecan,blueberry,0.42,8,0.18,46,2.5,0.059,7
+pecan,cranberry,0.46,8,0.23,63,14,0.057,1
+pecan,currant,3.43,88,1.88,73,4.7,0.296,10
+pecan,egg,12.3,64,1.69,0,0,0.157,34
+pecan,hazelnut,14.95,114,4.7,20,6.3,0.563,113
+pecan,oat,16.89,54,4.72,0,0,0.119,56
+pecan,peach,0.91,6,0.25,326,6.6,0.025,4
+pecan,plum,0.7,6,0.17,345,9.5,0.029,5
+pecan,raspberry,1.2,25,0.69,33,26.2,0.055,21
+pecan,strawberry,0.67,16,0.41,12,58.8,0.047,24
+pecan,walnut,15.23,98,2.91,20,1.3,0.537,98
+pecan,yogurt,3.47,121,0.05,99,0.5,0.032,7
+pepper jack,bell pepper,1.04,7,0.47,2760,162.8,0.364,2
+pepper jack,brown rice,2.32,10,0.53,0,0,0.149,4
+pepper jack,butternut squash,1,48,0.7,10630,21,0.154,27
+pepper jack,lemon,1.1,26,0.6,22,53,0.08,11
+pepper jack,lime,0.7,33,0.6,50,29.1,0.043,8
+pepper jack,plantain,1.3,3,0.55,1127,18.4,0.242,22
+pepper jack,rice,2.69,10,1.2,0,0,0.093,58
+pepper jack,salsa,0.71,11,0.23,0,10.8,0.091,12
+pepper jack,tomato,0.88,10,0.27,833,13.7,0.08,15
+pepperoni,arugula,2.58,160,1.46,2373,15,0.073,97
+pepperoni,bread,8.85,144,3.61,1,0,0.087,111
+pepperoni,cottage cheese,10.49,78,0.07,0,0,0.043,11
+pepperoni,garlic,6.36,181,1.7,9,31.2,1.235,3
+pepperoni,mozzarella,22.17,505,0.44,676,0,0.037,7
+pepperoni,mussel,23.7,52,7.08,0,12.7,0.09,63
+pepperoni,pesto,9.83,306,0.57,1544,0,0.133,16
+pepperoni,pine nut,13.69,16,5.53,29,0.8,0.094,34
+pepperoni,salami,21.7,10,1.52,0,0,0.55,2
+pepperoni,spinach,2.86,99,2.71,9377,28.1,0.195,194
+pepperoni,watercress,2.3,120,0.2,3191,43,0.129,9
+pickle,bacon,13.66,6,0.38,37,0,0.266,0
+pickle,corn oil,0,0,0,0,0,0,0
+pickle,crab,17.41,46,0.37,90,3.5,0.15,44
+pickle,garlic,6.36,181,1.7,9,31.2,1.235,3
+pickle,grape,0.63,14,0.29,100,4,0.11,4
+pickle,lamb,6.92,23,1.14,0,0,0.03,3
+pickle,navy bean,8.23,69,2.36,0,0.9,0.138,140
+pickle,pear,0.36,9,0.18,25,4.3,0.029,7
+pickle,pesto,9.83,306,0.57,1544,0,0.133,16
+pickle,swiss cheese,26.96,890,0.13,1047,0,0.071,10
+pickle,turkey,21.64,11,0.86,56,0,0.599,7
+pine nut,artichoke,2.87,21,0.61,0,7.4,0.081,88
+pine nut,arugula,2.58,160,1.46,2373,15,0.073,97
+pine nut,blue cheese,21.4,528,0.31,721,0,0.166,36
+pine nut,bread,8.85,144,3.61,1,0,0.087,111
+pine nut,chicken,26.79,14,0.73,0,0,0.247,10
+pine nut,cream cheese,6.15,97,0.11,1111,0,0.056,9
+pine nut,halibut,14.37,3,0.66,47,0,0.42,1
+pine nut,mozzarella,22.17,505,0.44,676,0,0.037,7
+pine nut,pear,0.36,9,0.18,25,4.3,0.029,7
+pine nut,pepperoni,19.25,19,1.33,0,0,0.362,5
+pine nut,pesto,9.83,306,0.57,1544,0,0.133,16
+pine nut,salami,21.7,10,1.52,0,0,0.55,2
+pine nut,sausage,13.9,12,1.77,0,0,0,0
+pine nut,spinach,2.86,99,2.71,9377,28.1,0.195,194
+pistachio,almond,20.96,268,3.73,1,0,0.136,55
+pistachio,banana,1.09,5,0.26,64,8.7,0.367,20
+pistachio,cranberry,0.46,8,0.23,63,14,0.057,1
+pistachio,currant,3.43,88,1.88,73,4.7,0.296,10
+pistachio,egg,12.3,64,1.69,0,0,0.157,34
+pistachio,oat,16.89,54,4.72,0,0,0.119,56
+pistachio,peach,0.91,6,0.25,326,6.6,0.025,4
+pistachio,pear,0.36,9,0.18,25,4.3,0.029,7
+pistachio,pecan,9.17,70,2.53,56,1.1,0.21,22
+pistachio,plum,0.7,6,0.17,345,9.5,0.029,5
+pistachio,raspberry,1.2,25,0.69,33,26.2,0.055,21
+pistachio,yogurt,3.47,121,0.05,99,0.5,0.032,7
+polish sausage,currant,3.43,88,1.88,73,4.7,0.296,10
+polish sausage,lobster,26.41,63,1.41,20,2.1,0.173,1
+polish sausage,mozzarella,22.17,505,0.44,676,0,0.037,7
+polish sausage,pear,0.36,9,0.18,25,4.3,0.029,7
+polish sausage,scallop,20.54,10,0.58,5,0,0.112,20
+pork,cabbage,1.28,40,0.47,98,36.6,0.124,43
+pork,carrot,0.93,33,0.3,16706,5.9,0.138,19
+pork,margarine,0.9,30,0,3577,0.2,0.009,1
+pork,miso,12.79,57,2.49,87,0,0.199,19
+pork,mushroom,1.49,15,3.47,0,0,0.044,2
+pork,noodle,1.79,4,0.14,0,0,0.006,1
+pork,pea,5.42,25,1.47,765,40,0.169,65
+pork,rice,2.69,10,1.2,0,0,0.093,58
+pork,shortening,0,0,0,0,0,0,0
+pork,tofu,9.04,201,1.61,0,0.2,0.071,19
+pork chop,buttermilk,3.21,115,0.03,165,0,0.036,5
+pork chop,chicken wing,17.52,11,0.46,29,0,0.528,7
+pork chop,halibut,14.37,3,0.66,47,0,0.42,1
+pork chop,honey,0.3,6,0.42,0,0.5,0.024,2
+pork chop,lemon,1.1,26,0.6,22,53,0.08,11
+pork chop,pork chop,26.54,51,0.81,13,0,0.488,0
+pork chop,pork loin,27.32,19,0.87,7,0.6,0.464,5
+pork chop,pork rib,21.75,25,1,8,0.3,0.419,4
+pork chop,salmon,19.93,26,0.25,453,4,0.4,30
+pork chop,scallop,20.54,10,0.58,5,0,0.112,20
+pork chop,walnut,15.23,98,2.91,20,1.3,0.537,98
+pork loin,almond paste,9,172,1.6,0,0.1,0.036,73
+pork loin,cherry,1.06,13,0.36,64,7,0.049,4
+pork loin,chicken wing,17.52,11,0.46,29,0,0.528,7
+pork loin,halibut,14.37,3,0.66,47,0,0.42,1
+pork loin,pork chop,26.54,51,0.81,13,0,0.488,0
+pork loin,pork rib,21.75,25,1,8,0.3,0.419,4
+pork loin,raspberry,1.2,25,0.69,33,26.2,0.055,21
+pork loin,salmon,19.93,26,0.25,453,4,0.4,30
+pork loin,scallop,20.54,10,0.58,5,0,0.112,20
+pork loin,walnut,15.23,98,2.91,20,1.3,0.537,98
+pork loin,yogurt,3.47,121,0.05,99,0.5,0.032,7
+potato,bacon,13.66,6,0.38,37,0,0.266,0
+potato,cabbage,1.28,40,0.47,98,36.6,0.124,43
+potato,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+potato,celery,0.69,40,0.2,449,3.1,0.074,36
+potato,lard,0,0,0,0,0,0,0
+potato,leek,0.81,30,1.1,812,4.2,0.113,24
+potato,noodle,1.79,4,0.14,0,0,0.006,1
+potato,paprika,14.14,229,21.14,49254,0.9,2.141,49
+potato,parsnip,1.32,37,0.58,0,13,0.093,58
+potato,pea,5.42,25,1.47,765,40,0.169,65
+potato,rice,2.69,10,1.2,0,0,0.093,58
+potato,sauerkraut,0.91,30,1.47,18,14.7,0.13,24
+potato,sausage,13.9,12,1.77,0,0,0,0
+potato,tomato,0.88,10,0.27,833,13.7,0.08,15
+prawn,bamboo shoot,3.45,17,0.66,0,4.5,0.302,7
+prawn,bok choy,1.5,105,0.8,4468,45,0.194,66
+prawn,chicken thigh,16.52,7,0.68,78,0,0.347,3
+prawn,coconut milk,2.02,18,3.3,0,1,0.028,14
+prawn,ginger,1.82,16,0.6,0,5,0.16,11
+prawn,noodle,1.79,4,0.14,0,0,0.006,1
+prawn,peanut,24.35,58,1.58,0,0,0.466,97
+prawn,peanut butter,24,41,1.9,0,0,0.45,92
+prawn,pork rib,21.75,25,1,8,0.3,0.419,4
+prawn,tofu,9.04,201,1.61,0,0.2,0.071,19
+provolone cheese,artichoke,2.87,21,0.61,0,7.4,0.081,88
+provolone cheese,arugula,2.58,160,1.46,2373,15,0.073,97
+provolone cheese,blue cheese,21.4,528,0.31,721,0,0.166,36
+provolone cheese,bread,8.85,144,3.61,1,0,0.087,111
+provolone cheese,mozzarella,22.17,505,0.44,676,0,0.037,7
+provolone cheese,parmesan,28.42,853,0.49,974,0,0.081,6
+provolone cheese,pepperoni,19.25,19,1.33,0,0,0.362,5
+provolone cheese,pesto,9.83,306,0.57,1544,0,0.133,16
+provolone cheese,scallop,20.54,10,0.58,5,0,0.112,20
+provolone cheese,spinach,2.86,99,2.71,9377,28.1,0.195,194
+provolone cheese,swiss cheese,26.96,890,0.13,1047,0,0.071,10
+provolone cheese,watercress,2.3,120,0.2,3191,43,0.129,9
+pumpkin,bok choy,1.5,105,0.8,4468,45,0.194,66
+pumpkin,cashew,14.85,44,5.82,0,0,0.248,67
+pumpkin,chicken,26.79,14,0.73,0,0,0.247,10
+pumpkin,chicken thigh,16.52,7,0.68,78,0,0.347,3
+pumpkin,cilantro,2.13,67,1.77,6748,27,0.149,62
+pumpkin,coconut milk,2.02,18,3.3,0,1,0.028,14
+pumpkin,lamb,6.92,23,1.14,0,0,0.03,3
+pumpkin,lime,0.7,33,0.6,50,29.1,0.043,8
+pumpkin,mint,3.75,243,5.08,4248,31.8,0.129,114
+pumpkin,peanut butter,24,41,1.9,0,0,0.45,92
+pumpkin,plantain,1.3,3,0.55,1127,18.4,0.242,22
+pumpkin,pork chop,26.54,51,0.81,13,0,0.488,0
+pumpkin,salmon,19.93,26,0.25,453,4,0.4,30
+pumpkin,sweet potato,1.57,30,0.61,14187,2.4,0.209,11
+pumpkin,whitefish,24.47,33,0.47,131,0,0.346,17
+quinoa,avocado,1.96,13,0.61,147,8.8,0.287,89
+quinoa,butternut squash,1,48,0.7,10630,21,0.154,27
+quinoa,chickpea,4.92,35,1.23,15,0.1,0.473,25
+quinoa,cilantro,2.13,67,1.77,6748,27,0.149,62
+quinoa,coconut milk,2.02,18,3.3,0,1,0.028,14
+quinoa,cucumber,0.65,16,0.28,105,2.8,0.04,7
+quinoa,lentil,24.63,35,6.51,39,4.5,0.54,479
+quinoa,mint,3.75,243,5.08,4248,31.8,0.129,114
+quinoa,noodle,1.79,4,0.14,0,0,0.006,1
+quinoa,pumpkin,1,21,0.8,8513,9,0.061,16
+quinoa,radish,0.68,25,0.34,7,14.8,0.071,25
+quinoa,rice,2.69,10,1.2,0,0,0.093,58
+quinoa,salami,21.7,10,1.52,0,0,0.55,2
+quinoa,spinach,2.86,99,2.71,9377,28.1,0.195,194
+quinoa,squash,1.01,21,0.44,150,19.3,0.104,19
+quinoa,sweet potato,1.57,30,0.61,14187,2.4,0.209,11
+quinoa,tomato,0.88,10,0.27,833,13.7,0.08,15
+quinoa,zucchini,1.21,16,0.37,200,17.9,0.163,24
+radish,avocado,1.96,13,0.61,147,8.8,0.287,89
+radish,corn tortilla,5.7,81,1.23,2,0,0.219,5
+radish,cucumber,0.65,16,0.28,105,2.8,0.04,7
+radish,lime,0.7,33,0.6,50,29.1,0.043,8
+radish,mahi mahi,18.5,15,1.13,180,0,0.4,5
+radish,mint,3.75,243,5.08,4248,31.8,0.129,114
+radish,noodle,1.79,4,0.14,0,0,0.006,1
+radish,peanut butter,24,41,1.9,0,0,0.45,92
+radish,pineapple,0.55,13,0.25,52,16.9,0.106,11
+radish,tomato,0.88,10,0.27,833,13.7,0.08,15
+radish,whitefish,24.47,33,0.47,131,0,0.346,17
+rice,bread,8.85,144,3.61,1,0,0.087,111
+rice,chicken breast,22.5,5,0.37,30,0,0.811,9
+rice,gouda,24.94,700,0.24,563,0,0.08,21
+rice,horseradish,1.18,56,0.42,2,24.9,0.073,57
+rice,leek,0.81,30,1.1,812,4.2,0.113,24
+rice,monterey jack cheese,24.48,746,0.72,769,0,0.079,18
+rice,navy bean,8.23,69,2.36,0,0.9,0.138,140
+rice,potato,1.4,5,1.26,2,5.1,0.19,6
+rice,spinach,2.86,99,2.71,9377,28.1,0.195,194
+rice,swiss cheese,26.96,890,0.13,1047,0,0.071,10
+salmon,almond milk,0.59,197,0.35,0,0,0.015,1
+salmon,apple cider vinegar,0,7,0.2,0,0,0,0
+salmon,avocado oil,0,0,0,0,0,0,0
+salmon,butternut squash,1,48,0.7,10630,21,0.154,27
+salmon,cashew,14.85,44,5.82,0,0,0.248,67
+salmon,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+salmon,cucumber,0.65,16,0.28,105,2.8,0.04,7
+salmon,dill,3.46,208,6.59,7718,85,0.185,150
+salmon,lamb,6.92,23,1.14,0,0,0.03,3
+salmon,lime,0.7,33,0.6,50,29.1,0.043,8
+salmon,mango,0.82,11,0.16,1082,36.4,0.119,43
+salmon,mint,3.75,243,5.08,4248,31.8,0.129,114
+salmon,mushroom,1.49,15,3.47,0,0,0.044,2
+salmon,orange,0.91,43,0.13,247,59.1,0.079,34
+salmon,oxtail,30.8,13,3.65,0,0,0.288,6
+salmon,pork,27.69,8,0.51,0,0,0.558,0
+salmon,pork shoulder,22.54,7,0.89,0,0,0.722,0
+salmon,safflower oil,0,0,0,0,0,0,0
+salmon,tomato,0.88,10,0.27,833,13.7,0.08,15
+sauerkraut,bacon,13.66,6,0.38,37,0,0.266,0
+sauerkraut,cabbage,1.28,40,0.47,98,36.6,0.124,43
+sauerkraut,lard,0,0,0,0,0,0,0
+sauerkraut,leek,0.81,30,1.1,812,4.2,0.113,24
+sauerkraut,noodle,1.79,4,0.14,0,0,0.006,1
+sauerkraut,paprika,14.14,229,21.14,49254,0.9,2.141,49
+sauerkraut,potato,1.4,5,1.26,2,5.1,0.19,6
+sauerkraut,sausage,13.9,12,1.77,0,0,0,0
+sausage,bacon,13.66,6,0.38,37,0,0.266,0
+sausage,celery,0.69,40,0.2,449,3.1,0.074,36
+sausage,ham,20.53,8,1.37,0,14,0.3,5
+sausage,lard,0,0,0,0,0,0,0
+sausage,navy bean,8.23,69,2.36,0,0.9,0.138,140
+sausage,noodle,1.79,4,0.14,0,0,0.006,1
+sausage,okra,1.93,82,0.62,716,23,0.215,60
+sausage,parsley,2.97,138,6.2,8424,133,0.09,152
+sausage,potato,1.4,5,1.26,2,5.1,0.19,6
+sausage,rice,2.69,10,1.2,0,0,0.093,58
+sausage,sauerkraut,0.91,30,1.47,18,14.7,0.13,24
+scallop,artichoke,2.87,21,0.61,0,7.4,0.081,88
+scallop,catfish,16.38,14,0.3,50,0.7,0.116,10
+scallop,halibut,14.37,3,0.66,47,0,0.42,1
+scallop,milk,3.15,113,0.03,162,0,0.036,5
+scallop,mozzarella,22.17,505,0.44,676,0,0.037,7
+scallop,pear,0.36,9,0.18,25,4.3,0.029,7
+scallop,pork loin,27.32,19,0.87,7,0.6,0.464,5
+scallop,sausage,13.9,12,1.77,0,0,0,0
+scallop,watercress,2.3,120,0.2,3191,43,0.129,9
+shallot,chicken,26.79,14,0.73,0,0,0.247,10
+shallot,chicken thigh,16.52,7,0.68,78,0,0.347,3
+shallot,leek,0.81,30,1.1,812,4.2,0.113,24
+shallot,lemon,1.1,26,0.6,22,53,0.08,11
+shallot,onion,1.1,23,0.21,2,7.4,0.12,19
+shallot,pesto,9.83,306,0.57,1544,0,0.133,16
+shallot,plantain,1.3,3,0.55,1127,18.4,0.242,22
+shallot,salmon,19.93,26,0.25,453,4,0.4,30
+shallot,sausage,13.9,12,1.77,0,0,0,0
+shallot,scallop,20.54,10,0.58,5,0,0.112,20
+shallot,sweet potato,1.57,30,0.61,14187,2.4,0.209,11
+shallot,tilapia,20.08,10,0.56,0,0,0.162,24
+shallot,watercress,2.3,120,0.2,3191,43,0.129,9
+shallot,whitefish,24.47,33,0.47,131,0,0.346,17
+shrimp,bell pepper,1.04,7,0.47,2760,162.8,0.364,2
+shrimp,brown rice,2.32,10,0.53,0,0,0.149,4
+shrimp,celery,0.69,40,0.2,449,3.1,0.074,36
+shrimp,chicken,26.79,14,0.73,0,0,0.247,10
+shrimp,chicken breast,22.5,5,0.37,30,0,0.811,9
+shrimp,chicken thigh,16.52,7,0.68,78,0,0.347,3
+shrimp,corn,9.42,7,2.71,0,0,0.622,0
+shrimp,ham,20.53,8,1.37,0,14,0.3,5
+shrimp,kidney bean,8.67,35,2.22,0,1.2,0.12,130
+shrimp,mushroom,1.49,15,3.47,0,0,0.044,2
+shrimp,okra,1.93,82,0.62,716,23,0.215,60
+shrimp,rice,2.69,10,1.2,0,0,0.093,58
+shrimp,sausage,13.9,12,1.77,0,0,0,0
+snow pea,bamboo shoot,3.45,17,0.66,0,4.5,0.302,7
+snow pea,beansprout,4.57,31,0.9,0,9.6,0.072,49
+snow pea,bok choy,1.5,105,0.8,4468,45,0.194,66
+snow pea,broccoli,2.82,47,0.73,623,89.2,0.175,63
+snow pea,daikon,1.1,27,0.8,0,29,0.075,14
+snow pea,mushroom,1.49,15,3.47,0,0,0.044,2
+snow pea,noodle,1.79,4,0.14,0,0,0.006,1
+snow pea,peanut,24.35,58,1.58,0,0,0.466,97
+snow pea,peanut butter,24,41,1.9,0,0,0.45,92
+snow pea,tofu,9.04,201,1.61,0,0.2,0.071,19
+snow pea,water chestnut,1.38,6,1.36,0,2,0.248,9
+spinach,anchovy,20.35,147,3.25,50,0,0.143,9
+spinach,artichoke,2.87,21,0.61,0,7.4,0.081,88
+spinach,arugula,2.58,160,1.46,2373,15,0.073,97
+spinach,asparagu,2.2,24,2.14,756,5.6,0.091,52
+spinach,basil,3.15,177,3.17,5275,18,0.155,68
+spinach,chicken,26.79,14,0.73,0,0,0.247,10
+spinach,cottage cheese,10.49,78,0.07,0,0,0.043,11
+spinach,cucumber,0.65,16,0.28,105,2.8,0.04,7
+spinach,dill,3.46,208,6.59,7718,85,0.185,150
+spinach,lettuce,1.39,62,0.9,0,11.5,0.066,129
+spinach,mozzarella,22.17,505,0.44,676,0,0.037,7
+spinach,pepperoni,19.25,19,1.33,0,0,0.362,5
+spinach,salsa,0.71,11,0.23,0,10.8,0.091,12
+spinach,sausage,13.9,12,1.77,0,0,0,0
+spinach,tomato,0.88,10,0.27,833,13.7,0.08,15
+spinach,zucchini,1.21,16,0.37,200,17.9,0.163,24
+steak,artichoke,2.87,21,0.61,0,7.4,0.081,88
+steak,bok choy,1.5,105,0.8,4468,45,0.194,66
+steak,carrot,0.93,33,0.3,16706,5.9,0.138,19
+steak,chicken thigh,16.52,7,0.68,78,0,0.347,3
+steak,lobster,26.41,63,1.41,20,2.1,0.173,1
+steak,miso,12.79,57,2.49,87,0,0.199,19
+steak,noodle,1.79,4,0.14,0,0,0.006,1
+steak,peanut butter,24,41,1.9,0,0,0.45,92
+steak,pumpkin,1,21,0.8,8513,9,0.061,16
+steak,scallop,20.54,10,0.58,5,0,0.112,20
+sweet potato,chicken,26.79,14,0.73,0,0,0.247,10
+sweet potato,chicken leg,16.37,9,0.69,92,0.2,0.318,4
+sweet potato,chicken thigh,16.52,7,0.68,78,0,0.347,3
+sweet potato,chickpea,4.92,35,1.23,15,0.1,0.473,25
+sweet potato,lamb,6.92,23,1.14,0,0,0.03,3
+sweet potato,lime,0.7,33,0.6,50,29.1,0.043,8
+sweet potato,lobster,26.41,63,1.41,20,2.1,0.173,1
+sweet potato,mahi mahi,18.5,15,1.13,180,0,0.4,5
+sweet potato,mushroom,1.49,15,3.47,0,0,0.044,2
+sweet potato,pesto,9.83,306,0.57,1544,0,0.133,16
+sweet potato,plantain,1.3,3,0.55,1127,18.4,0.242,22
+sweet potato,pork chop,26.54,51,0.81,13,0,0.488,0
+sweet potato,pumpkin,1,21,0.8,8513,9,0.061,16
+sweet potato,quinoa,14.12,47,4.57,14,0,0.487,184
+sweet potato,sausage,13.9,12,1.77,0,0,0,0
+sweet potato,scallop,20.54,10,0.58,5,0,0.112,20
+sweet potato,shallot,2.5,37,1.2,4,8,0.345,34
+sweet potato,tilapia,20.08,10,0.56,0,0,0.162,24
+sweet potato,turkey,21.64,11,0.86,56,0,0.599,7
+tofu,bok choy,1.5,105,0.8,4468,45,0.194,66
+tofu,broccoli,2.82,47,0.73,623,89.2,0.175,63
+tofu,daikon,1.1,27,0.8,0,29,0.075,14
+tofu,mushroom,1.49,15,3.47,0,0,0.044,2
+tofu,noodle,1.79,4,0.14,0,0,0.006,1
+tofu,peanut butter,24,41,1.9,0,0,0.45,92
+tofu,pork,27.69,8,0.51,0,0,0.558,0
+tomato,bell pepper,1.04,7,0.47,2760,162.8,0.364,2
+tomato,carrot,0.93,33,0.3,16706,5.9,0.138,19
+tomato,lamb,6.92,23,1.14,0,0,0.03,3
+tomato,lemon,1.1,26,0.6,22,53,0.08,11
+tomato,paprika,14.14,229,21.14,49254,0.9,2.141,49
+tomato,parsley,2.97,138,6.2,8424,133,0.09,152
+tomato,potato,1.4,5,1.26,2,5.1,0.19,6
+tomato,salsa,0.71,11,0.23,0,10.8,0.091,12
+tomato,sausage,13.9,12,1.77,0,0,0,0
+tomato,squash,1.01,21,0.44,150,19.3,0.104,19
+tomato paste,bacon,13.66,6,0.38,37,0,0.266,0
+tomato paste,bell pepper,1.04,7,0.47,2760,162.8,0.364,2
+tomato paste,celery,0.69,40,0.2,449,3.1,0.074,36
+tomato paste,chicken thigh,16.52,7,0.68,78,0,0.347,3
+tomato paste,chorizo,13.63,19,1.41,0,0,0.313,0
+tomato paste,noodle,1.79,4,0.14,0,0,0.006,1
+tomato paste,okra,1.93,82,0.62,716,23,0.215,60
+tomato paste,oxtail,30.8,13,3.65,0,0,0.288,6
+tomato paste,paprika,14.14,229,21.14,49254,0.9,2.141,49
+tomato paste,parsley,2.97,138,6.2,8424,133,0.09,152
+tomato paste,potato,1.4,5,1.26,2,5.1,0.19,6
+tomato paste,rosemary,3.31,317,6.65,2924,21.8,0.336,109
+tomato paste,sauerkraut,0.91,30,1.47,18,14.7,0.13,24
+tomato paste,sausage,13.9,12,1.77,0,0,0,0
+tomato paste,shrimp,22.78,91,0.32,301,0,0.242,24
+tomato paste,turkey,21.64,11,0.86,56,0,0.599,7
+turkey,artichoke,2.87,21,0.61,0,7.4,0.081,88
+turkey,basil,3.15,177,3.17,5275,18,0.155,68
+turkey,butternut squash,1,48,0.7,10630,21,0.154,27
+turkey,chorizo,13.63,19,1.41,0,0,0.313,0
+turkey,fennel,1.24,49,0.73,963,12,0.047,27
+turkey,horseradish,1.18,56,0.42,2,24.9,0.073,57
+turkey,lemon,1.1,26,0.6,22,53,0.08,11
+turkey,mozzarella,22.17,505,0.44,676,0,0.037,7
+turkey,parsley,2.97,138,6.2,8424,133,0.09,152
+turkey,pesto,9.83,306,0.57,1544,0,0.133,16
+turkey,pine nut,13.69,16,5.53,29,0.8,0.094,34
+turkey,rosemary,3.31,317,6.65,2924,21.8,0.336,109
+turkey,sausage,13.9,12,1.77,0,0,0,0
+turkey,spinach,2.86,99,2.71,9377,28.1,0.195,194
+turkey,tomato,0.88,10,0.27,833,13.7,0.08,15
+turnip,catfish,16.38,14,0.3,50,0.7,0.116,10
+turnip,chorizo,13.63,19,1.41,0,0,0.313,0
+turnip,garlic,6.36,181,1.7,9,31.2,1.235,3
+turnip,lamb,6.92,23,1.14,0,0,0.03,3
+turnip,lard,0,0,0,0,0,0,0
+turnip,parsnip,1.32,37,0.58,0,13,0.093,58
+turnip,rice,2.69,10,1.2,0,0,0.093,58
+turnip,tomato,0.88,10,0.27,833,13.7,0.08,15
+turnip,veal,9.4,6,0.45,0,0,0.11,5
+veal,cauliflower,1.92,22,0.42,0,48.2,0.184,57
+veal,celery,0.69,40,0.2,449,3.1,0.074,36
+veal,chicken,26.79,14,0.73,0,0,0.247,10
+veal,chorizo,13.63,19,1.41,0,0,0.313,0
+veal,corn,9.42,7,2.71,0,0,0.622,0
+veal,cornmeal,7.11,3,4.36,3,0,0.182,209
+veal,gouda,24.94,700,0.24,563,0,0.08,21
+veal,kale,2.92,254,1.6,4812,93.4,0.147,62
+veal,kidney bean,8.67,35,2.22,0,1.2,0.12,130
+veal,lamb,6.92,23,1.14,0,0,0.03,3
+veal,leek,0.81,30,1.1,812,4.2,0.113,24
+veal,mozzarella,22.17,505,0.44,676,0,0.037,7
+veal,mushroom,1.49,15,3.47,0,0,0.044,2
+veal,navy bean,8.23,69,2.36,0,0.9,0.138,140
+veal,noodle,1.79,4,0.14,0,0,0.006,1
+veal,parsnip,1.32,37,0.58,0,13,0.093,58
+veal,pesto,9.83,306,0.57,1544,0,0.133,16
+veal,potato,1.4,5,1.26,2,5.1,0.19,6
+walnut,almond,20.96,268,3.73,1,0,0.136,55
+walnut,almond paste,9,172,1.6,0,0.1,0.036,73
+walnut,banana,1.09,5,0.26,64,8.7,0.367,20
+walnut,cherry,1.06,13,0.36,64,7,0.049,4
+walnut,cranberry,0.46,8,0.23,63,14,0.057,1
+walnut,hazelnut,14.95,114,4.7,20,6.3,0.563,113
+walnut,oat,16.89,54,4.72,0,0,0.119,56
+walnut,peach,0.91,6,0.25,326,6.6,0.025,4
+walnut,pecan,9.17,70,2.53,56,1.1,0.21,22
+walnut,raspberry,1.2,25,0.69,33,26.2,0.055,21
+walnut,strawberry,0.67,16,0.41,12,58.8,0.047,24
+water chestnut,beansprout,4.57,31,0.9,0,9.6,0.072,49
+water chestnut,bok choy,1.5,105,0.8,4468,45,0.194,66
+water chestnut,broccoli,2.82,47,0.73,623,89.2,0.175,63
+water chestnut,cashew,14.85,44,5.82,0,0,0.248,67
+water chestnut,chicken,26.79,14,0.73,0,0,0.247,10
+water chestnut,miso,12.79,57,2.49,87,0,0.199,19
+water chestnut,mushroom,1.49,15,3.47,0,0,0.044,2
+water chestnut,noodle,1.79,4,0.14,0,0,0.006,1
+water chestnut,peanut,24.35,58,1.58,0,0,0.466,97
+water chestnut,peanut butter,24,41,1.9,0,0,0.45,92
+water chestnut,pork,27.69,8,0.51,0,0,0.558,0
+water chestnut,rice,2.69,10,1.2,0,0,0.093,58
+water chestnut,sesame oil,0,0,0,0,0,0,0
+water chestnut,snow pea,2.8,43,2.08,1087,60,0.16,42
+water chestnut,tofu,9.04,201,1.61,0,0.2,0.071,19
+whitefish,cucumber,0.65,16,0.28,105,2.8,0.04,7
+whitefish,halibut,14.37,3,0.66,47,0,0.42,1
+whitefish,lime,0.7,33,0.6,50,29.1,0.043,8
+whitefish,scallop,20.54,10,0.58,5,0,0.112,20
+whitefish,tomato,0.88,10,0.27,833,13.7,0.08,15
+whitefish,watercress,2.3,120,0.2,3191,43,0.129,9
+zucchini,artichoke,2.87,21,0.61,0,7.4,0.081,88
+zucchini,arugula,2.58,160,1.46,2373,15,0.073,97
+zucchini,avocado,1.96,13,0.61,147,8.8,0.287,89
+zucchini,basil,3.15,177,3.17,5275,18,0.155,68
+zucchini,bell pepper,1.04,7,0.47,2760,162.8,0.364,2
+zucchini,caper,2.36,40,1.67,138,4.3,0.023,23
+zucchini,cucumber,0.65,16,0.28,105,2.8,0.04,7
+zucchini,lettuce,1.39,62,0.9,0,11.5,0.066,129
+zucchini,mozzarella,22.17,505,0.44,676,0,0.037,7
+zucchini,salsa,0.71,11,0.23,0,10.8,0.091,12
+zucchini,sausage,13.9,12,1.77,0,0,0,0
+zucchini,spinach,2.86,99,2.71,9377,28.1,0.195,194
+zucchini,squash,1.01,21,0.44,150,19.3,0.104,19
+zucchini,tomato,0.88,10,0.27,833,13.7,0.08,15

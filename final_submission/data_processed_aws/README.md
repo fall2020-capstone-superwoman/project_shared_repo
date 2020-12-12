@@ -1,1 +1,1 @@
-# Capstone_Fall2020_Nutrition
+# Pre-calculated co-occrrence ingredients list. Recipe details with NER result.

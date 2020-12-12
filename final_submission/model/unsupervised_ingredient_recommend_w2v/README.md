@@ -1,1 +1,1 @@
-# Capstone_Fall2020_Nutrition
+# Co-occurrence ingredients model
